@@ -11,13 +11,16 @@ The final evidence uses the `m0-v3-*` runs. Earlier smoke, v1, and v2 runs are r
 ## Frozen implementation
 
 - Workspace files: 30 non-generated files.
-- Workspace SHA-256: `26c15de39ee28137a41292fb82557482094ed996c1bed8b925603a28338a7bff`.
+- Validated v3 workspace SHA-256: `26c15de39ee28137a41292fb82557482094ed996c1bed8b925603a28338a7bff`.
+- Committed implementation workspace SHA-256: `9f47e730387bb2db77d7f2b7b6da3670584f7e01c6163770ff8d928f3d143ca6`.
 - Qwen checkpoint: `Qwen/Qwen3-0.6B` at `c1899de289a04d12100db370d81485cdf75e47ca`.
 - DeepSeek checkpoint: `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` at `ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562`.
 - Environment: Python 3.11.15, PyTorch 2.13.0, Transformers 4.57.6, Accelerate 1.14.0.
 - Hardware: Fedora 44, RTX 3060 Ti 8 GiB, NVIDIA driver 595.71.05.
 
 The local and remote workspace hashes matched before the v3 runs. Every v3 resolved configuration records the same workspace hash, pinned checkpoint/tokenizer revisions, exact chat-template hash, dependency versions, item IDs, budgets, seed, delimiter variants, precision, and device.
+
+The committed implementation hash differs from the validated v3 hash only because the commit whitespace gate removed terminal blank lines from `.gitignore`, `data/m0_dev.jsonl`, and `pyproject.toml`. No executable source, configuration value, fixture item, or dependency resolution changed. The complete local test suite was rerun after this cleanup.
 
 ## Verification results
 
