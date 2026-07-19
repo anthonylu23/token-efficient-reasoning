@@ -1,0 +1,12 @@
+{"id":"m0-arith-001","prompt":"What is 17 + 28?","reference_answer":"45","answer_type":"integer","task_family":"short_arithmetic"}
+{"id":"m0-arith-002","prompt":"What is 63 - 19?","reference_answer":"44","answer_type":"integer","task_family":"short_arithmetic"}
+{"id":"m0-arith-003","prompt":"What is 7 multiplied by 8?","reference_answer":"56","answer_type":"integer","task_family":"short_arithmetic"}
+{"id":"m0-arith-004","prompt":"What is 144 divided by 12?","reference_answer":"12","answer_type":"integer","task_family":"short_arithmetic"}
+{"id":"m0-arith-005","prompt":"A jar starts with 23 marbles. Nine are added and seven are removed. How many marbles remain?","reference_answer":"25","answer_type":"integer","task_family":"short_arithmetic"}
+{"id":"m0-arith-006","prompt":"Four boxes contain 6 pencils each, and 3 loose pencils are added. How many pencils are there?","reference_answer":"27","answer_type":"integer","task_family":"short_arithmetic"}
+{"id":"m0-arith-007","prompt":"Nora has 50 dollars and buys three notebooks costing 8 dollars each. How many dollars remain?","reference_answer":"26","answer_type":"integer","task_family":"short_arithmetic"}
+{"id":"m0-arith-008","prompt":"The temperature is -4 degrees and rises by 11 degrees. What is the new temperature?","reference_answer":"7","answer_type":"integer","task_family":"short_arithmetic"}
+{"id":"m0-arith-009","prompt":"A train travels 18 miles in each of 5 equal segments. How many miles does it travel?","reference_answer":"90","answer_type":"integer","task_family":"short_arithmetic"}
+{"id":"m0-arith-010","prompt":"There are 96 cards shared equally among 8 players. How many cards does each player receive?","reference_answer":"12","answer_type":"integer","task_family":"short_arithmetic"}
+{"id":"m0-arith-011","prompt":"Start with 10, triple it, subtract 4, then divide by 2. What number results?","reference_answer":"13","answer_type":"integer","task_family":"short_arithmetic"}
+{"id":"m0-arith-012","prompt":"A shop has 8 shelves with 9 books on each shelf. It sells 17 books. How many books remain?","reference_answer":"55","answer_type":"integer","task_family":"short_arithmetic"}
