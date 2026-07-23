@@ -8,3 +8,4 @@ Expected topics as the codebase grows: tech stack, architecture, training/eval w
 
 - [Experimental roadmap and milestone gates](ROADMAP.md)
 - [Milestone 0 evaluator architecture and workflow](M0_EVALUATOR.md)
+- [Milestone 1 controlled dataset and verifier](M1_DATASET.md)

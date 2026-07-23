@@ -8,10 +8,11 @@ See the [project proposal and experimental specification](PROJECT_PROPOSAL.md) f
 
 ## Development
 
-Milestone 0 implements token-native fixed-budget evaluation for the frozen C0/C1 baselines. See the [M0 evaluator documentation](docs/M0_EVALUATOR.md) for the protocol, configuration, artifact schema, and verification workflow.
+Milestone 0 implements token-native fixed-budget evaluation for the frozen C0/C1 baselines. Milestone 1 adds deterministic controlled-depth arithmetic and graph data, executable replay verification, R0–R3 traces, split auditing, and pinned-tokenizer compression measurement. See the [M0 evaluator documentation](docs/M0_EVALUATOR.md) and [M1 dataset documentation](docs/M1_DATASET.md) for their protocols and workflows.
 
 ```bash
 uv sync
 uv run pytest
 uv run ter-eval validate-config configs/m0.json
+uv run ter-data validate-config configs/m1.json
 ```
