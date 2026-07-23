@@ -1,0 +1,550 @@
+{
+  "items": [
+    {
+      "answer": "1",
+      "depth": 12,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-test-d12-02a1f371fecf9d04-e97731c716",
+      "prompt": "A counter starts at 4. In order, subtract 2, then subtract 1, then multiply by 3, then subtract 3, then add 4, then add 1, then add 2, then add 3, then subtract 1, then subtract 4, then subtract 3, then subtract 1. A separate box contains 28 striped markers; that fact does not affect the calculation. What is the counter's final value?",
+      "renderings": {
+        "r0": "Step 1: The current value is 4. Subtracting 2 gives 2.\nStep 2: The current value is 2. Subtracting 1 gives 1.\nStep 3: The current value is 1. Multiplying by 3 gives 3.\nStep 4: The current value is 3. Subtracting 3 gives 0.\nStep 5: The current value is 0. Adding 4 gives 4.\nStep 6: The current value is 4. Adding 1 gives 5.\nStep 7: The current value is 5. Adding 2 gives 7.\nStep 8: The current value is 7. Adding 3 gives 10.\nStep 9: The current value is 10. Subtracting 1 gives 9.\nStep 10: The current value is 9. Subtracting 4 gives 5.\nStep 11: The current value is 5. Subtracting 3 gives 2.\nStep 12: The current value is 2. Subtracting 1 gives 1.",
+        "r1": "Step 1: 4 - 2 = 2.\nStep 2: 2 - 1 = 1.\nStep 3: 1 * 3 = 3.\nStep 4: 3 - 3 = 0.\nStep 5: 0 + 4 = 4.\nStep 6: 4 + 1 = 5.\nStep 7: 5 + 2 = 7.\nStep 8: 7 + 3 = 10.\nStep 9: 10 - 1 = 9.\nStep 10: 9 - 4 = 5.\nStep 11: 5 - 3 = 2.\nStep 12: 2 - 1 = 1.",
+        "r2": "1:4-2=2\n2:2-1=1\n3:1*3=3\n4:3-3=0\n5:0+4=4\n6:4+1=5\n7:5+2=7\n8:7+3=10\n9:10-1=9\n10:9-4=5\n11:5-3=2\n12:2-1=1",
+        "r3": "s1=4>sub(2)>2\ns2=2>sub(1)>1\ns3=1>mul(3)>3\ns4=3>sub(3)>0\ns5=0>add(4)>4\ns6=4>add(1)>5\ns7=5>add(2)>7\ns8=7>add(3)>10\ns9=10>sub(1)>9\ns10=9>sub(4)>5\ns11=5>sub(3)>2\ns12=2>sub(1)>1"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test"
+    },
+    {
+      "answer": "38",
+      "depth": 2,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-test-d2-00757c1ec63b6216-83d0d7a72f",
+      "prompt": "A number machine receives 23 and performs these commands in order: multiply by 2, then subtract 8. A separate box contains 26 wooden markers; that fact does not affect the calculation. What number leaves the machine?",
+      "renderings": {
+        "r0": "Step 1: The current value is 23. Multiplying by 2 gives 46.\nStep 2: The current value is 46. Subtracting 8 gives 38.",
+        "r1": "Step 1: 23 * 2 = 46.\nStep 2: 46 - 8 = 38.",
+        "r2": "1:23*2=46\n2:46-8=38",
+        "r3": "s1=23>mul(2)>46\ns2=46>sub(8)>38"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test"
+    },
+    {
+      "answer": "81",
+      "depth": 4,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-test-d4-00d6bc6e2f01d318-ce0c67b307",
+      "prompt": "A number machine receives 15 and performs these commands in order: multiply by 3, then multiply by 3, then multiply by 3, then divide by 5. A separate box contains 11 copper markers; that fact does not affect the calculation. What number leaves the machine?",
+      "renderings": {
+        "r0": "Step 1: The current value is 15. Multiplying by 3 gives 45.\nStep 2: The current value is 45. Multiplying by 3 gives 135.\nStep 3: The current value is 135. Multiplying by 3 gives 405.\nStep 4: The current value is 405. Dividing by 5 gives 81.",
+        "r1": "Step 1: 15 * 3 = 45.\nStep 2: 45 * 3 = 135.\nStep 3: 135 * 3 = 405.\nStep 4: 405 / 5 = 81.",
+        "r2": "1:15*3=45\n2:45*3=135\n3:135*3=405\n4:405/5=81",
+        "r3": "s1=15>mul(3)>45\ns2=45>mul(3)>135\ns3=135>mul(3)>405\ns4=405>div(5)>81"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test"
+    },
+    {
+      "answer": "182",
+      "depth": 8,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-test-d8-01738fbbc1f21bb2-0d59fe5e41",
+      "prompt": "A counter starts at 22. In order, add 10, then add 5, then multiply by 2, then divide by 2, then add 9, then multiply by 4, then subtract 8, then add 6. A separate box contains 19 wooden markers; that fact does not affect the calculation. What is the counter's final value?",
+      "renderings": {
+        "r0": "Step 1: The current value is 22. Adding 10 gives 32.\nStep 2: The current value is 32. Adding 5 gives 37.\nStep 3: The current value is 37. Multiplying by 2 gives 74.\nStep 4: The current value is 74. Dividing by 2 gives 37.\nStep 5: The current value is 37. Adding 9 gives 46.\nStep 6: The current value is 46. Multiplying by 4 gives 184.\nStep 7: The current value is 184. Subtracting 8 gives 176.\nStep 8: The current value is 176. Adding 6 gives 182.",
+        "r1": "Step 1: 22 + 10 = 32.\nStep 2: 32 + 5 = 37.\nStep 3: 37 * 2 = 74.\nStep 4: 74 / 2 = 37.\nStep 5: 37 + 9 = 46.\nStep 6: 46 * 4 = 184.\nStep 7: 184 - 8 = 176.\nStep 8: 176 + 6 = 182.",
+        "r2": "1:22+10=32\n2:32+5=37\n3:37*2=74\n4:74/2=37\n5:37+9=46\n6:46*4=184\n7:184-8=176\n8:176+6=182",
+        "r3": "s1=22>add(10)>32\ns2=32>add(5)>37\ns3=37>mul(2)>74\ns4=74>div(2)>37\ns5=37>add(9)>46\ns6=46>mul(4)>184\ns7=184>sub(8)>176\ns8=176>add(6)>182"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test"
+    },
+    {
+      "answer": "N04",
+      "depth": 12,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-test-d12-00213e8f09153f10-6f00906c25",
+      "prompt": "A router table has directed links: N00 -red-> N25; N00 -white-> N04; N05 -black-> N19; N05 -white-> N00; N07 -black-> N18; N07 -red-> N22; N08 -red-> N07; N08 -white-> N21; N10 -green-> N15; N10 -red-> N23; N11 -black-> N16; N11 -green-> N09; N12 -green-> N10; N12 -white-> N14; N13 -gold-> N17; N13 -green-> N05; N15 -blue-> N20; N15 -green-> N02; N16 -black-> N13; N16 -blue-> N26; N18 -gold-> N12; N18 -green-> N01; N20 -black-> N03; N20 -gold-> N11; N24 -green-> N06. A packet begins at N08. Route it using labels red, then black, then gold, then green, then green, then blue, then gold, then black, then black, then green, then white, then white, in that order. Report its final node.",
+      "renderings": {
+        "r0": "Step 1: From N08, following red reaches N07.\nStep 2: From N07, following black reaches N18.\nStep 3: From N18, following gold reaches N12.\nStep 4: From N12, following green reaches N10.\nStep 5: From N10, following green reaches N15.\nStep 6: From N15, following blue reaches N20.\nStep 7: From N20, following gold reaches N11.\nStep 8: From N11, following black reaches N16.\nStep 9: From N16, following black reaches N13.\nStep 10: From N13, following green reaches N05.\nStep 11: From N05, following white reaches N00.\nStep 12: From N00, following white reaches N04.",
+        "r1": "Step 1: N08 via red -> N07.\nStep 2: N07 via black -> N18.\nStep 3: N18 via gold -> N12.\nStep 4: N12 via green -> N10.\nStep 5: N10 via green -> N15.\nStep 6: N15 via blue -> N20.\nStep 7: N20 via gold -> N11.\nStep 8: N11 via black -> N16.\nStep 9: N16 via black -> N13.\nStep 10: N13 via green -> N05.\nStep 11: N05 via white -> N00.\nStep 12: N00 via white -> N04.",
+        "r2": "1:N08-red>N07\n2:N07-black>N18\n3:N18-gold>N12\n4:N12-green>N10\n5:N10-green>N15\n6:N15-blue>N20\n7:N20-gold>N11\n8:N11-black>N16\n9:N16-black>N13\n10:N13-green>N05\n11:N05-white>N00\n12:N00-white>N04",
+        "r3": "e1(N08,red,N07)\ne2(N07,black,N18)\ne3(N18,gold,N12)\ne4(N12,green,N10)\ne5(N10,green,N15)\ne6(N15,blue,N20)\ne7(N20,gold,N11)\ne8(N11,black,N16)\ne9(N16,black,N13)\ne10(N13,green,N05)\ne11(N05,white,N00)\ne12(N00,white,N04)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test"
+    },
+    {
+      "answer": "N05",
+      "depth": 2,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-test-d2-01b28c9321065f38-9973a14ddd",
+      "prompt": "A router table has directed links: N00 -blue-> N03; N02 -black-> N01; N02 -red-> N05; N04 -gold-> N06; N04 -red-> N02. A packet begins at N04. Route it using labels red, then red, in that order. Report its final node.",
+      "renderings": {
+        "r0": "Step 1: From N04, following red reaches N02.\nStep 2: From N02, following red reaches N05.",
+        "r1": "Step 1: N04 via red -> N02.\nStep 2: N02 via red -> N05.",
+        "r2": "1:N04-red>N02\n2:N02-red>N05",
+        "r3": "e1(N04,red,N02)\ne2(N02,red,N05)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test"
+    },
+    {
+      "answer": "N06",
+      "depth": 4,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-test-d4-00b2c66d4c28dd3c-4708f8d7bc",
+      "prompt": "A directed map contains these labeled edges: N02 -blue-> N04; N02 -gold-> N06; N07 -black-> N09; N07 -red-> N00; N08 -blue-> N01; N08 -red-> N02; N09 -green-> N08; N09 -white-> N03; N10 -black-> N05. Start at N07 and follow, in order, the black, then green, then red, then gold edges. Which node is reached?",
+      "renderings": {
+        "r0": "Step 1: From N07, following black reaches N09.\nStep 2: From N09, following green reaches N08.\nStep 3: From N08, following red reaches N02.\nStep 4: From N02, following gold reaches N06.",
+        "r1": "Step 1: N07 via black -> N09.\nStep 2: N09 via green -> N08.\nStep 3: N08 via red -> N02.\nStep 4: N02 via gold -> N06.",
+        "r2": "1:N07-black>N09\n2:N09-green>N08\n3:N08-red>N02\n4:N02-gold>N06",
+        "r3": "e1(N07,black,N09)\ne2(N09,green,N08)\ne3(N08,red,N02)\ne4(N02,gold,N06)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test"
+    },
+    {
+      "answer": "N06",
+      "depth": 8,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-test-d8-006ffc9af6378bed-cb68f264ad",
+      "prompt": "A directed map contains these labeled edges: N02 -blue-> N07; N02 -gold-> N14; N03 -blue-> N10; N03 -gold-> N06; N04 -white-> N13; N05 -black-> N09; N05 -red-> N03; N07 -green-> N17; N07 -white-> N15; N08 -gold-> N12; N08 -white-> N00; N12 -blue-> N18; N12 -green-> N16; N15 -black-> N11; N15 -gold-> N05; N18 -blue-> N01; N18 -gold-> N02. Start at N08 and follow, in order, the gold, then blue, then gold, then blue, then white, then gold, then red, then gold edges. Which node is reached?",
+      "renderings": {
+        "r0": "Step 1: From N08, following gold reaches N12.\nStep 2: From N12, following blue reaches N18.\nStep 3: From N18, following gold reaches N02.\nStep 4: From N02, following blue reaches N07.\nStep 5: From N07, following white reaches N15.\nStep 6: From N15, following gold reaches N05.\nStep 7: From N05, following red reaches N03.\nStep 8: From N03, following gold reaches N06.",
+        "r1": "Step 1: N08 via gold -> N12.\nStep 2: N12 via blue -> N18.\nStep 3: N18 via gold -> N02.\nStep 4: N02 via blue -> N07.\nStep 5: N07 via white -> N15.\nStep 6: N15 via gold -> N05.\nStep 7: N05 via red -> N03.\nStep 8: N03 via gold -> N06.",
+        "r2": "1:N08-gold>N12\n2:N12-blue>N18\n3:N18-gold>N02\n4:N02-blue>N07\n5:N07-white>N15\n6:N15-gold>N05\n7:N05-red>N03\n8:N03-gold>N06",
+        "r3": "e1(N08,gold,N12)\ne2(N12,blue,N18)\ne3(N18,gold,N02)\ne4(N02,blue,N07)\ne5(N07,white,N15)\ne6(N15,gold,N05)\ne7(N05,red,N03)\ne8(N03,gold,N06)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test"
+    },
+    {
+      "answer": "10",
+      "depth": 12,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-test_compositional-d12-0174d759f49e20cd-5e1d16047b",
+      "prompt": "An inventory register initially reads 22. Process these updates in order: multiply by 3, then subtract 3, then add 7, then divide by 7, then divide by 5, then subtract 1, then multiply by 4, then subtract 2, then add 12, then subtract 2, then subtract 11, then add 9. A separate box contains 17 blue markers; that fact does not affect the calculation. Report the final register value.",
+      "renderings": {
+        "r0": "Step 1: The current value is 22. Multiplying by 3 gives 66.\nStep 2: The current value is 66. Subtracting 3 gives 63.\nStep 3: The current value is 63. Adding 7 gives 70.\nStep 4: The current value is 70. Dividing by 7 gives 10.\nStep 5: The current value is 10. Dividing by 5 gives 2.\nStep 6: The current value is 2. Subtracting 1 gives 1.\nStep 7: The current value is 1. Multiplying by 4 gives 4.\nStep 8: The current value is 4. Subtracting 2 gives 2.\nStep 9: The current value is 2. Adding 12 gives 14.\nStep 10: The current value is 14. Subtracting 2 gives 12.\nStep 11: The current value is 12. Subtracting 11 gives 1.\nStep 12: The current value is 1. Adding 9 gives 10.",
+        "r1": "Step 1: 22 * 3 = 66.\nStep 2: 66 - 3 = 63.\nStep 3: 63 + 7 = 70.\nStep 4: 70 / 7 = 10.\nStep 5: 10 / 5 = 2.\nStep 6: 2 - 1 = 1.\nStep 7: 1 * 4 = 4.\nStep 8: 4 - 2 = 2.\nStep 9: 2 + 12 = 14.\nStep 10: 14 - 2 = 12.\nStep 11: 12 - 11 = 1.\nStep 12: 1 + 9 = 10.",
+        "r2": "1:22*3=66\n2:66-3=63\n3:63+7=70\n4:70/7=10\n5:10/5=2\n6:2-1=1\n7:1*4=4\n8:4-2=2\n9:2+12=14\n10:14-2=12\n11:12-11=1\n12:1+9=10",
+        "r3": "s1=22>mul(3)>66\ns2=66>sub(3)>63\ns3=63>add(7)>70\ns4=70>div(7)>10\ns5=10>div(5)>2\ns6=2>sub(1)>1\ns7=1>mul(4)>4\ns8=4>sub(2)>2\ns9=2>add(12)>14\ns10=14>sub(2)>12\ns11=12>sub(11)>1\ns12=1>add(9)>10"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test_compositional"
+    },
+    {
+      "answer": "8",
+      "depth": 2,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-test_compositional-d2-024c6a43b02070fb-08236043d5",
+      "prompt": "An inventory register initially reads 13. Process these updates in order: add 4, then subtract 9. A separate box contains 12 wooden markers; that fact does not affect the calculation. Report the final register value.",
+      "renderings": {
+        "r0": "Step 1: The current value is 13. Adding 4 gives 17.\nStep 2: The current value is 17. Subtracting 9 gives 8.",
+        "r1": "Step 1: 13 + 4 = 17.\nStep 2: 17 - 9 = 8.",
+        "r2": "1:13+4=17\n2:17-9=8",
+        "r3": "s1=13>add(4)>17\ns2=17>sub(9)>8"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test_compositional"
+    },
+    {
+      "answer": "22",
+      "depth": 4,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-test_compositional-d4-0216f06fa91b412b-aaf4344146",
+      "prompt": "An inventory register initially reads 13. Process these updates in order: multiply by 2, then add 4, then subtract 7, then subtract 1. A separate box contains 22 wooden markers; that fact does not affect the calculation. Report the final register value.",
+      "renderings": {
+        "r0": "Step 1: The current value is 13. Multiplying by 2 gives 26.\nStep 2: The current value is 26. Adding 4 gives 30.\nStep 3: The current value is 30. Subtracting 7 gives 23.\nStep 4: The current value is 23. Subtracting 1 gives 22.",
+        "r1": "Step 1: 13 * 2 = 26.\nStep 2: 26 + 4 = 30.\nStep 3: 30 - 7 = 23.\nStep 4: 23 - 1 = 22.",
+        "r2": "1:13*2=26\n2:26+4=30\n3:30-7=23\n4:23-1=22",
+        "r3": "s1=13>mul(2)>26\ns2=26>add(4)>30\ns3=30>sub(7)>23\ns4=23>sub(1)>22"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test_compositional"
+    },
+    {
+      "answer": "17",
+      "depth": 8,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-test_compositional-d8-01492f8d88eb05b4-83d4f09727",
+      "prompt": "An inventory register initially reads 21. Process these updates in order: add 6, then divide by 9, then divide by 3, then add 7, then subtract 8, then add 8, then multiply by 3, then subtract 7. A separate box contains 18 blue markers; that fact does not affect the calculation. Report the final register value.",
+      "renderings": {
+        "r0": "Step 1: The current value is 21. Adding 6 gives 27.\nStep 2: The current value is 27. Dividing by 9 gives 3.\nStep 3: The current value is 3. Dividing by 3 gives 1.\nStep 4: The current value is 1. Adding 7 gives 8.\nStep 5: The current value is 8. Subtracting 8 gives 0.\nStep 6: The current value is 0. Adding 8 gives 8.\nStep 7: The current value is 8. Multiplying by 3 gives 24.\nStep 8: The current value is 24. Subtracting 7 gives 17.",
+        "r1": "Step 1: 21 + 6 = 27.\nStep 2: 27 / 9 = 3.\nStep 3: 3 / 3 = 1.\nStep 4: 1 + 7 = 8.\nStep 5: 8 - 8 = 0.\nStep 6: 0 + 8 = 8.\nStep 7: 8 * 3 = 24.\nStep 8: 24 - 7 = 17.",
+        "r2": "1:21+6=27\n2:27/9=3\n3:3/3=1\n4:1+7=8\n5:8-8=0\n6:0+8=8\n7:8*3=24\n8:24-7=17",
+        "r3": "s1=21>add(6)>27\ns2=27>div(9)>3\ns3=3>div(3)>1\ns4=1>add(7)>8\ns5=8>sub(8)>0\ns6=0>add(8)>8\ns7=8>mul(3)>24\ns8=24>sub(7)>17"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test_compositional"
+    },
+    {
+      "answer": "N15",
+      "depth": 12,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-test_compositional-d12-09828de9aec7caa3-5c11b76c4d",
+      "prompt": "A dispatch network lists one-way labeled connections: N02 -black-> N14; N02 -white-> N26; N03 -gold-> N23; N03 -red-> N25; N05 -gold-> N12; N05 -red-> N02; N07 -blue-> N03; N07 -red-> N04; N13 -gold-> N05; N13 -red-> N24; N14 -green-> N09; N14 -white-> N15; N16 -blue-> N06; N16 -gold-> N18; N17 -red-> N16; N17 -white-> N10; N18 -green-> N21; N18 -white-> N08; N19 -white-> N01; N21 -black-> N11; N21 -blue-> N13; N22 -blue-> N17; N22 -red-> N00; N25 -black-> N20; N25 -red-> N22. Begin at N07; take connections labeled blue, then red, then red, then blue, then red, then gold, then green, then blue, then gold, then red, then black, then white, in order. Where do you finish?",
+      "renderings": {
+        "r0": "Step 1: From N07, following blue reaches N03.\nStep 2: From N03, following red reaches N25.\nStep 3: From N25, following red reaches N22.\nStep 4: From N22, following blue reaches N17.\nStep 5: From N17, following red reaches N16.\nStep 6: From N16, following gold reaches N18.\nStep 7: From N18, following green reaches N21.\nStep 8: From N21, following blue reaches N13.\nStep 9: From N13, following gold reaches N05.\nStep 10: From N05, following red reaches N02.\nStep 11: From N02, following black reaches N14.\nStep 12: From N14, following white reaches N15.",
+        "r1": "Step 1: N07 via blue -> N03.\nStep 2: N03 via red -> N25.\nStep 3: N25 via red -> N22.\nStep 4: N22 via blue -> N17.\nStep 5: N17 via red -> N16.\nStep 6: N16 via gold -> N18.\nStep 7: N18 via green -> N21.\nStep 8: N21 via blue -> N13.\nStep 9: N13 via gold -> N05.\nStep 10: N05 via red -> N02.\nStep 11: N02 via black -> N14.\nStep 12: N14 via white -> N15.",
+        "r2": "1:N07-blue>N03\n2:N03-red>N25\n3:N25-red>N22\n4:N22-blue>N17\n5:N17-red>N16\n6:N16-gold>N18\n7:N18-green>N21\n8:N21-blue>N13\n9:N13-gold>N05\n10:N05-red>N02\n11:N02-black>N14\n12:N14-white>N15",
+        "r3": "e1(N07,blue,N03)\ne2(N03,red,N25)\ne3(N25,red,N22)\ne4(N22,blue,N17)\ne5(N17,red,N16)\ne6(N16,gold,N18)\ne7(N18,green,N21)\ne8(N21,blue,N13)\ne9(N13,gold,N05)\ne10(N05,red,N02)\ne11(N02,black,N14)\ne12(N14,white,N15)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test_compositional"
+    },
+    {
+      "answer": "N01",
+      "depth": 2,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-test_compositional-d2-00c8c3b559f7fc7a-02bcf7fe37",
+      "prompt": "A dispatch network lists one-way labeled connections: N00 -black-> N01; N00 -green-> N06; N04 -red-> N02; N05 -black-> N00; N05 -blue-> N03. Begin at N05; take connections labeled black, then black, in order. Where do you finish?",
+      "renderings": {
+        "r0": "Step 1: From N05, following black reaches N00.\nStep 2: From N00, following black reaches N01.",
+        "r1": "Step 1: N05 via black -> N00.\nStep 2: N00 via black -> N01.",
+        "r2": "1:N05-black>N00\n2:N00-black>N01",
+        "r3": "e1(N05,black,N00)\ne2(N00,black,N01)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test_compositional"
+    },
+    {
+      "answer": "N02",
+      "depth": 4,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-test_compositional-d4-01bc8cfc42747aa9-aa7e8ef02d",
+      "prompt": "A dispatch network lists one-way labeled connections: N01 -white-> N06; N05 -blue-> N04; N05 -red-> N09; N08 -gold-> N00; N08 -red-> N05; N09 -blue-> N02; N09 -red-> N07; N10 -black-> N08; N10 -green-> N03. Begin at N10; take connections labeled black, then red, then red, then blue, in order. Where do you finish?",
+      "renderings": {
+        "r0": "Step 1: From N10, following black reaches N08.\nStep 2: From N08, following red reaches N05.\nStep 3: From N05, following red reaches N09.\nStep 4: From N09, following blue reaches N02.",
+        "r1": "Step 1: N10 via black -> N08.\nStep 2: N08 via red -> N05.\nStep 3: N05 via red -> N09.\nStep 4: N09 via blue -> N02.",
+        "r2": "1:N10-black>N08\n2:N08-red>N05\n3:N05-red>N09\n4:N09-blue>N02",
+        "r3": "e1(N10,black,N08)\ne2(N08,red,N05)\ne3(N05,red,N09)\ne4(N09,blue,N02)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test_compositional"
+    },
+    {
+      "answer": "N11",
+      "depth": 8,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-test_compositional-d8-0662ac60d5e1f02c-c29f9920b8",
+      "prompt": "A dispatch network lists one-way labeled connections: N00 -black-> N13; N00 -red-> N02; N01 -blue-> N05; N01 -white-> N10; N02 -gold-> N15; N02 -white-> N01; N03 -red-> N04; N06 -blue-> N18; N06 -white-> N08; N07 -red-> N17; N07 -white-> N00; N08 -green-> N09; N08 -red-> N07; N10 -black-> N12; N10 -white-> N16; N16 -black-> N11; N16 -blue-> N14. Begin at N06; take connections labeled white, then red, then white, then red, then white, then white, then white, then black, in order. Where do you finish?",
+      "renderings": {
+        "r0": "Step 1: From N06, following white reaches N08.\nStep 2: From N08, following red reaches N07.\nStep 3: From N07, following white reaches N00.\nStep 4: From N00, following red reaches N02.\nStep 5: From N02, following white reaches N01.\nStep 6: From N01, following white reaches N10.\nStep 7: From N10, following white reaches N16.\nStep 8: From N16, following black reaches N11.",
+        "r1": "Step 1: N06 via white -> N08.\nStep 2: N08 via red -> N07.\nStep 3: N07 via white -> N00.\nStep 4: N00 via red -> N02.\nStep 5: N02 via white -> N01.\nStep 6: N01 via white -> N10.\nStep 7: N10 via white -> N16.\nStep 8: N16 via black -> N11.",
+        "r2": "1:N06-white>N08\n2:N08-red>N07\n3:N07-white>N00\n4:N00-red>N02\n5:N02-white>N01\n6:N01-white>N10\n7:N10-white>N16\n8:N16-black>N11",
+        "r3": "e1(N06,white,N08)\ne2(N08,red,N07)\ne3(N07,white,N00)\ne4(N00,red,N02)\ne5(N02,white,N01)\ne6(N01,white,N10)\ne7(N10,white,N16)\ne8(N16,black,N11)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test_compositional"
+    },
+    {
+      "answer": "18",
+      "depth": 16,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-test_depth-d16-0088f11dbbf0f022-52b770499d",
+      "prompt": "A number machine receives 22 and performs these commands in order: divide by 2, then subtract 4, then multiply by 4, then add 11, then multiply by 2, then subtract 4, then add 9, then subtract 3, then divide by 5, then subtract 6, then add 3, then subtract 6, then subtract 1, then add 11, then add 2, then subtract 1. A separate box contains 11 wooden markers; that fact does not affect the calculation. What number leaves the machine?",
+      "renderings": {
+        "r0": "Step 1: The current value is 22. Dividing by 2 gives 11.\nStep 2: The current value is 11. Subtracting 4 gives 7.\nStep 3: The current value is 7. Multiplying by 4 gives 28.\nStep 4: The current value is 28. Adding 11 gives 39.\nStep 5: The current value is 39. Multiplying by 2 gives 78.\nStep 6: The current value is 78. Subtracting 4 gives 74.\nStep 7: The current value is 74. Adding 9 gives 83.\nStep 8: The current value is 83. Subtracting 3 gives 80.\nStep 9: The current value is 80. Dividing by 5 gives 16.\nStep 10: The current value is 16. Subtracting 6 gives 10.\nStep 11: The current value is 10. Adding 3 gives 13.\nStep 12: The current value is 13. Subtracting 6 gives 7.\nStep 13: The current value is 7. Subtracting 1 gives 6.\nStep 14: The current value is 6. Adding 11 gives 17.\nStep 15: The current value is 17. Adding 2 gives 19.\nStep 16: The current value is 19. Subtracting 1 gives 18.",
+        "r1": "Step 1: 22 / 2 = 11.\nStep 2: 11 - 4 = 7.\nStep 3: 7 * 4 = 28.\nStep 4: 28 + 11 = 39.\nStep 5: 39 * 2 = 78.\nStep 6: 78 - 4 = 74.\nStep 7: 74 + 9 = 83.\nStep 8: 83 - 3 = 80.\nStep 9: 80 / 5 = 16.\nStep 10: 16 - 6 = 10.\nStep 11: 10 + 3 = 13.\nStep 12: 13 - 6 = 7.\nStep 13: 7 - 1 = 6.\nStep 14: 6 + 11 = 17.\nStep 15: 17 + 2 = 19.\nStep 16: 19 - 1 = 18.",
+        "r2": "1:22/2=11\n2:11-4=7\n3:7*4=28\n4:28+11=39\n5:39*2=78\n6:78-4=74\n7:74+9=83\n8:83-3=80\n9:80/5=16\n10:16-6=10\n11:10+3=13\n12:13-6=7\n13:7-1=6\n14:6+11=17\n15:17+2=19\n16:19-1=18",
+        "r3": "s1=22>div(2)>11\ns2=11>sub(4)>7\ns3=7>mul(4)>28\ns4=28>add(11)>39\ns5=39>mul(2)>78\ns6=78>sub(4)>74\ns7=74>add(9)>83\ns8=83>sub(3)>80\ns9=80>div(5)>16\ns10=16>sub(6)>10\ns11=10>add(3)>13\ns12=13>sub(6)>7\ns13=7>sub(1)>6\ns14=6>add(11)>17\ns15=17>add(2)>19\ns16=19>sub(1)>18"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test_depth"
+    },
+    {
+      "answer": "N27",
+      "depth": 16,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-test_depth-d16-001e719f5f90a528-fb05b4a688",
+      "prompt": "A directed map contains these labeled edges: N00 -green-> N13; N00 -red-> N22; N01 -black-> N11; N01 -gold-> N15; N04 -black-> N29; N04 -green-> N00; N06 -blue-> N19; N06 -green-> N18; N08 -blue-> N02; N08 -green-> N09; N09 -green-> N28; N09 -red-> N27; N10 -red-> N16; N10 -white-> N05; N15 -blue-> N17; N15 -gold-> N07; N16 -black-> N21; N16 -blue-> N31; N17 -green-> N08; N17 -white-> N12; N19 -gold-> N01; N19 -white-> N14; N22 -black-> N23; N22 -white-> N30; N23 -green-> N06; N23 -red-> N25; N24 -blue-> N04; N24 -gold-> N03; N31 -green-> N24; N31 -white-> N26; N32 -gold-> N34; N33 -black-> N10; N33 -gold-> N20. Start at N33 and follow, in order, the black, then red, then blue, then green, then blue, then green, then red, then black, then green, then blue, then gold, then gold, then blue, then green, then green, then red edges. Which node is reached?",
+      "renderings": {
+        "r0": "Step 1: From N33, following black reaches N10.\nStep 2: From N10, following red reaches N16.\nStep 3: From N16, following blue reaches N31.\nStep 4: From N31, following green reaches N24.\nStep 5: From N24, following blue reaches N04.\nStep 6: From N04, following green reaches N00.\nStep 7: From N00, following red reaches N22.\nStep 8: From N22, following black reaches N23.\nStep 9: From N23, following green reaches N06.\nStep 10: From N06, following blue reaches N19.\nStep 11: From N19, following gold reaches N01.\nStep 12: From N01, following gold reaches N15.\nStep 13: From N15, following blue reaches N17.\nStep 14: From N17, following green reaches N08.\nStep 15: From N08, following green reaches N09.\nStep 16: From N09, following red reaches N27.",
+        "r1": "Step 1: N33 via black -> N10.\nStep 2: N10 via red -> N16.\nStep 3: N16 via blue -> N31.\nStep 4: N31 via green -> N24.\nStep 5: N24 via blue -> N04.\nStep 6: N04 via green -> N00.\nStep 7: N00 via red -> N22.\nStep 8: N22 via black -> N23.\nStep 9: N23 via green -> N06.\nStep 10: N06 via blue -> N19.\nStep 11: N19 via gold -> N01.\nStep 12: N01 via gold -> N15.\nStep 13: N15 via blue -> N17.\nStep 14: N17 via green -> N08.\nStep 15: N08 via green -> N09.\nStep 16: N09 via red -> N27.",
+        "r2": "1:N33-black>N10\n2:N10-red>N16\n3:N16-blue>N31\n4:N31-green>N24\n5:N24-blue>N04\n6:N04-green>N00\n7:N00-red>N22\n8:N22-black>N23\n9:N23-green>N06\n10:N06-blue>N19\n11:N19-gold>N01\n12:N01-gold>N15\n13:N15-blue>N17\n14:N17-green>N08\n15:N08-green>N09\n16:N09-red>N27",
+        "r3": "e1(N33,black,N10)\ne2(N10,red,N16)\ne3(N16,blue,N31)\ne4(N31,green,N24)\ne5(N24,blue,N04)\ne6(N04,green,N00)\ne7(N00,red,N22)\ne8(N22,black,N23)\ne9(N23,green,N06)\ne10(N06,blue,N19)\ne11(N19,gold,N01)\ne12(N01,gold,N15)\ne13(N15,blue,N17)\ne14(N17,green,N08)\ne15(N08,green,N09)\ne16(N09,red,N27)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "test_depth"
+    },
+    {
+      "answer": "480",
+      "depth": 12,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-train-d12-0015a1f7dcf81627-9fb2946756",
+      "prompt": "A counter starts at 9. In order, divide by 9, then add 8, then add 10, then subtract 10, then multiply by 4, then divide by 3, then add 11, then add 10, then multiply by 4, then subtract 8, then subtract 4, then multiply by 4. A separate box contains 29 blue markers; that fact does not affect the calculation. What is the counter's final value?",
+      "renderings": {
+        "r0": "Step 1: The current value is 9. Dividing by 9 gives 1.\nStep 2: The current value is 1. Adding 8 gives 9.\nStep 3: The current value is 9. Adding 10 gives 19.\nStep 4: The current value is 19. Subtracting 10 gives 9.\nStep 5: The current value is 9. Multiplying by 4 gives 36.\nStep 6: The current value is 36. Dividing by 3 gives 12.\nStep 7: The current value is 12. Adding 11 gives 23.\nStep 8: The current value is 23. Adding 10 gives 33.\nStep 9: The current value is 33. Multiplying by 4 gives 132.\nStep 10: The current value is 132. Subtracting 8 gives 124.\nStep 11: The current value is 124. Subtracting 4 gives 120.\nStep 12: The current value is 120. Multiplying by 4 gives 480.",
+        "r1": "Step 1: 9 / 9 = 1.\nStep 2: 1 + 8 = 9.\nStep 3: 9 + 10 = 19.\nStep 4: 19 - 10 = 9.\nStep 5: 9 * 4 = 36.\nStep 6: 36 / 3 = 12.\nStep 7: 12 + 11 = 23.\nStep 8: 23 + 10 = 33.\nStep 9: 33 * 4 = 132.\nStep 10: 132 - 8 = 124.\nStep 11: 124 - 4 = 120.\nStep 12: 120 * 4 = 480.",
+        "r2": "1:9/9=1\n2:1+8=9\n3:9+10=19\n4:19-10=9\n5:9*4=36\n6:36/3=12\n7:12+11=23\n8:23+10=33\n9:33*4=132\n10:132-8=124\n11:124-4=120\n12:120*4=480",
+        "r3": "s1=9>div(9)>1\ns2=1>add(8)>9\ns3=9>add(10)>19\ns4=19>sub(10)>9\ns5=9>mul(4)>36\ns6=36>div(3)>12\ns7=12>add(11)>23\ns8=23>add(10)>33\ns9=33>mul(4)>132\ns10=132>sub(8)>124\ns11=124>sub(4)>120\ns12=120>mul(4)>480"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "train"
+    },
+    {
+      "answer": "21",
+      "depth": 2,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-train-d2-0003207e424aca79-3c0b80e5f1",
+      "prompt": "A counter starts at 15. In order, multiply by 2, then subtract 9. A separate box contains 15 copper markers; that fact does not affect the calculation. What is the counter's final value?",
+      "renderings": {
+        "r0": "Step 1: The current value is 15. Multiplying by 2 gives 30.\nStep 2: The current value is 30. Subtracting 9 gives 21.",
+        "r1": "Step 1: 15 * 2 = 30.\nStep 2: 30 - 9 = 21.",
+        "r2": "1:15*2=30\n2:30-9=21",
+        "r3": "s1=15>mul(2)>30\ns2=30>sub(9)>21"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "train"
+    },
+    {
+      "answer": "27",
+      "depth": 4,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-train-d4-001157ac8eb2d4e5-56fc242da5",
+      "prompt": "A number machine receives 11 and performs these commands in order: multiply by 2, then divide by 2, then subtract 2, then multiply by 3. A separate box contains 13 wooden markers; that fact does not affect the calculation. What number leaves the machine?",
+      "renderings": {
+        "r0": "Step 1: The current value is 11. Multiplying by 2 gives 22.\nStep 2: The current value is 22. Dividing by 2 gives 11.\nStep 3: The current value is 11. Subtracting 2 gives 9.\nStep 4: The current value is 9. Multiplying by 3 gives 27.",
+        "r1": "Step 1: 11 * 2 = 22.\nStep 2: 22 / 2 = 11.\nStep 3: 11 - 2 = 9.\nStep 4: 9 * 3 = 27.",
+        "r2": "1:11*2=22\n2:22/2=11\n3:11-2=9\n4:9*3=27",
+        "r3": "s1=11>mul(2)>22\ns2=22>div(2)>11\ns3=11>sub(2)>9\ns4=9>mul(3)>27"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "train"
+    },
+    {
+      "answer": "55",
+      "depth": 8,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-train-d8-003df12db6bc722d-fdff4281e5",
+      "prompt": "A counter starts at 5. In order, add 5, then multiply by 4, then multiply by 4, then multiply by 4, then multiply by 3, then add 5, then divide by 7, then divide by 5. A separate box contains 19 blue markers; that fact does not affect the calculation. What is the counter's final value?",
+      "renderings": {
+        "r0": "Step 1: The current value is 5. Adding 5 gives 10.\nStep 2: The current value is 10. Multiplying by 4 gives 40.\nStep 3: The current value is 40. Multiplying by 4 gives 160.\nStep 4: The current value is 160. Multiplying by 4 gives 640.\nStep 5: The current value is 640. Multiplying by 3 gives 1920.\nStep 6: The current value is 1920. Adding 5 gives 1925.\nStep 7: The current value is 1925. Dividing by 7 gives 275.\nStep 8: The current value is 275. Dividing by 5 gives 55.",
+        "r1": "Step 1: 5 + 5 = 10.\nStep 2: 10 * 4 = 40.\nStep 3: 40 * 4 = 160.\nStep 4: 160 * 4 = 640.\nStep 5: 640 * 3 = 1920.\nStep 6: 1920 + 5 = 1925.\nStep 7: 1925 / 7 = 275.\nStep 8: 275 / 5 = 55.",
+        "r2": "1:5+5=10\n2:10*4=40\n3:40*4=160\n4:160*4=640\n5:640*3=1920\n6:1920+5=1925\n7:1925/7=275\n8:275/5=55",
+        "r3": "s1=5>add(5)>10\ns2=10>mul(4)>40\ns3=40>mul(4)>160\ns4=160>mul(4)>640\ns5=640>mul(3)>1920\ns6=1920>add(5)>1925\ns7=1925>div(7)>275\ns8=275>div(5)>55"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "train"
+    },
+    {
+      "answer": "N25",
+      "depth": 12,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-train-d12-009c759eb7150b12-a73d2c7c6e",
+      "prompt": "A router table has directed links: N05 -blue-> N19; N05 -white-> N24; N06 -blue-> N23; N06 -gold-> N25; N08 -blue-> N13; N08 -red-> N00; N11 -blue-> N07; N11 -red-> N21; N12 -green-> N16; N12 -white-> N01; N13 -green-> N05; N13 -white-> N02; N15 -blue-> N06; N15 -white-> N22; N16 -blue-> N17; N16 -gold-> N03; N17 -gold-> N20; N17 -white-> N14; N20 -green-> N15; N20 -white-> N09; N21 -black-> N10; N21 -white-> N12; N24 -blue-> N04; N24 -white-> N11; N26 -black-> N18. A packet begins at N08. Route it using labels blue, then green, then white, then white, then red, then white, then green, then blue, then gold, then green, then blue, then gold, in that order. Report its final node.",
+      "renderings": {
+        "r0": "Step 1: From N08, following blue reaches N13.\nStep 2: From N13, following green reaches N05.\nStep 3: From N05, following white reaches N24.\nStep 4: From N24, following white reaches N11.\nStep 5: From N11, following red reaches N21.\nStep 6: From N21, following white reaches N12.\nStep 7: From N12, following green reaches N16.\nStep 8: From N16, following blue reaches N17.\nStep 9: From N17, following gold reaches N20.\nStep 10: From N20, following green reaches N15.\nStep 11: From N15, following blue reaches N06.\nStep 12: From N06, following gold reaches N25.",
+        "r1": "Step 1: N08 via blue -> N13.\nStep 2: N13 via green -> N05.\nStep 3: N05 via white -> N24.\nStep 4: N24 via white -> N11.\nStep 5: N11 via red -> N21.\nStep 6: N21 via white -> N12.\nStep 7: N12 via green -> N16.\nStep 8: N16 via blue -> N17.\nStep 9: N17 via gold -> N20.\nStep 10: N20 via green -> N15.\nStep 11: N15 via blue -> N06.\nStep 12: N06 via gold -> N25.",
+        "r2": "1:N08-blue>N13\n2:N13-green>N05\n3:N05-white>N24\n4:N24-white>N11\n5:N11-red>N21\n6:N21-white>N12\n7:N12-green>N16\n8:N16-blue>N17\n9:N17-gold>N20\n10:N20-green>N15\n11:N15-blue>N06\n12:N06-gold>N25",
+        "r3": "e1(N08,blue,N13)\ne2(N13,green,N05)\ne3(N05,white,N24)\ne4(N24,white,N11)\ne5(N11,red,N21)\ne6(N21,white,N12)\ne7(N12,green,N16)\ne8(N16,blue,N17)\ne9(N17,gold,N20)\ne10(N20,green,N15)\ne11(N15,blue,N06)\ne12(N06,gold,N25)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "train"
+    },
+    {
+      "answer": "N03",
+      "depth": 2,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-train-d2-0061a6b49e758af2-467f474e4a",
+      "prompt": "A router table has directed links: N00 -black-> N06; N00 -gold-> N04; N01 -green-> N02; N04 -black-> N03; N04 -blue-> N05. A packet begins at N00. Route it using labels gold, then black, in that order. Report its final node.",
+      "renderings": {
+        "r0": "Step 1: From N00, following gold reaches N04.\nStep 2: From N04, following black reaches N03.",
+        "r1": "Step 1: N00 via gold -> N04.\nStep 2: N04 via black -> N03.",
+        "r2": "1:N00-gold>N04\n2:N04-black>N03",
+        "r3": "e1(N00,gold,N04)\ne2(N04,black,N03)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "train"
+    },
+    {
+      "answer": "N04",
+      "depth": 4,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-train-d4-000cdbcfd357f982-c575e42c2a",
+      "prompt": "A directed map contains these labeled edges: N00 -white-> N01; N02 -green-> N10; N02 -red-> N07; N05 -gold-> N02; N05 -red-> N06; N07 -black-> N04; N07 -gold-> N09; N08 -black-> N03; N08 -red-> N05. Start at N08 and follow, in order, the red, then gold, then red, then black edges. Which node is reached?",
+      "renderings": {
+        "r0": "Step 1: From N08, following red reaches N05.\nStep 2: From N05, following gold reaches N02.\nStep 3: From N02, following red reaches N07.\nStep 4: From N07, following black reaches N04.",
+        "r1": "Step 1: N08 via red -> N05.\nStep 2: N05 via gold -> N02.\nStep 3: N02 via red -> N07.\nStep 4: N07 via black -> N04.",
+        "r2": "1:N08-red>N05\n2:N05-gold>N02\n3:N02-red>N07\n4:N07-black>N04",
+        "r3": "e1(N08,red,N05)\ne2(N05,gold,N02)\ne3(N02,red,N07)\ne4(N07,black,N04)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "train"
+    },
+    {
+      "answer": "N13",
+      "depth": 8,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-train-d8-002746c52de20dcf-4a229fd025",
+      "prompt": "A directed map contains these labeled edges: N03 -blue-> N18; N03 -red-> N06; N04 -blue-> N03; N04 -red-> N15; N05 -gold-> N00; N05 -green-> N13; N07 -black-> N05; N07 -gold-> N11; N09 -black-> N16; N09 -white-> N04; N10 -blue-> N09; N10 -white-> N12; N14 -red-> N08; N17 -green-> N07; N17 -white-> N02; N18 -black-> N01; N18 -gold-> N17. Start at N10 and follow, in order, the blue, then white, then blue, then blue, then gold, then green, then black, then green edges. Which node is reached?",
+      "renderings": {
+        "r0": "Step 1: From N10, following blue reaches N09.\nStep 2: From N09, following white reaches N04.\nStep 3: From N04, following blue reaches N03.\nStep 4: From N03, following blue reaches N18.\nStep 5: From N18, following gold reaches N17.\nStep 6: From N17, following green reaches N07.\nStep 7: From N07, following black reaches N05.\nStep 8: From N05, following green reaches N13.",
+        "r1": "Step 1: N10 via blue -> N09.\nStep 2: N09 via white -> N04.\nStep 3: N04 via blue -> N03.\nStep 4: N03 via blue -> N18.\nStep 5: N18 via gold -> N17.\nStep 6: N17 via green -> N07.\nStep 7: N07 via black -> N05.\nStep 8: N05 via green -> N13.",
+        "r2": "1:N10-blue>N09\n2:N09-white>N04\n3:N04-blue>N03\n4:N03-blue>N18\n5:N18-gold>N17\n6:N17-green>N07\n7:N07-black>N05\n8:N05-green>N13",
+        "r3": "e1(N10,blue,N09)\ne2(N09,white,N04)\ne3(N04,blue,N03)\ne4(N03,blue,N18)\ne5(N18,gold,N17)\ne6(N17,green,N07)\ne7(N07,black,N05)\ne8(N05,green,N13)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "train"
+    },
+    {
+      "answer": "11",
+      "depth": 12,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-validation-d12-04517ff0d2a466fe-b31a3d6a9a",
+      "prompt": "A number machine receives 5 and performs these commands in order: divide by 5, then multiply by 3, then divide by 3, then multiply by 4, then multiply by 4, then divide by 4, then add 7, then add 11, then divide by 2, then subtract 8, then divide by 3, then add 10. A separate box contains 13 blue markers; that fact does not affect the calculation. What number leaves the machine?",
+      "renderings": {
+        "r0": "Step 1: The current value is 5. Dividing by 5 gives 1.\nStep 2: The current value is 1. Multiplying by 3 gives 3.\nStep 3: The current value is 3. Dividing by 3 gives 1.\nStep 4: The current value is 1. Multiplying by 4 gives 4.\nStep 5: The current value is 4. Multiplying by 4 gives 16.\nStep 6: The current value is 16. Dividing by 4 gives 4.\nStep 7: The current value is 4. Adding 7 gives 11.\nStep 8: The current value is 11. Adding 11 gives 22.\nStep 9: The current value is 22. Dividing by 2 gives 11.\nStep 10: The current value is 11. Subtracting 8 gives 3.\nStep 11: The current value is 3. Dividing by 3 gives 1.\nStep 12: The current value is 1. Adding 10 gives 11.",
+        "r1": "Step 1: 5 / 5 = 1.\nStep 2: 1 * 3 = 3.\nStep 3: 3 / 3 = 1.\nStep 4: 1 * 4 = 4.\nStep 5: 4 * 4 = 16.\nStep 6: 16 / 4 = 4.\nStep 7: 4 + 7 = 11.\nStep 8: 11 + 11 = 22.\nStep 9: 22 / 2 = 11.\nStep 10: 11 - 8 = 3.\nStep 11: 3 / 3 = 1.\nStep 12: 1 + 10 = 11.",
+        "r2": "1:5/5=1\n2:1*3=3\n3:3/3=1\n4:1*4=4\n5:4*4=16\n6:16/4=4\n7:4+7=11\n8:11+11=22\n9:22/2=11\n10:11-8=3\n11:3/3=1\n12:1+10=11",
+        "r3": "s1=5>div(5)>1\ns2=1>mul(3)>3\ns3=3>div(3)>1\ns4=1>mul(4)>4\ns5=4>mul(4)>16\ns6=16>div(4)>4\ns7=4>add(7)>11\ns8=11>add(11)>22\ns9=22>div(2)>11\ns10=11>sub(8)>3\ns11=3>div(3)>1\ns12=1>add(10)>11"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "validation"
+    },
+    {
+      "answer": "124",
+      "depth": 2,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-validation-d2-005f9bb56c900dcb-9687cc368c",
+      "prompt": "A number machine receives 24 and performs these commands in order: add 7, then multiply by 4. A separate box contains 6 blue markers; that fact does not affect the calculation. What number leaves the machine?",
+      "renderings": {
+        "r0": "Step 1: The current value is 24. Adding 7 gives 31.\nStep 2: The current value is 31. Multiplying by 4 gives 124.",
+        "r1": "Step 1: 24 + 7 = 31.\nStep 2: 31 * 4 = 124.",
+        "r2": "1:24+7=31\n2:31*4=124",
+        "r3": "s1=24>add(7)>31\ns2=31>mul(4)>124"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "validation"
+    },
+    {
+      "answer": "22",
+      "depth": 4,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-validation-d4-011de0159adbfe10-2351e4c7db",
+      "prompt": "A counter starts at 22. In order, multiply by 2, then multiply by 4, then divide by 4, then divide by 2. A separate box contains 16 wooden markers; that fact does not affect the calculation. What is the counter's final value?",
+      "renderings": {
+        "r0": "Step 1: The current value is 22. Multiplying by 2 gives 44.\nStep 2: The current value is 44. Multiplying by 4 gives 176.\nStep 3: The current value is 176. Dividing by 4 gives 44.\nStep 4: The current value is 44. Dividing by 2 gives 22.",
+        "r1": "Step 1: 22 * 2 = 44.\nStep 2: 44 * 4 = 176.\nStep 3: 176 / 4 = 44.\nStep 4: 44 / 2 = 22.",
+        "r2": "1:22*2=44\n2:44*4=176\n3:176/4=44\n4:44/2=22",
+        "r3": "s1=22>mul(2)>44\ns2=44>mul(4)>176\ns3=176>div(4)>44\ns4=44>div(2)>22"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "validation"
+    },
+    {
+      "answer": "2196",
+      "depth": 8,
+      "family": "multi_operation_arithmetic",
+      "item_id": "arith-validation-d8-003c79a6d4f6429d-b7a6bfdb5b",
+      "prompt": "A counter starts at 16. In order, multiply by 3, then multiply by 4, then add 5, then subtract 4, then subtract 8, then multiply by 4, then subtract 8, then multiply by 3. A separate box contains 2 blue markers; that fact does not affect the calculation. What is the counter's final value?",
+      "renderings": {
+        "r0": "Step 1: The current value is 16. Multiplying by 3 gives 48.\nStep 2: The current value is 48. Multiplying by 4 gives 192.\nStep 3: The current value is 192. Adding 5 gives 197.\nStep 4: The current value is 197. Subtracting 4 gives 193.\nStep 5: The current value is 193. Subtracting 8 gives 185.\nStep 6: The current value is 185. Multiplying by 4 gives 740.\nStep 7: The current value is 740. Subtracting 8 gives 732.\nStep 8: The current value is 732. Multiplying by 3 gives 2196.",
+        "r1": "Step 1: 16 * 3 = 48.\nStep 2: 48 * 4 = 192.\nStep 3: 192 + 5 = 197.\nStep 4: 197 - 4 = 193.\nStep 5: 193 - 8 = 185.\nStep 6: 185 * 4 = 740.\nStep 7: 740 - 8 = 732.\nStep 8: 732 * 3 = 2196.",
+        "r2": "1:16*3=48\n2:48*4=192\n3:192+5=197\n4:197-4=193\n5:193-8=185\n6:185*4=740\n7:740-8=732\n8:732*3=2196",
+        "r3": "s1=16>mul(3)>48\ns2=48>mul(4)>192\ns3=192>add(5)>197\ns4=197>sub(4)>193\ns5=193>sub(8)>185\ns6=185>mul(4)>740\ns7=740>sub(8)>732\ns8=732>mul(3)>2196"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "validation"
+    },
+    {
+      "answer": "N08",
+      "depth": 12,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-validation-d12-013c698a9c864a63-95bff4c244",
+      "prompt": "A router table has directed links: N00 -gold-> N19; N00 -red-> N07; N01 -blue-> N20; N01 -white-> N16; N02 -black-> N11; N04 -gold-> N15; N04 -white-> N01; N05 -gold-> N22; N05 -green-> N08; N07 -blue-> N03; N07 -green-> N05; N09 -blue-> N23; N09 -gold-> N06; N12 -black-> N24; N12 -red-> N13; N16 -red-> N00; N16 -white-> N14; N18 -black-> N12; N18 -gold-> N10; N23 -blue-> N04; N23 -green-> N25; N24 -red-> N21; N24 -white-> N26; N26 -green-> N09; N26 -red-> N17. A packet begins at N18. Route it using labels black, then black, then white, then green, then blue, then blue, then white, then white, then red, then red, then green, then green, in that order. Report its final node.",
+      "renderings": {
+        "r0": "Step 1: From N18, following black reaches N12.\nStep 2: From N12, following black reaches N24.\nStep 3: From N24, following white reaches N26.\nStep 4: From N26, following green reaches N09.\nStep 5: From N09, following blue reaches N23.\nStep 6: From N23, following blue reaches N04.\nStep 7: From N04, following white reaches N01.\nStep 8: From N01, following white reaches N16.\nStep 9: From N16, following red reaches N00.\nStep 10: From N00, following red reaches N07.\nStep 11: From N07, following green reaches N05.\nStep 12: From N05, following green reaches N08.",
+        "r1": "Step 1: N18 via black -> N12.\nStep 2: N12 via black -> N24.\nStep 3: N24 via white -> N26.\nStep 4: N26 via green -> N09.\nStep 5: N09 via blue -> N23.\nStep 6: N23 via blue -> N04.\nStep 7: N04 via white -> N01.\nStep 8: N01 via white -> N16.\nStep 9: N16 via red -> N00.\nStep 10: N00 via red -> N07.\nStep 11: N07 via green -> N05.\nStep 12: N05 via green -> N08.",
+        "r2": "1:N18-black>N12\n2:N12-black>N24\n3:N24-white>N26\n4:N26-green>N09\n5:N09-blue>N23\n6:N23-blue>N04\n7:N04-white>N01\n8:N01-white>N16\n9:N16-red>N00\n10:N00-red>N07\n11:N07-green>N05\n12:N05-green>N08",
+        "r3": "e1(N18,black,N12)\ne2(N12,black,N24)\ne3(N24,white,N26)\ne4(N26,green,N09)\ne5(N09,blue,N23)\ne6(N23,blue,N04)\ne7(N04,white,N01)\ne8(N01,white,N16)\ne9(N16,red,N00)\ne10(N00,red,N07)\ne11(N07,green,N05)\ne12(N05,green,N08)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "validation"
+    },
+    {
+      "answer": "N01",
+      "depth": 2,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-validation-d2-00cc593eb32a4b66-d151564797",
+      "prompt": "A directed map contains these labeled edges: N00 -black-> N01; N00 -red-> N02; N03 -black-> N04; N06 -black-> N00; N06 -green-> N05. Start at N06 and follow, in order, the black, then black edges. Which node is reached?",
+      "renderings": {
+        "r0": "Step 1: From N06, following black reaches N00.\nStep 2: From N00, following black reaches N01.",
+        "r1": "Step 1: N06 via black -> N00.\nStep 2: N00 via black -> N01.",
+        "r2": "1:N06-black>N00\n2:N00-black>N01",
+        "r3": "e1(N06,black,N00)\ne2(N00,black,N01)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "validation"
+    },
+    {
+      "answer": "N06",
+      "depth": 4,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-validation-d4-02ab4a867f06f8a8-1c3aa4c3c9",
+      "prompt": "A router table has directed links: N02 -blue-> N08; N02 -red-> N03; N03 -blue-> N06; N03 -white-> N07; N04 -black-> N02; N04 -blue-> N01; N05 -black-> N04; N05 -gold-> N09; N10 -green-> N00. A packet begins at N05. Route it using labels black, then black, then red, then blue, in that order. Report its final node.",
+      "renderings": {
+        "r0": "Step 1: From N05, following black reaches N04.\nStep 2: From N04, following black reaches N02.\nStep 3: From N02, following red reaches N03.\nStep 4: From N03, following blue reaches N06.",
+        "r1": "Step 1: N05 via black -> N04.\nStep 2: N04 via black -> N02.\nStep 3: N02 via red -> N03.\nStep 4: N03 via blue -> N06.",
+        "r2": "1:N05-black>N04\n2:N04-black>N02\n3:N02-red>N03\n4:N03-blue>N06",
+        "r3": "e1(N05,black,N04)\ne2(N04,black,N02)\ne3(N02,red,N03)\ne4(N03,blue,N06)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "validation"
+    },
+    {
+      "answer": "N07",
+      "depth": 8,
+      "family": "directed_graph_traversal",
+      "item_id": "graph-validation-d8-03496add298ab3e9-35ca43ad6d",
+      "prompt": "A directed map contains these labeled edges: N02 -black-> N01; N02 -gold-> N03; N03 -black-> N09; N03 -white-> N12; N05 -green-> N02; N05 -red-> N13; N08 -blue-> N10; N08 -red-> N06; N10 -black-> N00; N10 -gold-> N05; N11 -black-> N18; N12 -black-> N16; N12 -green-> N15; N14 -black-> N08; N14 -white-> N04; N15 -gold-> N07; N15 -white-> N17. Start at N14 and follow, in order, the black, then blue, then gold, then green, then gold, then white, then green, then gold edges. Which node is reached?",
+      "renderings": {
+        "r0": "Step 1: From N14, following black reaches N08.\nStep 2: From N08, following blue reaches N10.\nStep 3: From N10, following gold reaches N05.\nStep 4: From N05, following green reaches N02.\nStep 5: From N02, following gold reaches N03.\nStep 6: From N03, following white reaches N12.\nStep 7: From N12, following green reaches N15.\nStep 8: From N15, following gold reaches N07.",
+        "r1": "Step 1: N14 via black -> N08.\nStep 2: N08 via blue -> N10.\nStep 3: N10 via gold -> N05.\nStep 4: N05 via green -> N02.\nStep 5: N02 via gold -> N03.\nStep 6: N03 via white -> N12.\nStep 7: N12 via green -> N15.\nStep 8: N15 via gold -> N07.",
+        "r2": "1:N14-black>N08\n2:N08-blue>N10\n3:N10-gold>N05\n4:N05-green>N02\n5:N02-gold>N03\n6:N03-white>N12\n7:N12-green>N15\n8:N15-gold>N07",
+        "r3": "e1(N14,black,N08)\ne2(N08,blue,N10)\ne3(N10,gold,N05)\ne4(N05,green,N02)\ne5(N02,gold,N03)\ne6(N03,white,N12)\ne7(N12,green,N15)\ne8(N15,gold,N07)"
+      },
+      "review_notes": "",
+      "review_status": "pending_human_review",
+      "split": "validation"
+    }
+  ],
+  "schema_version": 1,
+  "selection": "lexicographically first item per split, family, and depth"
+}

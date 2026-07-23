@@ -1,0 +1,10 @@
+{
+  "counterfactual_checks": 25200,
+  "counterfactual_failures": [],
+  "failures": [],
+  "item_count": 12600,
+  "passed": true,
+  "schema_version": 1,
+  "verification_rate": 1.0,
+  "verified_count": 12600
+}

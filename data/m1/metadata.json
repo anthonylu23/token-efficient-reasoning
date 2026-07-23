@@ -1,0 +1,28 @@
+{
+  "dataset_name": "m1-controlled-depth-v1",
+  "generator_version": "1.0.0",
+  "item_count": 12600,
+  "rejection_count": 258,
+  "schema_version": 1,
+  "split_counts": {
+    "test": 2000,
+    "test_compositional": 800,
+    "test_depth": 1000,
+    "train": 8000,
+    "validation": 800
+  },
+  "tokenizers": {
+    "deepseek-r1-distill-qwen-1.5b": {
+      "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "name_or_path": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "tokenizer_revision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+      "vocab_size": 151665
+    },
+    "qwen3-0.6b": {
+      "model_id": "Qwen/Qwen3-0.6B",
+      "name_or_path": "Qwen/Qwen3-0.6B",
+      "tokenizer_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "vocab_size": 151669
+    }
+  }
+}
