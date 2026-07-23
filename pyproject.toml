@@ -32,6 +32,7 @@ dev = [
 
 [project.scripts]
 ter-eval = "token_efficient_reasoning.cli:main"
+ter-data = "token_efficient_reasoning.controlled.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/token_efficient_reasoning"]
