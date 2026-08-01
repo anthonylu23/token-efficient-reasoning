@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Callable
 from dataclasses import dataclass
-from typing import Protocol
+from typing import Any, Protocol
 
 StopCallback = Callable[[tuple[int, ...]], bool]
 
@@ -32,6 +32,21 @@ class GenerationBackend(Protocol):
         max_new_tokens: int,
         should_stop: StopCallback,
     ) -> BackendOutput: ...
+
+
+class BatchGenerationBackend(Protocol):
+    """Backend interface for independently stopped rows in one model batch."""
+
+    def create_sampling_states(self, seeds: tuple[int, ...]) -> tuple[Any, ...]: ...
+
+    def generate_batch(
+        self,
+        input_ids: tuple[tuple[int, ...], ...],
+        *,
+        max_new_tokens: int,
+        should_stop: tuple[StopCallback, ...],
+        sampling_states: tuple[Any, ...],
+    ) -> tuple[BackendOutput, ...]: ...
 
 
 @dataclass(frozen=True)
@@ -238,4 +253,98 @@ class BudgetedGenerator:
             reasoning_close_token_ids=reasoning_close_token_ids,
             answer_open_token_ids=answer_open_token_ids,
             answer_close_token_ids=answer_close_token_ids,
+        )
+
+
+class BatchBudgetedGenerator:
+    """Execute the two-phase protocol for independently seeded batched rows."""
+
+    def __init__(self, backend: BatchGenerationBackend) -> None:
+        self.backend = backend
+
+    def generate(
+        self,
+        prompt_token_ids: tuple[tuple[int, ...], ...],
+        *,
+        sampling_states: tuple[Any, ...],
+        reasoning_budget: int,
+        answer_allowance: int,
+        reasoning_close_token_ids: tuple[int, ...],
+        answer_open_token_ids: tuple[int, ...],
+        answer_close_token_ids: tuple[int, ...],
+        reasoning_close_variants: tuple[tuple[int, ...], ...] | None = None,
+        answer_close_variants: tuple[tuple[int, ...], ...] | None = None,
+    ) -> tuple[BudgetedGeneration, ...]:
+        if not prompt_token_ids:
+            raise ValueError("batch must contain at least one prompt")
+        if len(prompt_token_ids) != len(sampling_states):
+            raise ValueError("sampling state count must match the prompt batch")
+        if reasoning_budget <= 0 or answer_allowance <= 0:
+            raise ValueError("reasoning and answer budgets must be positive")
+        if not reasoning_close_token_ids or not answer_open_token_ids or not answer_close_token_ids:
+            raise ValueError("protocol delimiters must tokenize to non-empty sequences")
+
+        reasoning_variants = reasoning_close_variants or (reasoning_close_token_ids,)
+        answer_variants = answer_close_variants or (answer_close_token_ids,)
+        reasoning_raw = self.backend.generate_batch(
+            prompt_token_ids,
+            max_new_tokens=reasoning_budget + max(map(len, reasoning_variants)) - 1,
+            should_stop=tuple(
+                lambda ids, variants=reasoning_variants: phase_should_stop_any(
+                    ids, variants, reasoning_budget
+                )
+                for _ in prompt_token_ids
+            ),
+            sampling_states=sampling_states,
+        )
+        reasoning = tuple(
+            finalize_phase(
+                output,
+                delimiter=reasoning_close_token_ids,
+                delimiter_variants=reasoning_variants,
+                content_budget=reasoning_budget,
+                phase_name="reasoning",
+            )
+            for output in reasoning_raw
+        )
+        answer_prompts = tuple(
+            prompt
+            + phase.content_token_ids
+            + reasoning_close_token_ids
+            + answer_open_token_ids
+            for prompt, phase in zip(prompt_token_ids, reasoning, strict=True)
+        )
+        answer_raw = self.backend.generate_batch(
+            answer_prompts,
+            max_new_tokens=answer_allowance + max(map(len, answer_variants)) - 1,
+            should_stop=tuple(
+                lambda ids, variants=answer_variants: phase_should_stop_any(
+                    ids, variants, answer_allowance
+                )
+                for _ in prompt_token_ids
+            ),
+            sampling_states=sampling_states,
+        )
+        answers = tuple(
+            finalize_phase(
+                output,
+                delimiter=answer_close_token_ids,
+                delimiter_variants=answer_variants,
+                content_budget=answer_allowance,
+                phase_name="answer",
+            )
+            for output in answer_raw
+        )
+        return tuple(
+            BudgetedGeneration(
+                prompt_token_ids=prompt,
+                reasoning=reasoning_phase,
+                answer=answer_phase,
+                reasoning_close_token_ids=reasoning_close_token_ids,
+                answer_open_token_ids=answer_open_token_ids,
+                answer_close_token_ids=answer_close_token_ids,
+            )
+            for prompt, reasoning_phase, answer_phase in zip(
+                prompt_token_ids, reasoning, answers, strict=True
+            )
         )

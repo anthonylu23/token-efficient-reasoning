@@ -6,3 +6,4 @@ __pycache__/
 .coverage
 htmlcov/
 artifacts/runs/
+artifacts/m2/

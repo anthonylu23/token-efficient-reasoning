@@ -90,7 +90,16 @@ def collect_repository_state(repo_root: str | Path) -> dict[str, Any]:
 
 def collect_environment() -> dict[str, Any]:
     packages = {}
-    for name in ("accelerate", "numpy", "psutil", "safetensors", "torch", "transformers"):
+    for name in (
+        "accelerate",
+        "bitsandbytes",
+        "numpy",
+        "peft",
+        "psutil",
+        "safetensors",
+        "torch",
+        "transformers",
+    ):
         try:
             packages[name] = importlib.metadata.version(name)
         except importlib.metadata.PackageNotFoundError:

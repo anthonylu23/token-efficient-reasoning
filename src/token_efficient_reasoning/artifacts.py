@@ -59,9 +59,13 @@ def atomic_write_json(path: str | Path, value: Any) -> None:
 
 
 class RunWriter:
-    def __init__(self, run_dir: str | Path, run_id: str) -> None:
+    def __init__(self, run_dir: str | Path, run_id: str, *, resume: bool = False) -> None:
         self.run_dir = Path(run_dir)
-        self.run_dir.mkdir(parents=True, exist_ok=False)
+        if resume:
+            if not self.run_dir.is_dir():
+                raise ValueError(f"cannot resume missing run directory: {self.run_dir}")
+        else:
+            self.run_dir.mkdir(parents=True, exist_ok=False)
         self.run_id = run_id
         self.items_path = self.run_dir / "items.jsonl"
 

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_name": "m2-qwen3-0.6b-smoke",
+  "dataset_dir": "data/m1",
+  "dataset_manifest_sha256": "2bca4e9e3022f0fde902cbaea80d73e5ef71dfc8ecc45af06d807883a8005917",
+  "m0_config_path": "configs/m0.json",
+  "checkpoint_id": "qwen3-0.6b",
+  "train_split": "train",
+  "validation_split": "validation",
+  "conditions": [
+    {
+      "id": "c2",
+      "representation": "r0"
+    },
+    {
+      "id": "c3",
+      "representation": "r2"
+    },
+    {
+      "id": "c4",
+      "representation": "r3"
+    }
+  ],
+  "training_seed": 314159,
+  "evaluation_budgets": [16, 32, 64, 128, 256, 512],
+  "answer_allowance": 16,
+  "item_order": "manifest",
+  "label_policy": "assistant_target_only",
+  "target_format_version": "reasoning-answer-v1",
+  "overflow_policy": "error"
+}
