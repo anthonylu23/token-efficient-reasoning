@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "status": "pending",
+  "decision": null,
+  "reviewer": null,
+  "reviewed_at": null,
+  "approval_reference": null,
+  "dataset_manifest_sha256": "2bca4e9e3022f0fde902cbaea80d73e5ef71dfc8ecc45af06d807883a8005917",
+  "review_sample_sha256": "5bce54eb70026ad1dc375228bbcffc5131dc697d185b7131bbb19bb0fde7752d",
+  "reviewed_item_count": 0,
+  "failed_item_ids": [],
+  "notes": "A human reviewer must complete artifacts/M1_HUMAN_REVIEW.md and update this machine-readable record. Agent inspection is not sign-off."
+}
