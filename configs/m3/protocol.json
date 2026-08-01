@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "experiment_name": "m3-deepseek-r1-distill-qwen-1.5b-primary",
+  "dataset_dir": "data/m1",
+  "dataset_manifest_sha256": "2bca4e9e3022f0fde902cbaea80d73e5ef71dfc8ecc45af06d807883a8005917",
+  "m0_config_path": "configs/m0.json",
+  "checkpoint_id": "deepseek-r1-distill-qwen-1.5b",
+  "train_split": "train",
+  "validation_split": "validation",
+  "evaluation_splits": [
+    "test",
+    "test_depth",
+    "test_compositional"
+  ],
+  "conditions": [
+    {
+      "id": "c2",
+      "representation": "r0"
+    },
+    {
+      "id": "c3",
+      "representation": "r2"
+    },
+    {
+      "id": "c4",
+      "representation": "r3"
+    }
+  ],
+  "training_seeds": [
+    314159,
+    271828,
+    161803
+  ],
+  "decoding_seeds": [
+    1729,
+    2718,
+    3141
+  ],
+  "evaluation_budgets": [
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "primary_budgets": [
+    64,
+    128
+  ],
+  "answer_allowance": 16,
+  "evaluation_batch_size": 4,
+  "evaluation_batch_sizes": [
+    4,
+    4,
+    4,
+    2,
+    2,
+    2
+  ],
+  "optimizer_updates": 500,
+  "checkpoint_selection": "fixed_final_update",
+  "item_order": "manifest",
+  "label_policy": "assistant_target_only",
+  "target_format_version": "reasoning-answer-v1",
+  "overflow_policy": "error",
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 8675309,
+  "analysis_version": "m3-primary-v1",
+  "primary_inference_split": "test",
+  "primary_comparators": [
+    "c0",
+    "c1",
+    "c2"
+  ],
+  "secondary_comparators": [
+    "c3"
+  ],
+  "bootstrap_unit": "item_id",
+  "familywise_alpha": 0.05,
+  "multiplicity_method": "holm",
+  "noninferiority_margin": -0.01,
+  "invalid_transition_margin": 0.01,
+  "reliable_accuracy_threshold": 0.8,
+  "minimum_token_reduction": 0.3,
+  "primary_accuracy_improvement": 0.02,
+  "minimum_density_ratio": 1.5,
+  "m1_human_review_path": "artifacts/M1_HUMAN_REVIEW.json",
+  "bridge_gate_path": "artifacts/m3/bridge/report/gate_summary.json"
+}

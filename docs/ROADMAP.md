@@ -2,7 +2,7 @@
 
 **Status:** Planned
 
-**Last updated:** July 18, 2026
+**Last updated:** July 27, 2026
 
 This roadmap turns the research design in [`PROJECT_PROPOSAL.md`](../PROJECT_PROPOSAL.md) into an executable sequence of gated milestones. It defines what must be built, what evidence must be retained, and what must be true before the project advances. A milestone can be complete even when its scientific result is negative; completion means the experiment was run correctly and produced enough evidence for a defensible decision.
 
@@ -17,7 +17,7 @@ The milestones are ordered by dependency rather than calendar date. Heavy GPU wo
 | M2 — 0.6B smoke-test training | Validate the full QLoRA and evaluation workflow cheaply | M0 and M1 | The pipeline works end to end and C4 learns a usable structured format |
 | M3 — Primary 1.5B experiment | Test the central hypothesis under controlled conditions | M2 | Continue, revise, investigate compute, or stop/reframe |
 | M4 — Generalization | Test whether the result survives new distributions and checkpoints | Positive or informative M3 result | Scope and limits of transfer are established |
-| M5 — Extensions | Test follow-up mechanisms one at a time | Evidence-based M3/M4 rationale | Each extension earns continuation independently |
+| M5 — Extensions | Test RLVR and other follow-up mechanisms one at a time | Evidence-based M3/M4 rationale | Each extension earns continuation independently |
 
 ## Gate and evidence conventions
 
@@ -152,6 +152,8 @@ Advance when semantic equivalence, split integrity, and tokenizer-level compress
 
 ## M2 — 0.6B smoke-test training
 
+**Status:** Complete execution; gate decision `revise or hold`
+
 ### Objective
 
 Exercise the complete training-to-evaluation workflow on Qwen3-0.6B before spending substantial time on the primary checkpoint. The focus is engineering validity and format learnability, not final scientific conclusions.
@@ -201,7 +203,33 @@ Exercise the complete training-to-evaluation workflow on Qwen3-0.6B before spend
 
 Advance when the training and evaluation system is reliable and structured output is learnable. If the 0.6B model cannot solve even shallow tasks, distinguish a model-capacity limit from a pipeline defect before deciding whether a tightly scoped 1.5B pilot is justified.
 
+### Optional M2-R — RLVR feasibility spike
+
+M2-R is a non-blocking engineering slice that begins only after C4 satisfies the M2 format, replay, and shallow-accuracy gates. Its purpose is to determine whether verifier-backed online policy optimization is operationally feasible on Qwen3-0.6B and the 8 GB target GPU. It is not a scientific comparison and does not delay M3.
+
+#### Deliverables
+
+- A quantized PEFT policy initialized from the C4 adapter.
+- Deterministic reward fixtures covering malformed output, verified prefixes, correct answers with invalid traces, and fully replayable correct traces.
+- One short RLVR calibration on a single task family using training or development prompts only.
+- Recorded policy-optimization method and version, group size, completion limit, sampling parameters, effective batch, rollout-token count, optimizer updates, peak VRAM, verifier time, and wall time.
+- Fresh-process adapter reload and evaluation of a fixed development fixture.
+
+#### Acceptance criteria
+
+- Every reward fixture produces the preregistered component values and total reward.
+- At least one complete generate, verify, update, save, and reload cycle runs without non-finite loss or an unhandled out-of-memory failure.
+- The saved adapter has changed parameters or fixed-fixture token log-probabilities and reloads reproducibly.
+- Reward components, zero-variance-group rate, rollout lengths, policy entropy, throughput, and peak VRAM are retained as structured artifacts.
+- No validation or test result is used to select the feasibility curriculum or reward coefficients.
+
+#### Gate decision
+
+If M2-R succeeds, record a candidate local configuration for the M5 RLVR extension. If it fails after a documented safe calibration sweep, record the hardware or software boundary and continue to M3 unchanged. Do not interpret engineering infeasibility as evidence against H7 or H8.
+
 ## M3 — Primary 1.5B experiment
+
+**Status:** Validation bridge passed; awaiting M1 human sign-off and protocol freeze
 
 ### Objective
 
@@ -356,9 +384,57 @@ Test mechanisms suggested by M3 and M4 after the discrete structured-reasoning h
 | Answer-only training (C6) | Need to test whether visible transitions add value beyond task supervision | C2, C4, and C6 with matched questions and optimization |
 | Added reasoning vocabulary (C7) | Valid sketches tokenize poorly despite good semantic behavior | Unchanged-tokenizer C4 versus C7, including latency and compute |
 | Utility-weighted pruning (C8) | Failures cluster around low-value repetition or removable trace regions | C4 versus a preregistered pruning method |
+| Verifier-backed RLVR (C9–C11) | C4 is replayable and accurate enough to provide a stable cold start | C4 versus correctness-only C9 versus efficiency-aware C10; optional C11 |
 | Compact traces plus pause tokens | Compact traces remain valid but accuracy falls at greater depths | Equal visible content with controlled extra sequential compute |
 | Continuous latent reasoning | Discrete traces hit a demonstrated representational or compute ceiling | Strong discrete baseline and architecture-aware compute accounting |
 | Coding and debugging tasks | Gains generalize across initial symbolic families | Executable MBPP-style or generated program-state verification |
+
+### RLVR extension protocol
+
+RLVR remains downstream of the primary supervised comparison. C9 and C10 may proceed only when C4 produces reliably parseable, replayable traces and either M2-R demonstrates a viable local configuration or an alternative compute environment is documented. C11 is optional.
+
+| Condition | Initialization | Reward | Purpose |
+|---|---|---|---|
+| C4 | Structured-sketch SFT | None | No-RL baseline |
+| C9 | C4 adapter | Exact-answer correctness | Isolate generic correctness RLVR |
+| C10 | C4 adapter | Correctness-gated verified efficiency | Test direct optimization of semantic throughput |
+| C11, optional | C2 adapter | C10 reward | Test whether the structured cold start is necessary |
+
+C10 and C11 must use a tiered reward with this ordering:
+
+```text
+malformed or unverifiable trace              -> 0
+verified proper prefix without full success  -> 0.2 * progress_fraction
+correct answer with a non-replayable trace   -> 0.25
+fully replayable and correct                  -> 1.0 + 0.2 * efficiency_bonus
+```
+
+The initial definitions are:
+
+```text
+progress_fraction = verified prefix transitions / required transitions
+efficiency_bonus = max(0, 1 - reasoning_tokens / assigned_budget)
+```
+
+Each rollout must receive an assigned reasoning budget from a preregistered training-budget set and use the evaluator's token-native reasoning-region accounting and forced-answer semantics. The answer allowance and reasoning delimiters do not contribute to `reasoning_tokens`.
+
+Coefficients may be tuned on training and development data, but their ordering must not change and final values must be frozen before the compared runs. Efficiency reward is available only to exact-correct traces that replay completely. No learned reward model is permitted in this extension.
+
+The policy-optimization loss must not introduce an uncontrolled response-length preference. Use and pin a group-relative formulation designed to reduce or eliminate response-length bias, such as DAPO or Dr-GRPO, and treat any residual preference as a potential confound. Compare C9 and C10 using matched policy initialization, prompts, rollout-token budget, optimizer updates, sampling configuration, and hardware wherever practical. Report discrepancies rather than silently equalizing them after results are known.
+
+Training prompt selection may emphasize family-depth strata with mixed rollout outcomes, because groups with identical rewards supply no group-relative signal. Selection must use training and development data only. Log the zero-variance-group rate and retain the unfiltered prompt distribution so the curriculum is auditable.
+
+In addition to the standard M3 metrics and artifacts, retain:
+
+- Each raw rollout and every reward component.
+- Rollout and optimizer token counts.
+- Verifier calls, failures, and wall time.
+- Reward distributions and zero-variance groups by family and depth.
+- Policy entropy, completion diversity, and completion lengths.
+- Answer-only, skipped-transition, malformed-output, repetition, and parser-exploit diagnostics.
+- Training reward alongside the untouched validation accuracy/token frontier.
+
+H7 is supported only if C9 improves over C4. H8 is supported only if C10 improves over both C4 and C9 without a material increase in invalid transitions, malformed traces, forced transitions, or reward-hacking indicators. Shorter output without a frontier improvement is not success.
 
 ### Requirements for each extension
 

@@ -1,8 +1,8 @@
 # Learning High-Density Reasoning Representations in Small Language Models
 
-**Project proposal and experimental specification**  
-**Status:** Draft v0.1  
-**Date:** July 18, 2026
+**Project proposal and experimental specification**
+**Status:** Draft v0.2
+**Date:** July 26, 2026
 
 ## 1. Executive summary
 
@@ -12,7 +12,7 @@ The central goal is stronger than producing shorter answers. The project asks wh
 
 The primary experiment will compare an unchanged small reasoning model with parameter-efficient variants trained on compact, structure-preserving reasoning traces. Evaluation will hold the model, prompts, decoding configuration, answer allowance, and reasoning-token budget as constant wherever possible. The principal outcome will be an accuracy-versus-budget Pareto frontier, supported by measurements of verified reasoning transitions per token, latency, and memory use.
 
-The work is designed to run locally on an NVIDIA RTX 3060 Ti with 8 GB of VRAM. Initial experiments will use 4-bit QLoRA on models between 0.6B and 1.7B parameters. Supervised fine-tuning will be the first training method; online reinforcement learning and latent-space reasoning are deferred until the discrete-reasoning hypothesis has been tested cleanly.
+The work is designed to run locally on an NVIDIA RTX 3060 Ti with 8 GB of VRAM. Initial experiments will use 4-bit QLoRA on models between 0.6B and 1.7B parameters. Supervised fine-tuning will remain the first training method so the discrete-reasoning hypothesis can be tested cleanly. If that pipeline succeeds, a gated reinforcement-learning-with-verifiable-rewards (RLVR) extension will test whether direct optimization for correctness and verified efficiency shifts the accuracy/token frontier beyond structured-sketch SFT.
 
 ## 2. Motivation
 
@@ -66,6 +66,14 @@ Structured sketches that preserve operators, variables, references, negation, an
 
 A model conditioned on explicit budget tags will learn to use short traces on simple problems and reserve additional reasoning for harder problems, producing a better aggregate frontier than a single fixed compression style.
 
+### H7 — RLVR improvement
+
+Correctness-only RLVR initialized from the structured-sketch SFT checkpoint will improve fixed-budget accuracy beyond structured-sketch SFT alone.
+
+### H8 — Efficiency-aware RLVR
+
+Correctness-gated RLVR that rewards fully verified solutions for using fewer reasoning tokens will improve the accuracy/token frontier beyond correctness-only RLVR without increasing the invalid-transition rate.
+
 ## 5. Definitions
 
 ### Reasoning token
@@ -96,6 +104,10 @@ Exact-answer accuracy when every condition receives the same maximum number of g
 
 The rate at which a generated trace advances through valid problem states, measured through verified transitions per token and the maximum problem depth solved reliably at a fixed budget.
 
+### Reinforcement learning with verifiable rewards
+
+Online policy optimization using rewards computed entirely from deterministic parsers, exact-answer solvers, and executable transition verifiers. The RLVR extension will not use a learned reward model.
+
 ## 6. Scope
 
 ### In scope
@@ -107,13 +119,14 @@ The rate at which a generated trace advances through valid problem states, measu
 - Comparisons against the exact original checkpoint.
 - Fixed-budget accuracy, reasoning-depth, latency, and memory measurements.
 - Budget-conditioned reasoning formats.
+- A gated RLVR extension initialized from a successful supervised checkpoint.
 
 ### Out of scope for the initial study
 
 - Training a language model from scratch.
 - Claims about unobservable human-like internal reasoning.
 - General-purpose chat quality optimization.
-- Large-scale online reinforcement learning.
+- Large-scale or ungated online reinforcement learning in the primary experiment.
 - Hidden-state or continuous latent reasoning in the primary experiment.
 - Treating shorter visible text as sufficient evidence of better reasoning.
 - Comparisons between unrelated model families as the main result.
@@ -129,6 +142,9 @@ The project is most closely related to the following lines of research:
 - [Think Better, Not Longer / MUTO](https://aclanthology.org/2026.acl-long.1386/) estimates token-level marginal utility and directly evaluates a 1.5B reasoning-model backbone.
 - [Coconut](https://arxiv.org/abs/2412.06769), [Compressed Chain-of-Thought](https://arxiv.org/abs/2412.13171), and [SoftCoT](https://aclanthology.org/2025.acl-long.1137/) explore continuous or soft latent reasoning representations. These motivate a potential second phase but require a different inference architecture.
 - [Think Before You Speak](https://openreview.net/forum?id=ph04CRkPdC) studies learned pause tokens, illustrating that the number of visible language tokens and the amount of sequential model computation are related but separable design choices.
+- [DeepSeek-R1](https://arxiv.org/abs/2501.12948) demonstrates reasoning-oriented reinforcement learning with rule-based rewards and motivates using supervised cold-start data before RL when output structure and readability matter.
+- [Making Small Language Models Efficient Reasoners](https://arxiv.org/abs/2505.07961) introduces length-regularized GRPO for controllable, token-efficient reasoning.
+- [Stable Reinforcement Learning for Efficient Reasoning](https://arxiv.org/abs/2505.18086) shows that applying length pressure before a policy is reliably correct can destabilize training, motivating correctness-gated efficiency rewards.
 
 The proposed study differs in its primary emphasis: it will directly test whether compact post-training increases **verified conceptual transitions and task accuracy at the same token budget**, rather than focusing only on preserving accuracy after shortening outputs.
 
@@ -276,6 +292,9 @@ Optional conditions:
 - C6: Answer-only QLoRA to test whether visible reasoning is necessary.
 - C7: Added-vocabulary structured sketches.
 - C8: A utility-pruned or MUTO-inspired dataset variant.
+- C9: C4 initialized with correctness-only RLVR.
+- C10: C4 initialized with correctness-gated verified-efficiency RLVR.
+- C11: C2 initialized with the C10 reward, testing whether structured-sketch SFT is a necessary RLVR cold start.
 
 All trained controls must use, as closely as practical:
 
@@ -288,6 +307,8 @@ All trained controls must use, as closely as practical:
 - Comparable target-token exposure, reported explicitly when exact matching is impossible.
 
 The full-CoT control is mandatory. Without it, accuracy gains could be attributed to additional supervised problem exposure rather than reasoning compression.
+
+The RLVR extension must retain C4 as its no-RL baseline and C9 as its outcome-only RL control. C10 cannot be interpreted as evidence for efficiency-aware RLVR unless it outperforms both. C11 is optional and should be run only when the value of the structured cold start remains scientifically ambiguous.
 
 ## 13. Budget conditioning
 
@@ -325,7 +346,51 @@ Initial configuration for the 1.5B–1.7B run:
 
 The first run on each model will be a short memory and throughput calibration. Exact batch, sequence, and accumulation settings will be recorded rather than assumed.
 
-Online RL is excluded from the first milestone because rollout generation and multi-model memory requirements are disproportionate on an 8 GB GPU. If supervised results are promising, offline preference optimization or token-utility reweighting can be evaluated before full RL.
+Online RL is excluded from the primary C0–C4 experiment because rollout generation and token-level policy updates may be disproportionate on an 8 GB GPU. After C4 passes the smoke-test gate, a non-blocking M2-R engineering spike may test RLVR feasibility on Qwen3-0.6B. Scientific RLVR conditions remain gated extensions and do not replace the supervised primary comparison.
+
+### 14.1 RLVR extension configuration
+
+The initial RLVR implementation will use a group-relative policy-optimization implementation that supports PEFT and quantized model loading. Because the original GRPO loss has response-length bias, the extension will use a formulation designed to reduce or eliminate that bias, such as DAPO or Dr-GRPO. The exact loss, implementation, and version will be frozen before runs are compared, and any residual length preference will be treated as a potential confound.
+
+The first hardware calibration will use:
+
+- The C4 adapter as the policy initialization.
+- 4-bit adapter training with gradient checkpointing.
+- A group size beginning at four completions per prompt.
+- A maximum completion length beginning at 64 or 128 tokens.
+- Microbatch 1 with effective batch size and accumulation chosen to satisfy group divisibility.
+- Native Transformers generation before considering a colocated inference engine.
+- No separate reference model in the first feasibility run if omitting it is required to fit memory; this deviation and its implications must be recorded.
+
+RL training prompts should emphasize task-family and depth strata where the current policy produces a mixture of successful and unsuccessful rollouts. This curriculum may use training and development data only. The frozen validation and test distributions must not be resampled according to observed evaluation outcomes.
+
+Every RL rollout will receive an assigned reasoning budget from a preregistered training-budget set and will use the same token-native reasoning-region accounting and forced-answer semantics as evaluation. The M2-R spike may use one fixed budget. Delimiters and final-answer allowance are excluded from `reasoning_tokens` when computing reward.
+
+#### C9 reward
+
+C9 receives a binary reward of one for an exact correct final answer and zero otherwise. It controls for additional task exposure and generic correctness optimization through RL.
+
+#### C10 and C11 reward
+
+The initial tiered reward is:
+
+```text
+malformed or unverifiable trace              -> 0
+verified proper prefix without full success  -> 0.2 * progress_fraction
+correct answer with a non-replayable trace   -> 0.25
+fully replayable and correct                  -> 1.0 + 0.2 * efficiency_bonus
+```
+
+where:
+
+```text
+progress_fraction = verified prefix transitions / required transitions
+efficiency_bonus = max(0, 1 - reasoning_tokens / assigned_budget)
+```
+
+The coefficients are initial development values and must be frozen before final comparison. Their ordering is a protocol requirement: brevity alone must never allow an incorrect, malformed, or skipped-step trace to outrank a correct and fully replayable trace. Efficiency reward is granted only after both exact-answer correctness and complete transition replay succeed.
+
+All reward components must be logged separately. Training must record the fraction of prompt groups with zero reward variance, since all-equal groups provide no group-relative learning signal.
 
 ## 15. Inference and budget enforcement
 
@@ -383,6 +448,16 @@ Generation parameters, chat templates, stop conditions, and random seeds will be
 - Training time and examples per second.
 - Adapter size and total checkpoint storage.
 
+### RLVR diagnostics
+
+- Rollouts and generated rollout tokens per optimizer update.
+- Total verifier calls and verifier wall time.
+- Reward-component distributions by task family and depth.
+- Fraction of prompt groups with zero reward variance.
+- Policy entropy, completion diversity, and completion-length distributions.
+- Training-reward versus held-out frontier behavior.
+- Reward-hacking indicators, including answer-only traces, skipped transitions, malformed syntax, and repetition.
+
 No single ratio such as `accuracy / tokens` will serve as the headline metric. The primary result will be the complete accuracy-versus-budget frontier.
 
 ## 17. Statistical protocol
@@ -394,6 +469,7 @@ No single ratio such as `accuracy / tokens` will serve as the headline metric. T
 - Compute item-level bootstrap confidence intervals for accuracy and matched-budget differences.
 - Predeclare the non-inferiority margin and success thresholds before the final run.
 - Report all attempted primary configurations, including unsuccessful ones.
+- Compare RLVR conditions under matched prompt sets, rollout-token budgets, optimizer updates, and sampling configurations wherever practical; report any mismatch explicitly.
 
 For sampled decoding, report both per-generation accuracy and per-problem aggregate results. Do not select the best sample after observing the answer unless pass@k is explicitly the metric for every condition.
 
@@ -421,6 +497,13 @@ At one or more practically relevant budgets, such as 64 or 128 tokens:
 
 The structured or budget-conditioned model produces a statistically supported upward and leftward shift of the accuracy/token frontier across multiple task families and retains part of the gain on standard out-of-distribution benchmarks.
 
+### RLVR extension success
+
+- C9 improves fixed-budget accuracy over C4, establishing a benefit from correctness-only RLVR.
+- C10 improves the accuracy/token frontier over both C4 and C9.
+- C10 does not materially increase invalid transitions, malformed traces, or forced-answer transitions.
+- Gains persist on held-out instances and templates that were never used to select the RL curriculum or reward coefficients.
+
 ## 19. Failure criteria and interpretation
 
 The central hypothesis is not supported if apparent gains arise only from:
@@ -434,6 +517,8 @@ The central hypothesis is not supported if apparent gains arise only from:
 - Memorized benchmark items without gains on generated held-out tasks.
 
 A null result remains useful if it identifies the depth or compression ratio at which accuracy breaks down.
+
+The RLVR hypotheses are not supported if C10 merely shortens completions, exploits answer extraction, overfits the training verifier, or fails to improve over C9 under matched RL compute.
 
 ## 20. Risks and mitigations
 
@@ -475,9 +560,27 @@ A null result remains useful if it identifies the depth or compression ratio at 
 
 ### Hardware limits
 
-**Risk:** Long sequences or preference training exceed 8 GB VRAM.
+**Risk:** Long sequences, grouped rollout generation, or online policy updates exceed 8 GB VRAM.
 
-**Mitigation:** Use 4-bit QLoRA, gradient checkpointing, microbatch 1, short sequences, and staged experiments; keep RL out of the initial scope.
+**Mitigation:** Use 4-bit QLoRA, gradient checkpointing, microbatch 1, short completions, small rollout groups, and staged experiments; keep RLVR non-blocking and out of the primary C0–C4 scope.
+
+### RLVR reward hacking
+
+**Risk:** The policy learns to emit short answer-only completions, exploit parser tolerance, repeat rewarded syntax, or otherwise increase reward without increasing verified reasoning throughput.
+
+**Mitigation:** Gate efficiency reward on complete replay and exact correctness; retain immutable raw rollouts; test adversarial reward fixtures; audit reward components separately; and evaluate on held-out generators, templates, and verifier mutations.
+
+### Sparse or uniform RLVR rewards
+
+**Risk:** All rollouts for a prompt receive the same reward, producing no group-relative learning signal.
+
+**Mitigation:** Measure zero-variance groups, sample training prompts near the current policy's capability boundary, retain a range of depths, and stop rather than infer a negative scientific result from an uninformative curriculum.
+
+### Length-pressure instability
+
+**Risk:** Efficiency reward causes abrupt shortening and accuracy collapse before the policy has learned reliable solutions.
+
+**Mitigation:** Warm-start from C4, bound the efficiency bonus below the correctness reward, apply it only to fully correct replayable traces, and monitor accuracy and length jointly with an early-stop rule.
 
 ## 21. Milestones
 
@@ -504,6 +607,7 @@ A null result remains useful if it identifies the depth or compression ratio at 
 - Train C2–C4 on Qwen3-0.6B.
 - Validate controls, budget enforcement, and frontier plotting.
 - Diagnose trace collapse and formatting failures.
+- After C4 passes its format and shallow-accuracy gates, optionally run the non-blocking M2-R RLVR feasibility spike.
 
 **Gate:** The structured model learns its format and does not materially degrade shallow-task accuracy.
 
@@ -525,6 +629,7 @@ A null result remains useful if it identifies the depth or compression ratio at 
 
 Pursue only if earlier evidence is positive:
 
+- Correctness-only and efficiency-aware RLVR conditions C9–C10, with optional C11.
 - Mixed budget-conditioned training.
 - Added reasoning vocabulary.
 - Utility-weighted trace pruning.
@@ -539,6 +644,7 @@ The repository should preserve:
 - Locked environment and dependency versions.
 - Model and tokenizer identifiers plus exact revisions.
 - LoRA configuration and training arguments.
+- RLVR algorithm, reward source, component weights, rollout configuration, and policy initialization.
 - Dataset-generator source, seeds, and split manifests.
 - Canonical solution graphs and trace renderers.
 - Raw generations for every evaluated condition.
@@ -569,6 +675,15 @@ After Milestone 3:
 - **Investigate pause or latent computation** if compact traces retain information but performance drops primarily at high reasoning depths, suggesting insufficient sequential compute.
 - **Stop or reframe** if full-CoT SFT matches all gains, prompt-only compression performs equally well, or improvements disappear on uncontaminated compositional splits.
 
+For the RLVR extension:
+
+- **Continue from C9 to C10** only when the policy produces enough mixed-reward groups to supply a meaningful learning signal.
+- **Attribute a general RLVR gain** only when C9 improves over C4 under the frozen evaluator.
+- **Attribute an efficiency-reward gain** only when C10 improves over both C4 and C9 without a material validity regression.
+- **Stop local RLVR scaling** if the M2-R configuration cannot complete stable policy updates within the recorded 8 GB hardware envelope; this does not block M3.
+
 ## 25. Proposed contribution statement
 
 If successful, the project will demonstrate that post-training a small language model on compact, structure-preserving reasoning sketches can increase semantic reasoning throughput: the model completes more verified conceptual transitions and achieves greater task accuracy within the same generated-token budget. The accompanying controlled-depth benchmark and evaluation protocol will separate genuine reasoning-density improvements from verbosity reduction, task memorization, and answer-format artifacts.
+
+If the gated RLVR extension also succeeds, it will further show that deterministic correctness and transition verification can directly optimize this supervised representation for a better accuracy/token frontier without relying on a learned reward model.

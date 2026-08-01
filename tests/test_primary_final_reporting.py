@@ -1,0 +1,192 @@
+from __future__ import annotations
+
+from dataclasses import replace
+from pathlib import Path
+
+import pytest
+
+from token_efficient_reasoning.primary.config import M3Config
+from token_efficient_reasoning.primary.final_reporting import (
+    EvaluationRun,
+    PrimaryRecord,
+    _aggregate_table,
+    _matched_accuracy_reductions,
+    _paired_comparisons,
+    _per_problem_aggregates,
+    _primary_success_summary,
+    _records_by_cell,
+    _reliable_depths,
+    _select_m3_decision,
+    _summarize_ordered_batches,
+    _verify_tree_manifest,
+    _write_markdown_report,
+    _write_plots,
+)
+from token_efficient_reasoning.training.artifacts import tree_manifest
+
+
+def _record(
+    *,
+    replicate: int,
+    condition: str,
+    split: str,
+    item_id: str,
+    depth: int,
+    budget: int,
+) -> PrimaryRecord:
+    c4 = condition == "c4"
+    reasoning_tokens = max(1, budget // 2) if c4 else budget
+    return PrimaryRecord(
+        run_id=f"m3-eval-r{replicate}-{condition}-{split}",
+        replicate=replicate,
+        condition_id=condition,
+        split=split,
+        item_id=item_id,
+        task_family="arithmetic" if int(item_id.rsplit("-", 1)[1]) % 2 else "graph",
+        depth=depth,
+        reasoning_budget=budget,
+        correct=c4,
+        region_valid=True,
+        trace_parse_success=c4,
+        replay_valid=c4,
+        verified_prefix_transitions=depth if c4 else 1,
+        parsed_transition_count=depth if c4 else 1,
+        invalid_transition_count=0,
+        reasoning_tokens=reasoning_tokens,
+        answer_tokens=2,
+        sampled_tokens=reasoning_tokens + 3,
+        forced_transition=not c4,
+        reasoning_empty=False,
+        prompt_copied=False,
+        repeated_line=False,
+        latency_seconds=0.1,
+        generation_batch_size=4,
+    )
+
+
+def _matrix() -> tuple[M3Config, list[EvaluationRun]]:
+    config = replace(
+        M3Config.from_json("configs/m3/protocol.json"),
+        bootstrap_samples=2_000,
+    )
+    runs = []
+    for replicate in (1, 2, 3):
+        for condition in ("c0", "c1", "c2", "c3", "c4"):
+            for split in config.evaluation_splits:
+                records = []
+                for item_index in range(20):
+                    depth = (
+                        16
+                        if split == "test_depth"
+                        else (2, 4, 8, 12)[item_index % 4]
+                    )
+                    item_id = f"{split}-item-{item_index}"
+                    for budget in config.evaluation_budgets:
+                        records.append(
+                            _record(
+                                replicate=replicate,
+                                condition=condition,
+                                split=split,
+                                item_id=item_id,
+                                depth=depth,
+                                budget=budget,
+                            )
+                        )
+                runs.append(
+                    EvaluationRun(
+                        run_id=f"m3-eval-r{replicate}-{condition}-{split}",
+                        replicate=replicate,
+                        condition_id=condition,
+                        split=split,
+                        path="/unused",
+                        records=tuple(records),
+                        generation_count=len(records),
+                        batch_count=len(records) // 4,
+                        estimated_wall_seconds=1.0,
+                        sampled_tokens=sum(record.sampled_tokens for record in records),
+                        decode_tokens_per_second=100.0,
+                        peak_allocated_bytes=1,
+                        peak_reserved_bytes=2,
+                        decoding_sha256="d" * 64,
+                        tokenizer_sha256="t" * 64,
+                    )
+                )
+    return config, runs
+
+
+def test_complete_synthetic_matrix_supports_known_primary_success(
+    tmp_path: Path,
+) -> None:
+    config, runs = _matrix()
+    aggregate = _aggregate_table(runs)
+    cells = _records_by_cell(runs)
+    comparisons = _paired_comparisons(cells, config)
+    per_problem = _per_problem_aggregates(cells)
+    reliable = _reliable_depths(aggregate, config)
+    matched = _matched_accuracy_reductions(aggregate, config)
+    success = _primary_success_summary(comparisons, reliable, matched, config)
+    decision = _select_m3_decision(comparisons, matched, reliable, config)
+
+    primary = [row for row in comparisons if row["scope"] == "primary"]
+    assert len(primary) == 6
+    assert all(row["holm"]["reject_null"] for row in primary)
+    assert all(row["paired_accuracy_difference"]["estimate"] == 1.0 for row in primary)
+    c4_test_64 = next(
+        row
+        for row in per_problem["summary_rows"]
+        if row["condition_id"] == "c4"
+        and row["split"] == "test"
+        and row["reasoning_budget"] == 64
+    )
+    assert c4_test_64["all_generations_correct_rate"] == 1.0
+    assert success["primary_success"] is True
+    assert decision["outcome"] == "continue_to_generalization"
+    assert decision["exactly_one_outcome_selected"] is True
+
+    plots = _write_plots(tmp_path, aggregate, config)
+    assert len(plots) == 20
+    assert all((tmp_path / name).is_file() for name in plots)
+    report_path = tmp_path / "M3_REPORT.md"
+    _write_markdown_report(
+        report_path,
+        success=success,
+        decision=decision,
+        comparisons=comparisons,
+        systems={"evaluation_runs": [{"generation_count": 5_400}]},
+        config=config,
+    )
+    report = report_path.read_text(encoding="utf-8")
+    assert "**Decision:** `continue_to_generalization`" in report
+    assert "5,400" in report
+    assert "## Engineering validity" in report
+    assert "## Statistical evidence" in report
+    assert "## Scientific interpretation" in report
+
+
+def test_ordered_batch_wall_time_counts_shared_latency_once() -> None:
+    rows = [
+        {
+            "generation_batch_size": 2,
+            "reasoning_budget": 64,
+            "latency_seconds": {"reasoning": 0.4, "answer": 0.1},
+            "token_counts": {"sampled_total": 10},
+        }
+        for _ in range(4)
+    ]
+
+    batch_count, wall, tokens, throughput = _summarize_ordered_batches(rows)
+
+    assert batch_count == 2
+    assert wall == pytest.approx(1.0)
+    assert tokens == 40
+    assert throughput == pytest.approx(40.0)
+
+
+def test_manifest_verifier_rejects_post_manifest_tampering(tmp_path: Path) -> None:
+    (tmp_path / "value.json").write_text("{}\n", encoding="utf-8")
+    tree_manifest(tmp_path, tmp_path.name)
+    _verify_tree_manifest(tmp_path)
+
+    (tmp_path / "value.json").write_text('{"tampered":true}\n', encoding="utf-8")
+    with pytest.raises(ValueError, match="hash mismatch"):
+        _verify_tree_manifest(tmp_path)

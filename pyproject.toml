@@ -34,6 +34,7 @@ dev = [
 ter-eval = "token_efficient_reasoning.cli:main"
 ter-data = "token_efficient_reasoning.controlled.cli:main"
 ter-m2 = "token_efficient_reasoning.training.cli:main"
+ter-m3 = "token_efficient_reasoning.primary.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/token_efficient_reasoning"]

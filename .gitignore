@@ -7,3 +7,4 @@ __pycache__/
 htmlcov/
 artifacts/runs/
 artifacts/m2/
+artifacts/m3/

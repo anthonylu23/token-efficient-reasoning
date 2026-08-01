@@ -8,11 +8,27 @@ See the [project proposal and experimental specification](PROJECT_PROPOSAL.md) f
 
 ## Development
 
-Milestone 0 implements token-native fixed-budget evaluation for the frozen C0/C1 baselines. Milestone 1 adds deterministic controlled-depth arithmetic and graph data, executable replay verification, R0–R3 traces, split auditing, and pinned-tokenizer compression measurement. See the [M0 evaluator documentation](docs/M0_EVALUATOR.md) and [M1 dataset documentation](docs/M1_DATASET.md) for their protocols and workflows.
+Milestone 0 implements token-native fixed-budget evaluation for the frozen C0/C1 baselines.
+Milestone 1 adds deterministic controlled-depth arithmetic and graph data, executable replay
+verification, R0–R3 traces, split auditing, and pinned-tokenizer compression measurement.
+Milestone 2 completes the local Qwen3-0.6B QLoRA workflow and the full C0–C4 validation frontier;
+its gate decision is **revise or hold** because C4 misses the preregistered very-low-budget
+non-inferiority and all-budget structured-trace thresholds. See the
+[M0 evaluator documentation](docs/M0_EVALUATOR.md),
+[M1 dataset documentation](docs/M1_DATASET.md), and
+[M2 smoke-test report](docs/M2_PROTOCOL.md) for protocols, workflows, and results. Milestone 3
+implementation and its validation-only bridge are complete; the bridge passed, while held-out test
+access remains fail-closed pending the 34-item M1 human review and protocol freeze. See the
+[M3 primary protocol](docs/M3_PROTOCOL.md) and
+[bridge gate review](artifacts/M3_BRIDGE_GATE_REVIEW.md). After freeze, the full final matrix is
+executed sequentially and resumably with `python scripts/run_m3_primary.py --stage all`; primary
+runs and reporting fail if the repository workspace differs from the freeze.
 
 ```bash
 uv sync
 uv run pytest
 uv run ter-eval validate-config configs/m0.json
 uv run ter-data validate-config configs/m1.json
+uv run ter-m2 validate
+uv run ter-m3 validate
 ```
