@@ -115,6 +115,10 @@ reviewed and signed off on that sample.
   diversity of arithmetic or graph reasoning.
 - Arithmetic answers can sometimes be computed with algebraic shortcuts even though the formal
   trace system requires one transition per listed operation.
+- In 103 of 6,300 arithmetic items (1.63%), the explicitly irrelevant marker count happens to equal
+  the final answer: 62 train, 4 validation, 20 ordinary test, 10 compositional test, and 7 depth
+  test items. The final report must include a preregistered sensitivity excluding these items; the
+  immutable v1 corpus is not silently rewritten after bridge training.
 - Graph problems test labeled traversal rather than unrestricted reachability proofs.
 - Token-based acceptance filters the benchmark toward examples whose R2 and R3 traces are shorter
   for both target tokenizers. Rejection counts are reported to make this selection visible.

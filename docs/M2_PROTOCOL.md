@@ -6,7 +6,8 @@ Milestone 2 exercises the complete training-to-evaluation workflow on Qwen3-0.6B
 engineering and format-learnability gate, not the primary scientific experiment. The primary
 comparison remains Milestone 3 on DeepSeek-R1-Distill-Qwen-1.5B.
 
-M1's automated gates pass, but its human review is still pending. M2 engineering may proceed while
+At the M2 gate, M1's automated gates passed while its human review was pending. That review was
+subsequently accepted with documented limitations. M2 engineering could proceed while
 that review is completed; no M2 scientific result should be treated as final until the M1 review
 artifact is signed.
 
@@ -140,8 +141,8 @@ The M2 run is complete, but advancement is held:
   and canonical-prefix use is 60.40% across all budgets.
 - Shallow non-inferiority fails at depth 2/budget 16 and depth 4/budgets 16 and 32. From budget 64
   upward, C4 and the strongest trained control are both 100% accurate at depths 2 and 4.
-- The M1 automated validation, split, and compression criteria pass, but its human review remains
-  unsigned.
+- At the time of the M2 gate, M1 automated criteria passed while human review was unsigned; the
+  review was subsequently accepted with documented limitations.
 
 The result is therefore `revise or hold`, not an engineering failure. Raw generations, paired
 bootstrap comparisons, verifier diagnostics, SVG frontiers, and the deterministic failure sample

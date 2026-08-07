@@ -1,6 +1,6 @@
 # Milestone 3 primary experiment protocol
 
-**Status:** Validation bridge passed; final test access locked pending M1 human review and freeze
+**Status:** Validation bridge and M1 review passed; final test access locked pending freeze
 
 Milestone 3 tests whether structured-sketch SFT shifts the accuracy-versus-reasoning-budget
 frontier on `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`. The experiment preserves the M2 result,
@@ -39,12 +39,15 @@ require a valid freeze and an exact matching run ID and specification.
 - a 1 percentage-point invalid-transition margin;
 - 10,000 paired bootstrap resamples;
 - item-ID bootstrap clusters, with the three paired replicate outcomes averaged within each item;
-- six one-sided primary C4 comparisons on the ordinary test split (C0, C1, and C2 at
-  budgets 64 and 128), controlled at family-wise alpha 0.05 with Holm's procedure;
-- C3, held-out depth, compositional, family, and depth comparisons as descriptive secondary
-  analyses;
+- eight one-sided primary C4 comparisons on the ordinary test split (C0, C1, C2, and C3 at
+  budgets 64 and 128), controlled together at family-wise alpha 0.05 with Holm's procedure;
+- the six C0/C1/C2 tests retain the central frontier claims, while the two C4/R3-versus-C3/R2
+  tests directly test H5 (structure matters) under the same reasoning-token caps;
+- C3 comparisons outside the two primary cells, held-out depth, compositional, family, and depth
+  comparisons as descriptive secondary analyses;
 - the 80% reliable-depth threshold, 30% matched-accuracy token-reduction threshold, 2
-  percentage-point primary accuracy improvement, and 1.5× density threshold; and
+  percentage-point primary accuracy improvement, and 1.5× density threshold, with an explicit
+  zero-control boundary rule; and
 - ordinary test, held-out depth-16, and compositional test splits.
 
 The three replicate blocks pair one training seed and one decoding seed. Each block evaluates
@@ -163,15 +166,20 @@ the unchanged saved artifacts. See
 [`M3_BRIDGE_GATE_REVIEW.md`](../artifacts/M3_BRIDGE_GATE_REVIEW.md) and
 [`M3_BRIDGE_ENGINEERING.md`](../artifacts/M3_BRIDGE_ENGINEERING.md).
 
-The bridge pass does not unlock test access by itself. The remaining prerequisite is the
-34-item M1 human review in `artifacts/M1_HUMAN_REVIEW.md` and
-`artifacts/M1_HUMAN_REVIEW.json`.
+The bridge pass did not unlock test access by itself. The repository owner subsequently accepted
+the 34-item M1 review with the documented distractor-answer limitation. Both prerequisites now
+pass; held-out access remains locked until a clean-workspace freeze is created and validated.
 
 ## Final run safeguards
 
 The freeze writes `freeze.json`, `run_plan.json`, and a recursive manifest. The snapshot embeds the
-protocol, QLoRA settings, checkpoint, split hashes, prerequisite evidence, repository workspace
-digest, environment, and hardware.
+protocol, QLoRA settings, checkpoint, split hashes, repository workspace digest, environment, and
+hardware. It also copies the exact M1 human-review record, its manifest-bound review sample, and
+the complete manifest-verified bridge report under `prerequisites/`; `freeze.json` records the
+source and frozen SHA-256 for each gate artifact. Validation hashes every file and then rechecks
+the copied review decision, reviewer/time/reference, reviewed count, dataset/sample bindings,
+bridge pass/no-test-access flags, protocol compatibility, and final protocol hash; self-consistent
+but semantically false prerequisite bytes cannot authorize test access.
 
 Primary training and evaluation:
 
@@ -189,6 +197,25 @@ frozen run directory; it retains prior failure evidence under `attempts/` and pr
 run ID. Both primary execution and final reporting compare the current repository state to the
 frozen workspace digest and fail on any change.
 
+### Ignored artifact retrieval
+
+`artifacts/m2/` and `artifacts/m3/` are intentionally Git-ignored, so a clean checkout does not
+contain bridge runs, adapters, raw generations, or a created freeze. Restore the exact directory
+from the experiment's artifact archive or originating machine while preserving repository-relative
+paths; do not substitute a newly generated report for the accepted evidence. For example:
+
+```bash
+rsync -a --partial <artifact-host>:/path/to/repo/artifacts/m3/ artifacts/m3/
+uv run ter-m3 validate
+uv run ter-m3 validate-freeze artifacts/m3/freeze  # after freeze exists
+```
+
+Compare the restored bridge gate and report-manifest hashes with the tracked
+[`M3_BRIDGE_GATE_REVIEW.md`](../artifacts/M3_BRIDGE_GATE_REVIEW.md). No automated remote artifact
+store is configured by this repository, so the experiment custodian must retain and identify the
+archive by content hash. `ter-m3 freeze` prints its manifest SHA-256; archive the whole freeze
+directory under that identity before primary execution.
+
 ## Reporting
 
 The primary report will be generated from saved artifacts without loading a model. It will include
@@ -197,12 +224,36 @@ verified-density frontiers, matched-accuracy token reduction, invalid and forced
 latency, throughput, memory, and stratified failure examples. It will report null and adverse
 results and select exactly one M3 decision outcome from the roadmap.
 
+Trace diagnostics retain fully parsed canonical lines before an incomplete final line only when the
+evaluator recorded a forced budget transition. The whole trace remains a parse failure, and every
+empty or syntactically unparseable trace is an adverse invalid-transition event; the transition
+count itself continues to count only parsed non-prefix transitions. Bridge reporting recomputes
+these diagnostics in memory from immutable saved `reasoning_text`, forced-transition flags, and
+the manifest-verified validation split, so older item artifacts need not be modified or regenerated.
+
 The primary estimand is the C4-minus-comparator exact-answer difference at a fixed reasoning
 budget. Outcomes are paired by replicate block and item ID. For confidence intervals, the three
 replicate differences for each item are averaged first, then item IDs are sampled with replacement.
-The six primary p-values use paired sign randomization over those item-level averages and Holm's
-step-down correction. Per-generation accuracy and per-problem aggregate behavior are both retained;
-no best-of-seed or best-of-sample selection is permitted.
+The eight primary p-values use paired sign randomization over those item-level averages and Holm's
+step-down correction in one family. Six preserve the central C4-versus-C0/C1/C2 claims. The two
+C4/R3-versus-C3/R2 tests at budgets 64 and 128 directly test H5: whether structured sketches
+outperform telegraphic English under the same maximum reasoning-token budget. C3 task/depth
+breakdowns, other budgets, and other splits remain descriptive. Per-generation accuracy and
+per-problem aggregate behavior are both retained; no best-of-seed or best-of-sample selection is
+permitted.
+
+Verified density is a rate (pooled verified-prefix transitions divided by pooled reasoning tokens).
+The primary 1.5× density threshold compares C4 against C2 full-CoT QLoRA, whose controlled R0
+output is verifier-readable; C0 density is retained as a diagnostic rather than allowing parser
+coverage to make primary density success automatic. For every reported pair, positive comparator
+density uses ordinary division. If a diagnostic comparator is zero and C4 is positive, JSON stores
+a null numeric ratio plus `positive_treatment_over_zero_control`; two zero densities are
+`both_zero`. No outcome-dependent pseudocount is used.
+
+A preregistered descriptive sensitivity repeats all eight primary-budget accuracy comparisons after
+excluding arithmetic items whose explicitly irrelevant marker count equals the reference answer
+(20 of 2,000 ordinary-test problems). It does not replace the full-split primary inference or alter
+the Holm family; it measures whether this known v1 distractor coincidence changes interpretation.
 
 Matched-accuracy token reduction uses the lowest frozen C4 budget whose pooled per-generation
 accuracy is at least a comparator frontier point. The reduction is computed from pooled median

@@ -306,6 +306,7 @@ def test_primary_report_builds_from_complete_saved_artifact_matrix(
         {
             "protocol": config.to_dict(),
             "protocol_sha256": protocol_sha256,
+            "dataset_dir": str(Path("data/m1").resolve()),
             "qlora": qlora,
             "qlora_sha256": qlora_sha256,
             "checkpoint": checkpoint,
@@ -374,7 +375,13 @@ def test_primary_report_builds_from_complete_saved_artifact_matrix(
 
     assert result["generation_count"] == 5_400
     assert result["primary_success"] is True
+    assert result["h5_supported"] is True
     assert result["decision"] == "continue_to_generalization"
     assert result["report_manifest_files"] >= 25
     assert (report_dir / "per_problem_aggregates.json").is_file()
+    sensitivity = json.loads(
+        (report_dir / "distractor_answer_sensitivity.json").read_text(encoding="utf-8")
+    )
+    assert len(sensitivity["collision_item_ids"]) == 20
+    assert len(sensitivity["rows"]) == 8
     assert (report_dir / "M3_REPORT.md").is_file()

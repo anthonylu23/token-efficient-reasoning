@@ -18,14 +18,18 @@ non-inferiority and all-budget structured-trace thresholds. See the
 [M1 dataset documentation](docs/M1_DATASET.md), and
 [M2 smoke-test report](docs/M2_PROTOCOL.md) for protocols, workflows, and results. Milestone 3
 implementation and its validation-only bridge are complete; the bridge passed, while held-out test
-access remains fail-closed pending the 34-item M1 human review and protocol freeze. See the
+access remains fail-closed pending creation and validation of the protocol freeze; the 34-item M1
+human review is accepted with documented limitations. See the
 [M3 primary protocol](docs/M3_PROTOCOL.md) and
 [bridge gate review](artifacts/M3_BRIDGE_GATE_REVIEW.md). After freeze, the full final matrix is
 executed sequentially and resumably with `python scripts/run_m3_primary.py --stage all`; primary
 runs and reporting fail if the repository workspace differs from the freeze.
 
+Install the Linux-only `training` extra before QLoRA work; CPU-only data and evaluation
+workflows can use plain `uv sync`.
+
 ```bash
-uv sync
+uv sync --extra training
 uv run pytest
 uv run ter-eval validate-config configs/m0.json
 uv run ter-data validate-config configs/m1.json

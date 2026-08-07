@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import shutil
 from pathlib import Path
 
 import pytest
@@ -11,6 +12,7 @@ from token_efficient_reasoning.primary.planning import build_run_plan
 from token_efficient_reasoning.primary.reporting import _protocol_compatibility
 from token_efficient_reasoning.primary.runtime import resolve_runtime_batch_sizes
 from token_efficient_reasoning.provenance import sha256_file
+from token_efficient_reasoning.training.artifacts import tree_manifest
 
 PROTOCOL_PATH = Path("configs/m3/protocol.json")
 QLORA_PATH = Path("configs/m3/qlora.json")
@@ -39,10 +41,13 @@ def test_repository_m3_protocol_and_references_are_valid() -> None:
     assert config.evaluation_batch_sizes == (4, 4, 4, 2, 2, 2)
     assert config.batch_size_for_budget(256) == 2
     assert config.optimizer_updates == 500
-    assert config.analysis_version == "m3-primary-v1"
+    assert config.analysis_version == "m3-primary-v2"
     assert config.primary_inference_split == "test"
-    assert config.primary_comparators == ("c0", "c1", "c2")
-    assert config.secondary_comparators == ("c3",)
+    assert config.central_primary_comparators == ("c0", "c1", "c2")
+    assert config.primary_comparators == ("c0", "c1", "c2", "c3")
+    assert config.h5_comparator == "c3"
+    assert config.primary_density_comparator == "c2"
+    assert config.secondary_comparators == ()
     assert config.bootstrap_unit == "item_id"
     assert config.familywise_alpha == 0.05
     assert config.multiplicity_method == "holm"
@@ -94,6 +99,21 @@ def test_m3_rejects_unfrozen_primary_analysis_choices() -> None:
     with pytest.raises(M3ConfigError, match="multiplicity_method"):
         M3Config.from_dict(data)
 
+    data = _load_protocol()
+    data["h5_comparator"] = "c2"
+    with pytest.raises(M3ConfigError, match="h5_comparator"):
+        M3Config.from_dict(data)
+
+    data = _load_protocol()
+    data["verified_density_zero_control_rule"] = "add_epsilon"
+    with pytest.raises(M3ConfigError, match="verified_density_zero_control_rule"):
+        M3Config.from_dict(data)
+
+    data = _load_protocol()
+    data["primary_density_comparator"] = "c0"
+    with pytest.raises(M3ConfigError, match="primary_density_comparator"):
+        M3Config.from_dict(data)
+
 
 def test_bridge_protocol_compatibility_allows_only_analysis_contract_additions() -> None:
     current = _load_protocol()
@@ -104,11 +124,15 @@ def test_bridge_protocol_compatibility_allows_only_analysis_contract_additions()
         not in {
             "analysis_version",
             "primary_inference_split",
+            "central_primary_comparators",
             "primary_comparators",
+            "h5_comparator",
             "secondary_comparators",
             "bootstrap_unit",
             "familywise_alpha",
             "multiplicity_method",
+            "verified_density_zero_control_rule",
+            "primary_density_comparator",
         }
     }
 
@@ -153,13 +177,20 @@ def test_run_plan_contains_nine_training_and_45_evaluation_runs() -> None:
     assert trained_eval["decoding_seed"] == 2718
 
 
-def test_repository_readiness_requires_human_review_after_bridge_passes() -> None:
+def test_repository_readiness_passes_after_bound_human_approval_and_bridge() -> None:
     readiness = M3Config.from_json(PROTOCOL_PATH).readiness(PROTOCOL_PATH)
 
-    assert readiness["m1_human_review_passed"] is False
+    assert readiness["m1_human_review_passed"] is True
+    assert readiness["m1_review_sample_matches"] is True
+    assert readiness["m1_human_review_sha256"] == sha256_file(
+        "artifacts/M1_HUMAN_REVIEW.json"
+    )
+    assert readiness["bridge_gate_sha256"] == sha256_file(
+        "artifacts/m3/bridge/report/gate_summary.json"
+    )
     assert readiness["bridge_protocol_compatible"] is True
     assert readiness["bridge_gate_passed"] is True
-    assert readiness["ready_to_freeze"] is False
+    assert readiness["ready_to_freeze"] is True
     assert readiness["bridge_gate_path"] == str(
         Path("artifacts/m3/bridge/report/gate_summary.json").resolve()
     )
@@ -168,7 +199,9 @@ def test_repository_readiness_requires_human_review_after_bridge_passes() -> Non
 def test_freeze_requires_prerequisites_and_detects_tampering(tmp_path: Path) -> None:
     data = _load_protocol()
     human_path = tmp_path / "human.json"
-    bridge_path = tmp_path / "bridge.json"
+    bridge_dir = tmp_path / "bridge_report"
+    bridge_dir.mkdir()
+    bridge_path = bridge_dir / "gate_summary.json"
     protocol_path = tmp_path / "protocol.json"
     human_path.write_text(
         json.dumps(
@@ -209,6 +242,7 @@ def test_freeze_requires_prerequisites_and_detects_tampering(tmp_path: Path) -> 
     bridge = json.loads(bridge_path.read_text(encoding="utf-8"))
     bridge["report_protocol_sha256"] = sha256_file(protocol_path)
     bridge_path.write_text(json.dumps(bridge), encoding="utf-8")
+    tree_manifest(bridge_dir, "bridge-report")
 
     output = tmp_path / "freeze"
     result = create_freeze(protocol_path, QLORA_PATH, output)
@@ -217,7 +251,81 @@ def test_freeze_requires_prerequisites_and_detects_tampering(tmp_path: Path) -> 
     assert result["training_runs"] == 9
     assert result["evaluation_runs"] == 45
     assert result["generations"] == 342_000
+    assert validated["schema_version"] == 2
+    assert validated["prerequisite_evidence_bound"] is True
+    assert validated["prerequisite_semantics_validated"] is True
     assert validated["test_access_authorized"] is True
+    frozen = json.loads((output / "freeze.json").read_text(encoding="utf-8"))
+    evidence = frozen["prerequisite_evidence"]
+    assert sha256_file(output / evidence["m1_human_review"]["frozen_path"]) == evidence[
+        "m1_human_review"
+    ]["sha256"]
+    assert sha256_file(output / evidence["m1_review_sample"]["frozen_path"]) == evidence[
+        "m1_review_sample"
+    ]["sha256"]
+    assert sha256_file(output / evidence["bridge_gate"]["frozen_path"]) == evidence[
+        "bridge_gate"
+    ]["sha256"]
+
+    frozen_human_path = output / evidence["m1_human_review"]["frozen_path"]
+    frozen_human_bytes = frozen_human_path.read_bytes()
+    frozen_human_path.write_bytes(frozen_human_bytes + b" ")
+    with pytest.raises(M3ConfigError, match="hash mismatch"):
+        validate_freeze(output)
+    frozen_human_path.write_bytes(frozen_human_bytes)
+
+    bridge_path.write_text(bridge_path.read_text(encoding="utf-8") + " ", encoding="utf-8")
+    with pytest.raises(M3ConfigError, match="bridge report file hash mismatch"):
+        create_freeze(protocol_path, QLORA_PATH, tmp_path / "second-freeze")
+    assert not (tmp_path / "second-freeze").exists()
+
+    malicious_human = tmp_path / "malicious-human-freeze"
+    shutil.copytree(output, malicious_human)
+    malicious_frozen_path = malicious_human / "freeze.json"
+    malicious_frozen = json.loads(malicious_frozen_path.read_text(encoding="utf-8"))
+    malicious_human_path = malicious_human / malicious_frozen["prerequisite_evidence"][
+        "m1_human_review"
+    ]["frozen_path"]
+    malicious_review = json.loads(malicious_human_path.read_text(encoding="utf-8"))
+    malicious_review["decision"] = "reject"
+    malicious_human_path.write_text(json.dumps(malicious_review), encoding="utf-8")
+    malicious_frozen["prerequisite_evidence"]["m1_human_review"]["sha256"] = sha256_file(
+        malicious_human_path
+    )
+    malicious_frozen_path.write_text(json.dumps(malicious_frozen), encoding="utf-8")
+    tree_manifest(malicious_human, malicious_human.name)
+    with pytest.raises(M3ConfigError, match="human-review semantics"):
+        validate_freeze(malicious_human)
+
+    malicious_gate = tmp_path / "malicious-gate-freeze"
+    shutil.copytree(output, malicious_gate)
+    malicious_frozen_path = malicious_gate / "freeze.json"
+    malicious_frozen = json.loads(malicious_frozen_path.read_text(encoding="utf-8"))
+    malicious_gate_path = malicious_gate / malicious_frozen["prerequisite_evidence"][
+        "bridge_gate"
+    ]["frozen_path"]
+    malicious_gate_value = json.loads(malicious_gate_path.read_text(encoding="utf-8"))
+    malicious_gate_value["test_data_inspected"] = True
+    malicious_gate_path.write_text(json.dumps(malicious_gate_value), encoding="utf-8")
+    report_manifest_path = malicious_gate / malicious_frozen["prerequisite_evidence"][
+        "bridge_report_manifest"
+    ]["frozen_path"]
+    report_manifest = json.loads(report_manifest_path.read_text(encoding="utf-8"))
+    report_manifest["files"]["gate_summary.json"] = {
+        "sha256": sha256_file(malicious_gate_path),
+        "size_bytes": malicious_gate_path.stat().st_size,
+    }
+    report_manifest_path.write_text(json.dumps(report_manifest), encoding="utf-8")
+    malicious_frozen["prerequisite_evidence"]["bridge_gate"]["sha256"] = sha256_file(
+        malicious_gate_path
+    )
+    malicious_frozen["prerequisite_evidence"]["bridge_report_manifest"][
+        "sha256"
+    ] = sha256_file(report_manifest_path)
+    malicious_frozen_path.write_text(json.dumps(malicious_frozen), encoding="utf-8")
+    tree_manifest(malicious_gate, malicious_gate.name)
+    with pytest.raises(M3ConfigError, match="bridge-gate semantics"):
+        validate_freeze(malicious_gate)
 
     plan_path = output / "run_plan.json"
     plan_path.write_text(plan_path.read_text(encoding="utf-8") + " ", encoding="utf-8")

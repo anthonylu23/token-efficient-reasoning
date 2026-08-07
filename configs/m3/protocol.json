@@ -66,16 +66,21 @@
   "overflow_policy": "error",
   "bootstrap_samples": 10000,
   "bootstrap_seed": 8675309,
-  "analysis_version": "m3-primary-v1",
+  "analysis_version": "m3-primary-v2",
   "primary_inference_split": "test",
-  "primary_comparators": [
+  "central_primary_comparators": [
     "c0",
     "c1",
     "c2"
   ],
-  "secondary_comparators": [
+  "primary_comparators": [
+    "c0",
+    "c1",
+    "c2",
     "c3"
   ],
+  "h5_comparator": "c3",
+  "secondary_comparators": [],
   "bootstrap_unit": "item_id",
   "familywise_alpha": 0.05,
   "multiplicity_method": "holm",
@@ -84,6 +89,8 @@
   "reliable_accuracy_threshold": 0.8,
   "minimum_token_reduction": 0.3,
   "primary_accuracy_improvement": 0.02,
+  "verified_density_zero_control_rule": "positive_treatment_required",
+  "primary_density_comparator": "c2",
   "minimum_density_ratio": 1.5,
   "m1_human_review_path": "artifacts/M1_HUMAN_REVIEW.json",
   "bridge_gate_path": "artifacts/m3/bridge/report/gate_summary.json"

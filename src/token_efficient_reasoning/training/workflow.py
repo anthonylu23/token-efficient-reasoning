@@ -447,7 +447,10 @@ def evaluate_condition_resolved(
             )
             parse_status, parse_errors = _region_parse_status(generation)
             trace_diagnostics = diagnose_trace(
-                example, reasoning_text, expected_representation
+                example,
+                reasoning_text,
+                expected_representation,
+                allow_trailing_fragment=generation.forced_reasoning_transition,
             )
             total_latency = (
                 generation.reasoning.latency_seconds

@@ -53,6 +53,15 @@ def _aggregate_group(rows: list[dict[str, Any]]) -> dict[str, Any]:
             row["trace_diagnostics"]["replay_valid"] for row in rows
         )
         / len(rows),
+        "invalid_transition_event_rate": sum(
+            diagnostics.get(
+                "invalid_transition_event",
+                not diagnostics["trace_parse_success"]
+                or diagnostics.get("invalid_transition_count", 0) > 0,
+            )
+            for diagnostics in (row["trace_diagnostics"] for row in rows)
+        )
+        / len(rows),
         "canonical_prefix_rate": sum(value > 0 for value in verified_transitions)
         / len(rows),
         "verified_transitions": sum(verified_transitions),

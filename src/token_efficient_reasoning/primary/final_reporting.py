@@ -63,7 +63,12 @@ class PrimaryRecord:
 
     @property
     def invalid_transition_event(self) -> bool:
-        return self.invalid_transition_count > 0
+        """Whether this generation contains either syntax or parsed-transition invalidity."""
+
+        # Historical item artifacts predate the explicit diagnostic event flag and recorded
+        # zero invalid transitions on parse failure.  Deriving the event from parse success
+        # keeps those artifacts adverse without changing the meaning of the transition count.
+        return not self.trace_parse_success or self.invalid_transition_count > 0
 
     @property
     def gold_path_coverage(self) -> float:
@@ -927,6 +932,122 @@ def _paired_effect(
     return interval, differences
 
 
+
+def _distractor_answer_sensitivity(
+    cells: dict[tuple[str, str, int], list[PrimaryRecord]],
+    config: M3Config,
+    dataset_dir: str | Path,
+) -> dict[str, Any]:
+    """Recompute primary accuracies after excluding distractors equal to the answer."""
+
+    collision_ids: set[str] = set()
+    split_path = Path(dataset_dir) / "splits" / f"{config.primary_inference_split}.jsonl"
+    with split_path.open(encoding="utf-8") as handle:
+        for line in handle:
+            if not line.strip():
+                continue
+            item = json.loads(line)
+            if item.get("family") != "multi_operation_arithmetic":
+                continue
+            count = item.get("initial_state", {}).get("irrelevant_fact", {}).get("count")
+            if str(count) == str(item.get("answer")):
+                collision_ids.add(item["id"])
+
+    rows: list[dict[str, Any]] = []
+    for budget in config.primary_budgets:
+        retained_by_condition: dict[str, list[PrimaryRecord]] = {}
+        for condition in _CONDITIONS:
+            records = cells[(condition, config.primary_inference_split, budget)]
+            retained = [record for record in records if record.item_id not in collision_ids]
+            if not retained:
+                raise ValueError("distractor-answer sensitivity removed every primary record")
+            retained_by_condition[condition] = retained
+        c4_index = _metric_index(retained_by_condition["c4"], "correct")
+        for comparator in config.primary_comparators:
+            control_index = _metric_index(retained_by_condition[comparator], "correct")
+            differences = paired_cluster_values(c4_index, control_index)
+            interval = clustered_bootstrap_mean(
+                differences,
+                seed=derived_analysis_seed(
+                    config.bootstrap_seed,
+                    "distractor-answer-sensitivity",
+                    comparator,
+                    budget,
+                ),
+                samples=config.bootstrap_samples,
+            )
+            rows.append(
+                {
+                    "reasoning_budget": budget,
+                    "comparator": comparator,
+                    "excluded_problem_count": len(collision_ids),
+                    "retained_problem_count": len(c4_index),
+                    "c4_accuracy_excluding_collisions": statistics.fmean(
+                        record.correct for record in retained_by_condition["c4"]
+                    ),
+                    "comparator_accuracy_excluding_collisions": statistics.fmean(
+                        record.correct for record in retained_by_condition[comparator]
+                    ),
+                    "paired_accuracy_difference_excluding_collisions": interval,
+                    "scope": "preregistered_sensitivity_not_primary_inference",
+                }
+            )
+    return {
+        "schema_version": 1,
+        "definition": (
+            "exclude arithmetic items whose explicitly irrelevant marker count equals the "
+            "reference answer; do not alter primary inference or multiplicity"
+        ),
+        "collision_item_ids": sorted(collision_ids),
+        "rows": rows,
+    }
+
+def _verified_density_comparison(
+    treatment_density: float,
+    control_density: float,
+    *,
+    minimum_ratio: float,
+) -> dict[str, Any]:
+    """Apply the frozen rate-ratio rule, including its zero-control boundary.
+
+    A positive treatment density over a zero control density is an extended rate ratio
+    (positive infinity) and clears any finite minimum ratio. Two zero densities do not
+    demonstrate an improvement and fail. JSON retains ``None`` for non-finite/undefined
+    numeric ratios and records the boundary explicitly rather than emitting Infinity.
+    """
+
+    if (
+        not math.isfinite(treatment_density)
+        or not math.isfinite(control_density)
+        or treatment_density < 0
+        or control_density < 0
+    ):
+        raise ValueError("verified densities must be finite and non-negative")
+    if not math.isfinite(minimum_ratio) or minimum_ratio < 1.0:
+        raise ValueError("minimum density ratio must be finite and at least one")
+    if control_density > 0.0:
+        ratio = treatment_density / control_density
+        return {
+            "ratio": ratio,
+            "ratio_status": "finite",
+            "threshold_passed": (
+                ratio >= minimum_ratio
+                or math.isclose(ratio, minimum_ratio, rel_tol=1e-12, abs_tol=0.0)
+            ),
+        }
+    if treatment_density > 0.0:
+        return {
+            "ratio": None,
+            "ratio_status": "positive_treatment_over_zero_control",
+            "threshold_passed": True,
+        }
+    return {
+        "ratio": None,
+        "ratio_status": "both_zero",
+        "threshold_passed": False,
+    }
+
+
 def _paired_comparisons(
     cells: dict[tuple[str, str, int], list[PrimaryRecord]],
     config: M3Config,
@@ -973,10 +1094,22 @@ def _paired_comparisons(
                         alternative="greater",
                     )
                     primary_p_values[hypothesis_id] = randomization["p_value"]
+                density = _verified_density_comparison(
+                    c4_metrics["verified_transitions_per_reasoning_token"],
+                    control_metrics["verified_transitions_per_reasoning_token"],
+                    minimum_ratio=config.minimum_density_ratio,
+                )
                 comparisons.append(
                     {
                         "hypothesis_id": hypothesis_id,
                         "scope": "primary" if hypothesis_id else "descriptive_secondary",
+                        "primary_claim": (
+                            "h5_structured_vs_telegraphic"
+                            if hypothesis_id and comparator == config.h5_comparator
+                            else "central_frontier"
+                            if hypothesis_id
+                            else None
+                        ),
                         "treatment": "c4",
                         "comparator": comparator,
                         "split": split,
@@ -993,14 +1126,11 @@ def _paired_comparisons(
                         "comparator_verified_density": control_metrics[
                             "verified_transitions_per_reasoning_token"
                         ],
-                        "verified_density_ratio": (
-                            c4_metrics["verified_transitions_per_reasoning_token"]
-                            / control_metrics["verified_transitions_per_reasoning_token"]
-                            if control_metrics[
-                                "verified_transitions_per_reasoning_token"
-                            ]
-                            else None
-                        ),
+                        "verified_density_ratio": density["ratio"],
+                        "verified_density_ratio_status": density["ratio_status"],
+                        "verified_density_threshold_passed": density[
+                            "threshold_passed"
+                        ],
                         "paired_invalid_event_rate_difference": invalid,
                         "holm": None,
                     }
@@ -1231,6 +1361,7 @@ def _primary_success_summary(
             for comparator in (*config.primary_comparators, *config.secondary_comparators)
         }
         c0 = versus["c0"]
+        density_reference = versus[config.primary_density_comparator]
         result = {
             "reasoning_budget": budget,
             "accuracy_improvement_over_c0": c0[
@@ -1245,11 +1376,14 @@ def _primary_success_summary(
                 versus[comparator]["paired_accuracy_difference"]["estimate"] > 0
                 for comparator in ("c1", "c2")
             ),
-            "density_ratio_over_c0": c0["verified_density_ratio"],
-            "density_threshold_passed": (
-                c0["verified_density_ratio"] is not None
-                and c0["verified_density_ratio"] >= config.minimum_density_ratio
-            ),
+            "density_comparator": config.primary_density_comparator,
+            "density_ratio": density_reference["verified_density_ratio"],
+            "density_ratio_status": density_reference[
+                "verified_density_ratio_status"
+            ],
+            "density_threshold_passed": density_reference[
+                "verified_density_threshold_passed"
+            ],
             "depth_levels_beyond_c0": depth_index[("c4", budget)][
                 "depth_levels_beyond_c0"
             ],
@@ -1292,8 +1426,12 @@ def _primary_success_summary(
                     invalid_upper <= config.invalid_transition_margin
                 ),
                 "density_higher": (
-                    strongest["verified_density_ratio"] is not None
-                    and strongest["verified_density_ratio"] > 1.0
+                    strongest["verified_density_ratio_status"]
+                    == "positive_treatment_over_zero_control"
+                    or (
+                        strongest["verified_density_ratio"] is not None
+                        and strongest["verified_density_ratio"] > 1.0
+                    )
                 ),
             }
         )
@@ -1310,11 +1448,35 @@ def _primary_success_summary(
         and row["density_higher"]
         for row in noninferiority_cells
     )
+    h5_budget_results = []
+    for budget in config.primary_budgets:
+        comparison = indexed[
+            (config.h5_comparator, config.primary_inference_split, budget)
+        ]
+        h5_budget_results.append(
+            {
+                "reasoning_budget": budget,
+                "hypothesis_id": comparison["hypothesis_id"],
+                "paired_accuracy_difference": comparison[
+                    "paired_accuracy_difference"
+                ],
+                "holm": comparison["holm"],
+                "structured_accuracy_higher": comparison[
+                    "paired_accuracy_difference"
+                ]["estimate"] > 0.0,
+                "h5_supported_at_budget": comparison["holm"]["reject_null"],
+            }
+        )
+
     return {
         "schema_version": 1,
         "primary_budget_results": budget_results,
         "primary_success": any(
             row["primary_success_at_budget"] for row in budget_results
+        ),
+        "h5_structured_vs_telegraphic_budget_results": h5_budget_results,
+        "h5_supported": any(
+            row["h5_supported_at_budget"] for row in h5_budget_results
         ),
         "minimum_viable_noninferiority_cells": noninferiority_cells,
         "matched_accuracy_reduction_cells_passing": len(primary_matched),
@@ -1801,30 +1963,45 @@ def _write_markdown_report(
         "",
         f"- Minimum viable result: **{success['minimum_viable_result']}**.",
         f"- Primary success result: **{success['primary_success']}**.",
+        "- H5 (structured R3 versus telegraphic R2) supported at one or more "
+        f"primary budgets: **{success['h5_supported']}**.",
         f"- Primary family-wise alpha: **{config.familywise_alpha:.3f}**, "
         f"corrected with **{config.multiplicity_method}** over "
         f"{len(config.primary_comparators) * len(config.primary_budgets)} hypotheses.",
+        "- `distractor_answer_sensitivity.json` repeats primary-budget accuracy comparisons "
+        "after excluding arithmetic items whose irrelevant marker count equals the answer; "
+        "this does not replace primary inference.",
         "",
         "### Primary matched-budget comparisons",
         "",
-        "| Budget | Comparator | C4 accuracy | Comparator accuracy | "
+        "| Budget | Claim | Comparator | C4 accuracy | Comparator accuracy | "
         "Difference (95% CI) | Holm reject | Density ratio |",
-        "|---:|---|---:|---:|---:|---|---:|",
+        "|---:|---|---|---:|---:|---:|---|---:|",
     ]
-    for row in sorted(primary, key=lambda value: (value["reasoning_budget"], value["comparator"])):
+    for row in sorted(
+        primary, key=lambda value: (value["reasoning_budget"], value["comparator"])
+    ):
         effect = row["paired_accuracy_difference"]
         lower, upper = effect["confidence_interval"]
         density = row["verified_density_ratio"]
+        density_status = row["verified_density_ratio_status"]
+        if density is not None:
+            density_display = f"{density:.3f}"
+        elif density_status == "positive_treatment_over_zero_control":
+            density_display = "∞ (positive / zero)"
+        else:
+            density_display = "undefined (both zero)"
+        claim = (
+            "H5 structure"
+            if row["primary_claim"] == "h5_structured_vs_telegraphic"
+            else "central"
+        )
         lines.append(
-            f"| {row['reasoning_budget']} | {row['comparator'].upper()} | "
-            f"{row['c4_accuracy']:.3%} | {row['comparator_accuracy']:.3%} | "
+            f"| {row['reasoning_budget']} | {claim} | "
+            f"{row['comparator'].upper()} | {row['c4_accuracy']:.3%} | "
+            f"{row['comparator_accuracy']:.3%} | "
             f"{effect['estimate']:+.3%} [{lower:+.3%}, {upper:+.3%}] | "
-            f"{row['holm']['reject_null']} | "
-            f"{density:.3f} |" if density is not None else
-            f"| {row['reasoning_budget']} | {row['comparator'].upper()} | "
-            f"{row['c4_accuracy']:.3%} | {row['comparator_accuracy']:.3%} | "
-            f"{effect['estimate']:+.3%} [{lower:+.3%}, {upper:+.3%}] | "
-            f"{row['holm']['reject_null']} | n/a |"
+            f"{row['holm']['reject_null']} | {density_display} |"
         )
     lines.extend(
         [
@@ -1839,8 +2016,13 @@ def _write_markdown_report(
             "accuracy/token scalar is substituted for it.",
             "- Confidence intervals resample item IDs and average paired replicate-block "
             "outcomes within each item before resampling.",
-            "- C3 and held-out depth/compositional comparisons are descriptive secondary "
-            "analyses and are not added to the primary Holm family.",
+            "- C4-versus-C3 at budgets 64 and 128 directly tests H5 (structured R3 "
+            "versus telegraphic R2) in the same eight-test Holm family as the six central "
+            "comparisons; C3 at other budgets/splits and all held-out depth/compositional "
+            "comparisons remain descriptive secondary analyses.",
+            "- A positive C4 verified density over zero C0 density is reported as an "
+            "extended infinite rate ratio and passes the finite ratio threshold; if both "
+            "densities are zero, the ratio is undefined and the criterion fails.",
             "- Null, adverse, and unsuccessful attempted runs remain in the machine-readable "
             "artifacts and experiment registry.",
             "- All report files were generated from saved artifacts without loading a model.",
@@ -1887,7 +2069,9 @@ def build_primary_report(
                 "analysis_version": config.analysis_version,
                 "primary_inference_split": config.primary_inference_split,
                 "primary_budgets": config.primary_budgets,
+                "central_primary_comparators": config.central_primary_comparators,
                 "primary_comparators": config.primary_comparators,
+                "h5_comparator": config.h5_comparator,
                 "secondary_comparators": config.secondary_comparators,
                 "bootstrap_unit": config.bootstrap_unit,
                 "within_item_reduction": (
@@ -1901,6 +2085,26 @@ def build_primary_report(
                 "multiplicity_method": config.multiplicity_method,
                 "primary_hypothesis_count": (
                     len(config.primary_budgets) * len(config.primary_comparators)
+                ),
+                "primary_hypothesis_families": {
+                    "central_frontier": (
+                        "C4 greater than C0, C1, and C2 at budgets 64 and 128"
+                    ),
+                    "h5_structured_vs_telegraphic": (
+                        "C4/R3 greater accuracy than C3/R2 under the same reasoning-token "
+                        "cap at budgets 64 and 128"
+                    ),
+                    "multiplicity_scope": "one Holm family containing all eight tests",
+                },
+                "verified_density_zero_control_rule": (
+                    "When control density is zero, positive treatment density is an extended "
+                    "infinite rate ratio and passes any finite minimum ratio; both zero is "
+                    "undefined and fails. JSON numeric ratio is null in either boundary case."
+                ),
+                "primary_density_comparator": config.primary_density_comparator,
+                "distractor_answer_sensitivity": (
+                    "exclude arithmetic items whose explicitly irrelevant marker count equals "
+                    "the reference answer; descriptive sensitivity only"
                 ),
                 "matched_accuracy_rule": (
                     "lowest frozen C4 budget whose pooled per-generation accuracy is at least "
@@ -1950,6 +2154,16 @@ def build_primary_report(
         )
         _write_aggregate_csv(output_root / "aggregate.csv", aggregate_rows)
         cells = _records_by_cell(evaluation_runs)
+        frozen_report_input = _load_json(Path(freeze_dir).resolve() / "freeze.json")
+        sensitivity = _distractor_answer_sensitivity(
+            cells,
+            config,
+            frozen_report_input["dataset_dir"],
+        )
+        atomic_write_json(
+            output_root / "distractor_answer_sensitivity.json",
+            sensitivity,
+        )
         per_problem = _per_problem_aggregates(cells)
         atomic_write_json(
             output_root / "per_problem_aggregates.json",
@@ -2020,6 +2234,7 @@ def build_primary_report(
             "decision": decision["outcome"],
             "minimum_viable_result": success["minimum_viable_result"],
             "primary_success": success["primary_success"],
+            "h5_supported": success["h5_supported"],
             "generation_count": sum(
                 run.generation_count for run in evaluation_runs
             ),

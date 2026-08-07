@@ -18,6 +18,7 @@ from token_efficient_reasoning.primary.final_reporting import (
     _reliable_depths,
     _select_m3_decision,
     _summarize_ordered_batches,
+    _verified_density_comparison,
     _verify_tree_manifest,
     _write_markdown_report,
     _write_plots,
@@ -128,9 +129,17 @@ def test_complete_synthetic_matrix_supports_known_primary_success(
     decision = _select_m3_decision(comparisons, matched, reliable, config)
 
     primary = [row for row in comparisons if row["scope"] == "primary"]
-    assert len(primary) == 6
+    assert len(primary) == 8
     assert all(row["holm"]["reject_null"] for row in primary)
     assert all(row["paired_accuracy_difference"]["estimate"] == 1.0 for row in primary)
+    h5 = [
+        row
+        for row in primary
+        if row["primary_claim"] == "h5_structured_vs_telegraphic"
+    ]
+    assert len(h5) == 2
+    assert {row["comparator"] for row in h5} == {"c3"}
+    assert success["h5_supported"] is True
     c4_test_64 = next(
         row
         for row in per_problem["summary_rows"]
@@ -160,7 +169,122 @@ def test_complete_synthetic_matrix_supports_known_primary_success(
     assert "5,400" in report
     assert "## Engineering validity" in report
     assert "## Statistical evidence" in report
+    assert "H5 (structured R3 versus telegraphic R2)" in report
+    assert "eight-test Holm family" in report
     assert "## Scientific interpretation" in report
+
+
+def test_verified_density_zero_control_rule_is_explicit_and_nontrivial() -> None:
+    positive = _verified_density_comparison(0.25, 0.0, minimum_ratio=1.5)
+    assert positive == {
+        "ratio": None,
+        "ratio_status": "positive_treatment_over_zero_control",
+        "threshold_passed": True,
+    }
+
+    both_zero = _verified_density_comparison(0.0, 0.0, minimum_ratio=1.5)
+    assert both_zero == {
+        "ratio": None,
+        "ratio_status": "both_zero",
+        "threshold_passed": False,
+    }
+
+    finite = _verified_density_comparison(0.3, 0.2, minimum_ratio=1.5)
+    assert finite["ratio"] == pytest.approx(1.5)
+    assert finite["ratio_status"] == "finite"
+    assert finite["threshold_passed"] is True
+
+
+def test_zero_c0_boundary_is_diagnostic_while_primary_density_uses_c2() -> None:
+    config, runs = _matrix()
+    zero_c0_runs = [
+        replace(
+            run,
+            records=tuple(
+                replace(
+                    record,
+                    verified_prefix_transitions=0,
+                    parsed_transition_count=0,
+                )
+                for record in run.records
+            ),
+        )
+        if run.condition_id == "c0"
+        else run
+        for run in runs
+    ]
+    aggregate = _aggregate_table(zero_c0_runs)
+    comparisons = _paired_comparisons(_records_by_cell(zero_c0_runs), config)
+    success = _primary_success_summary(
+        comparisons,
+        _reliable_depths(aggregate, config),
+        _matched_accuracy_reductions(aggregate, config),
+        config,
+    )
+
+    c0_64 = next(
+        row
+        for row in comparisons
+        if row["comparator"] == "c0"
+        and row["split"] == config.primary_inference_split
+        and row["reasoning_budget"] == 64
+    )
+    assert c0_64["verified_density_ratio"] is None
+    assert (
+        c0_64["verified_density_ratio_status"]
+        == "positive_treatment_over_zero_control"
+    )
+    assert c0_64["verified_density_threshold_passed"] is True
+    primary_64 = success["primary_budget_results"][0]
+    assert primary_64["density_comparator"] == "c2"
+    assert primary_64["density_ratio"] is not None
+    assert primary_64["density_threshold_passed"] is True
+    assert success["primary_success"] is True
+
+
+
+def test_zero_c0_does_not_override_failed_c2_density_threshold() -> None:
+    config, runs = _matrix()
+    adjusted = []
+    for run in runs:
+        if run.condition_id == "c0":
+            records = tuple(
+                replace(record, verified_prefix_transitions=0, parsed_transition_count=0)
+                for record in run.records
+            )
+        elif run.condition_id == "c2":
+            records = tuple(
+                replace(
+                    record,
+                    verified_prefix_transitions=record.depth,
+                    parsed_transition_count=record.depth,
+                )
+                for record in run.records
+            )
+        elif run.condition_id == "c4":
+            records = tuple(
+                replace(record, verified_prefix_transitions=1, parsed_transition_count=1)
+                for record in run.records
+            )
+        else:
+            records = run.records
+        adjusted.append(replace(run, records=records))
+
+    aggregate = _aggregate_table(adjusted)
+    comparisons = _paired_comparisons(_records_by_cell(adjusted), config)
+    success = _primary_success_summary(
+        comparisons,
+        _reliable_depths(aggregate, config),
+        _matched_accuracy_reductions(aggregate, config),
+        config,
+    )
+
+    assert all(
+        row["density_comparator"] == "c2"
+        and row["density_threshold_passed"] is False
+        for row in success["primary_budget_results"]
+    )
+    assert success["primary_success"] is False
 
 
 def test_ordered_batch_wall_time_counts_shared_latency_once() -> None:
