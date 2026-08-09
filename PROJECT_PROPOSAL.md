@@ -467,6 +467,10 @@ No single ratio such as `accuracy / tokens` will serve as the headline metric. T
 - Use identical evaluation items and decoding seeds across conditions.
 - Report paired accuracy differences.
 - Compute item-level bootstrap confidence intervals for accuracy and matched-budget differences.
+- For M3, control one eight-test Holm family at family-wise alpha 0.05: C4 versus C0, C1, C2,
+  and C3 at each of budgets 64 and 128. The C4/R3-versus-C3/R2 cells directly test H5 under
+  identical maximum reasoning-token budgets; the other six tests retain the central frontier
+  claims.
 - Predeclare the non-inferiority margin and success thresholds before the final run.
 - Report all attempted primary configurations, including unsuccessful ones.
 - Compare RLVR conditions under matched prompt sets, rollout-token budgets, optimizer updates, and sampling configurations wherever practical; report any mismatch explicitly.
@@ -490,7 +494,9 @@ At one or more practically relevant budgets, such as 64 or 128 tokens:
 
 - At least 2 percentage points higher exact-answer accuracy than the frozen checkpoint.
 - Higher accuracy than the prompt-only compression and full-CoT SFT controls.
-- At least 1.5× verified reasoning density.
+- At least 1.5× verified reasoning density relative to C2 full-CoT SFT. C2 is the primary
+  density reference because its controlled R0 grammar is verifier-readable; C0 density remains a
+  diagnostic rather than an automatic-success boundary.
 - Reliably solves problems at least two controlled-depth levels beyond the frozen baseline.
 
 ### Strong result

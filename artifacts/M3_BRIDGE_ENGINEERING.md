@@ -97,4 +97,5 @@ payloads through JSON, covered by regression tests, and the original false repor
 
 The report regenerated from unchanged saved artifacts passes all bridge gates. See
 `artifacts/M3_BRIDGE_GATE_REVIEW.md` for the decision and exact results. Held-out test access
-remains locked pending the M1 human review and protocol freeze.
+remains locked pending creation and validation of the protocol freeze; the M1 review was
+subsequently accepted with documented limitations.

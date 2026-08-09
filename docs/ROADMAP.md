@@ -1,8 +1,8 @@
 # Experimental Roadmap and Milestone Gates
 
-**Status:** Planned
+**Status:** M3 in progress — validation bridge and M1 review passed; ready to freeze
 
-**Last updated:** July 27, 2026
+**Last updated:** August 6, 2026
 
 This roadmap turns the research design in [`PROJECT_PROPOSAL.md`](../PROJECT_PROPOSAL.md) into an executable sequence of gated milestones. It defines what must be built, what evidence must be retained, and what must be true before the project advances. A milestone can be complete even when its scientific result is negative; completion means the experiment was run correctly and produced enough evidence for a defensible decision.
 
@@ -229,7 +229,7 @@ If M2-R succeeds, record a candidate local configuration for the M5 RLVR extensi
 
 ## M3 — Primary 1.5B experiment
 
-**Status:** Validation bridge passed; awaiting M1 human sign-off and protocol freeze
+**Status:** Validation bridge and M1 human review passed; ready for protocol freeze
 
 ### Objective
 
@@ -284,8 +284,14 @@ These criteria measure whether the experiment is complete. They do not require t
 
 - At least 2 percentage points higher exact-answer accuracy than C0.
 - Higher accuracy than C1 prompt-only compression and C2 full-CoT QLoRA.
-- At least 1.5 times the verified reasoning density.
+- At least 1.5 times C2 full-CoT QLoRA's verified reasoning density. C2 is the primary density
+  reference because both trained conditions emit verifier-readable controlled grammars; C0 density
+  remains diagnostic.
 - Reliable performance, using the preregistered 80% accuracy rule, at least two controlled-depth levels beyond C0.
+
+**H5 structure test:** C4/R3 versus C3/R2 exact-answer accuracy at budgets 64 and 128 is included
+with the six central C4-versus-C0/C1/C2 tests in one eight-test Holm family at family-wise alpha
+0.05. C3 comparisons at other budgets/splits and C3 task/depth breakdowns remain descriptive.
 
 **Strong result:**
 

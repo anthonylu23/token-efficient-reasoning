@@ -68,6 +68,26 @@ def test_aggregate_group_reports_reasoning_density_and_adherence() -> None:
     assert aggregate["verified_transitions"] == 3
     assert aggregate["verified_transitions_per_reasoning_token"] == pytest.approx(0.3)
     assert aggregate["median_reasoning_tokens"] == 5
+    assert aggregate["invalid_transition_event_rate"] == 0.0
+
+
+def test_aggregate_group_treats_historical_parse_failure_as_invalid_event() -> None:
+    row = _row(
+        item_id="malformed",
+        condition="c4",
+        depth=2,
+        budget=16,
+        correct=False,
+    )
+    # Old saved rows have no explicit event and recorded a zero transition count.
+    row["trace_diagnostics"].update(
+        trace_parse_success=False,
+        invalid_transition_count=0,
+    )
+
+    aggregate = _aggregate_group([row])
+
+    assert aggregate["invalid_transition_event_rate"] == 1.0
 
 
 def test_shallow_comparisons_pair_identical_items_and_choose_strongest_control() -> None:

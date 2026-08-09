@@ -87,7 +87,9 @@ class M3Config:
     bootstrap_seed: int
     analysis_version: str
     primary_inference_split: str
+    central_primary_comparators: tuple[str, ...]
     primary_comparators: tuple[str, ...]
+    h5_comparator: str
     secondary_comparators: tuple[str, ...]
     bootstrap_unit: str
     familywise_alpha: float
@@ -97,6 +99,8 @@ class M3Config:
     reliable_accuracy_threshold: float
     minimum_token_reduction: float
     primary_accuracy_improvement: float
+    verified_density_zero_control_rule: str
+    primary_density_comparator: str
     minimum_density_ratio: float
     m1_human_review_path: str
     bridge_gate_path: str
@@ -131,7 +135,9 @@ class M3Config:
             "bootstrap_seed",
             "analysis_version",
             "primary_inference_split",
+            "central_primary_comparators",
             "primary_comparators",
+            "h5_comparator",
             "secondary_comparators",
             "bootstrap_unit",
             "familywise_alpha",
@@ -141,6 +147,8 @@ class M3Config:
             "reliable_accuracy_threshold",
             "minimum_token_reduction",
             "primary_accuracy_improvement",
+            "verified_density_zero_control_rule",
+            "primary_density_comparator",
             "minimum_density_ratio",
             "m1_human_review_path",
             "bridge_gate_path",
@@ -174,7 +182,9 @@ class M3Config:
             bootstrap_seed=data["bootstrap_seed"],
             analysis_version=data["analysis_version"],
             primary_inference_split=data["primary_inference_split"],
+            central_primary_comparators=tuple(data["central_primary_comparators"]),
             primary_comparators=tuple(data["primary_comparators"]),
+            h5_comparator=data["h5_comparator"],
             secondary_comparators=tuple(data["secondary_comparators"]),
             bootstrap_unit=data["bootstrap_unit"],
             familywise_alpha=float(data["familywise_alpha"]),
@@ -184,6 +194,10 @@ class M3Config:
             reliable_accuracy_threshold=float(data["reliable_accuracy_threshold"]),
             minimum_token_reduction=float(data["minimum_token_reduction"]),
             primary_accuracy_improvement=float(data["primary_accuracy_improvement"]),
+            verified_density_zero_control_rule=data[
+                "verified_density_zero_control_rule"
+            ],
+            primary_density_comparator=data["primary_density_comparator"],
             minimum_density_ratio=float(data["minimum_density_ratio"]),
             m1_human_review_path=data["m1_human_review_path"],
             bridge_gate_path=data["bridge_gate_path"],
@@ -268,14 +282,22 @@ class M3Config:
             raise M3ConfigError("M3 overflow_policy must be 'error'")
         if self.bootstrap_samples < 2_000 or self.bootstrap_seed < 0:
             raise M3ConfigError("bootstrap_samples must be at least 2000 and seed non-negative")
-        if self.analysis_version != "m3-primary-v1":
-            raise M3ConfigError("analysis_version must be 'm3-primary-v1'")
+        if self.analysis_version != "m3-primary-v2":
+            raise M3ConfigError("analysis_version must be 'm3-primary-v2'")
         if self.primary_inference_split != "test":
             raise M3ConfigError("primary_inference_split must be 'test'")
-        if self.primary_comparators != ("c0", "c1", "c2"):
-            raise M3ConfigError("primary_comparators must be ordered as C0, C1, and C2")
-        if self.secondary_comparators != ("c3",):
-            raise M3ConfigError("secondary_comparators must contain only C3")
+        if self.central_primary_comparators != ("c0", "c1", "c2"):
+            raise M3ConfigError(
+                "central_primary_comparators must be ordered as C0, C1, and C2"
+            )
+        if self.primary_comparators != ("c0", "c1", "c2", "c3"):
+            raise M3ConfigError(
+                "primary_comparators must add C3 to the ordered central comparators"
+            )
+        if self.h5_comparator != "c3":
+            raise M3ConfigError("h5_comparator must be C3")
+        if self.secondary_comparators:
+            raise M3ConfigError("secondary_comparators must be empty")
         if self.bootstrap_unit != "item_id":
             raise M3ConfigError("bootstrap_unit must be 'item_id'")
         if not 0 < self.familywise_alpha < 1:
@@ -292,6 +314,13 @@ class M3Config:
             raise M3ConfigError("rate thresholds and margins must lie in [0, 1]")
         if not -1 <= self.noninferiority_margin <= 0:
             raise M3ConfigError("noninferiority_margin must lie in [-1, 0]")
+        if self.verified_density_zero_control_rule != "positive_treatment_required":
+            raise M3ConfigError(
+                "verified_density_zero_control_rule must be "
+                "'positive_treatment_required'"
+            )
+        if self.primary_density_comparator != "c2":
+            raise M3ConfigError("primary_density_comparator must be C2")
         if self.minimum_density_ratio < 1:
             raise M3ConfigError("minimum_density_ratio must be at least one")
 
@@ -340,19 +369,41 @@ class M3Config:
         source = Path(config_path).resolve()
         human_path = _resolve_reference(source, self.m1_human_review_path)
         bridge_path = _resolve_reference(source, self.bridge_gate_path)
+        dataset_dir = _resolve_reference(source, self.dataset_dir)
+        review_sample_path = dataset_dir / "review_sample.json"
+        manifest_path = dataset_dir / "manifest.json"
         human: dict[str, Any] | None = None
         bridge: dict[str, Any] | None = None
+        manifest_review_sample_sha256: str | None = None
+        if manifest_path.is_file():
+            with manifest_path.open(encoding="utf-8") as handle:
+                dataset_manifest = json.load(handle)
+            manifest_review_sample_sha256 = (
+                dataset_manifest.get("files", {}).get("review_sample.json", {}).get("sha256")
+            )
+        human_sha256 = sha256_file(human_path) if human_path.is_file() else None
+        bridge_sha256 = sha256_file(bridge_path) if bridge_path.is_file() else None
+        review_sample_sha256 = (
+            sha256_file(review_sample_path) if review_sample_path.is_file() else None
+        )
         if human_path.is_file():
             with human_path.open(encoding="utf-8") as handle:
                 human = json.load(handle)
         if bridge_path.is_file():
             with bridge_path.open(encoding="utf-8") as handle:
                 bridge = json.load(handle)
+        review_sample_matches = bool(
+            human
+            and review_sample_sha256
+            and human.get("review_sample_sha256") == review_sample_sha256
+            and manifest_review_sample_sha256 == review_sample_sha256
+        )
         human_passed = bool(
             human
             and human.get("status") == "complete"
             and human.get("decision") in _ACCEPTED_HUMAN_DECISIONS
             and human.get("dataset_manifest_sha256") == self.dataset_manifest_sha256
+            and review_sample_matches
             and human.get("reviewed_item_count") == 34
             and human.get("reviewer")
             and human.get("reviewed_at")
@@ -372,8 +423,13 @@ class M3Config:
         return {
             "schema_version": 1,
             "m1_human_review_path": str(human_path),
+            "m1_human_review_sha256": human_sha256,
+            "m1_review_sample_path": str(review_sample_path),
+            "m1_review_sample_sha256": review_sample_sha256,
+            "m1_review_sample_matches": review_sample_matches,
             "m1_human_review_passed": human_passed,
             "bridge_gate_path": str(bridge_path),
+            "bridge_gate_sha256": bridge_sha256,
             "bridge_protocol_compatible": bridge_protocol_compatible,
             "bridge_gate_passed": bridge_passed,
             "ready_to_freeze": human_passed and bridge_passed,

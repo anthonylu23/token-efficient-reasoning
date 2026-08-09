@@ -4,8 +4,9 @@ Date: 2026-07-21
 
 ## Decision
 
-The automated Milestone 1 gates pass. Final milestone acceptance remains pending human review of
-the generated stratified sample; this record does not treat agent inspection as human sign-off.
+The automated Milestone 1 gates pass. The repository owner completed the 34-item review on
+2026-08-07 and accepted M1 with the documented distractor-answer limitation. Milestone 1 is
+complete.
 
 ## Frozen configuration
 
@@ -43,6 +44,6 @@ preservation, arithmetic/edge replay, and whether the compressed forms remain le
 status and notes should be recorded without editing the immutable generated dataset; a separate
 signed review artifact should reference item IDs and the root manifest hash.
 
-After that sign-off, update the decision and gate status. Until then, M2 preparation may use the
-pipeline for engineering work, but the M1 scientific gate should be described as conditionally
-complete rather than final.
+The signed decision is recorded in `artifacts/M1_HUMAN_REVIEW.md` and `.json`. One sampled item
+has an irrelevant marker count equal to its answer; the coincidence affects 103/6,300 arithmetic
+items and is accepted as a documented limitation with a preregistered M3 sensitivity analysis.

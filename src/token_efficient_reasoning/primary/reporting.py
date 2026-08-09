@@ -9,8 +9,10 @@ from pathlib import Path
 from typing import Any
 
 from token_efficient_reasoning.artifacts import atomic_write_json
+from token_efficient_reasoning.controlled.schema import CanonicalExample, load_examples
 from token_efficient_reasoning.provenance import sha256_file
 from token_efficient_reasoning.training.artifacts import tree_manifest
+from token_efficient_reasoning.training.diagnostics import diagnose_trace
 from token_efficient_reasoning.training.reporting import (
     _aggregate_group,
     _bootstrap_interval,
@@ -22,11 +24,15 @@ from .config import M3Config
 _ANALYSIS_ONLY_PROTOCOL_FIELDS = {
     "analysis_version",
     "primary_inference_split",
+    "central_primary_comparators",
     "primary_comparators",
+    "h5_comparator",
     "secondary_comparators",
     "bootstrap_unit",
     "familywise_alpha",
     "multiplicity_method",
+    "verified_density_zero_control_rule",
+    "primary_density_comparator",
 }
 
 
@@ -38,6 +44,31 @@ def _load_json(path: Path) -> dict[str, Any]:
 def _load_jsonl(path: Path) -> list[dict[str, Any]]:
     with path.open(encoding="utf-8") as handle:
         return [json.loads(line) for line in handle if line.strip()]
+
+
+def _recompute_trace_diagnostics(
+    rows: list[dict[str, Any]],
+    examples: dict[str, CanonicalExample],
+    expected_representation: str | None,
+) -> list[dict[str, Any]]:
+    """Return report-only rows with diagnostics recomputed from immutable saved text."""
+
+    corrected: list[dict[str, Any]] = []
+    for row in rows:
+        item_id = row["item_id"]
+        try:
+            example = examples[item_id]
+        except KeyError as error:
+            raise ValueError(f"saved evaluation contains unknown item ID: {item_id}") from error
+        copied = dict(row)
+        copied["trace_diagnostics"] = diagnose_trace(
+            example,
+            row["reasoning_text"],
+            expected_representation,
+            allow_trailing_fragment=bool(row.get("forced_reasoning_transition", False)),
+        )
+        corrected.append(copied)
+    return corrected
 
 
 def _paired_comparison(
@@ -122,7 +153,10 @@ def build_bridge_report(
     """Evaluate the preregistered validation-only 1.5B bridge gate."""
 
     config = M3Config.from_json(protocol_path)
-    config.validate_references(protocol_path)
+    _, _, split_paths = config.validate_references(protocol_path)
+    validation_examples = {
+        example.id: example for example in load_examples(split_paths[config.validation_split])
+    }
     eval_roots = [Path(path).resolve() for path in evaluation_dirs]
     train_roots = [Path(path).resolve() for path in training_dirs]
     output_root = Path(output_dir).resolve()
@@ -144,7 +178,12 @@ def build_bridge_report(
             raise ValueError(f"evaluation run is not a bridge run: {root}")
         bridge_protocols.append(resolved["protocol"])
         bridge_protocol_sha256.add(resolved["protocol_sha256"])
-        by_condition[condition] = _load_jsonl(root / "items.jsonl")
+        saved_rows = _load_jsonl(root / "items.jsonl")
+        by_condition[condition] = _recompute_trace_diagnostics(
+            saved_rows,
+            validation_examples,
+            resolved.get("expected_representation"),
+        )
     if set(by_condition) != {"c0", "c1", "c2", "c3", "c4"}:
         raise ValueError("bridge report requires exactly C0-C4 evaluation runs")
     identities = {
@@ -260,6 +299,7 @@ def build_bridge_report(
     gate = {
         "schema_version": 1,
         "test_data_inspected": test_data_inspected,
+        "trace_diagnostics_recomputed_from_saved_reasoning": True,
         "bridge_protocol_sha256": next(iter(bridge_protocol_sha256)),
         "report_protocol_sha256": sha256_file(Path(protocol_path).resolve()),
         "protocol_compatibility_passed": protocol_compatibility["passed"],

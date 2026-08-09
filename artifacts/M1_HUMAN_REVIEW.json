@@ -1,13 +1,15 @@
 {
   "schema_version": 1,
-  "status": "pending",
-  "decision": null,
-  "reviewer": null,
-  "reviewed_at": null,
-  "approval_reference": null,
+  "status": "complete",
+  "decision": "accept_with_documented_limitations",
+  "reviewer": "Anthony Lu (repository owner)",
+  "reviewed_at": "2026-08-07T02:48:28Z",
+  "approval_reference": "Explicit user approval in Prime Agent session 019fd4df-b5ff-729a-91bb-39351f6c719f on 2026-08-07",
   "dataset_manifest_sha256": "2bca4e9e3022f0fde902cbaea80d73e5ef71dfc8ecc45af06d807883a8005917",
   "review_sample_sha256": "5bce54eb70026ad1dc375228bbcffc5131dc697d185b7131bbb19bb0fde7752d",
-  "reviewed_item_count": 0,
-  "failed_item_ids": [],
-  "notes": "A human reviewer must complete artifacts/M1_HUMAN_REVIEW.md and update this machine-readable record. Agent inspection is not sign-off."
+  "reviewed_item_count": 34,
+  "failed_item_ids": [
+    "arith-test_compositional-d4-0216f06fa91b412b-aaf4344146"
+  ],
+  "notes": "Accepted with documented limitations. The sampled failed item has an explicitly irrelevant marker count equal to its final answer. This coincidence occurs in 103/6300 arithmetic items (1.63%). M3 retains the immutable v1 corpus and preregisters a descriptive sensitivity excluding affected ordinary-test items without replacing primary inference."
 }
