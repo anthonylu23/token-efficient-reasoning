@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 import token_efficient_reasoning.primary.final_reporting as final_reporting
+from token_efficient_reasoning.artifacts import RunWriter
 from token_efficient_reasoning.config import ExperimentConfig
 from token_efficient_reasoning.primary.config import M3Config
 from token_efficient_reasoning.primary.planning import (
@@ -264,7 +265,8 @@ def _write_evaluation_runs(
                 "torch_cuda_peak_reserved_bytes": 200,
             },
         )
-        tree_manifest(run_dir, run["run_id"])
+        # Exercise the same manifest schema as the real evaluator, not the training writer.
+        RunWriter(run_dir, run["run_id"], resume=True).finalize_manifest()
         generation_count += len(rows)
     return generation_count
 

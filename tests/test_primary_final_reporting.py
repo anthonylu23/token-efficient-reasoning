@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from dataclasses import replace
 from pathlib import Path
 
@@ -313,4 +314,56 @@ def test_manifest_verifier_rejects_post_manifest_tampering(tmp_path: Path) -> No
 
     (tmp_path / "value.json").write_text('{"tampered":true}\n', encoding="utf-8")
     with pytest.raises(ValueError, match="hash mismatch"):
+        _verify_tree_manifest(tmp_path)
+
+
+@pytest.mark.parametrize(
+    "identity_keys", [("artifact_id",), ("run_id",), ("artifact_id", "run_id")]
+)
+def test_manifest_verifier_accepts_both_writer_schemas(tmp_path, identity_keys):
+    from token_efficient_reasoning.artifacts import RunWriter
+
+    (tmp_path / "value.json").write_text("{}\n")
+    manifest = RunWriter(tmp_path, tmp_path.name, resume=True).finalize_manifest()
+    manifest.pop("run_id")
+    manifest.update({key: tmp_path.name for key in identity_keys})
+    path = tmp_path / "manifest.json"
+    path.write_text(json.dumps(manifest))
+    original = path.read_bytes()
+    _verify_tree_manifest(tmp_path)
+    assert path.read_bytes() == original  # Compatibility is read-only.
+    (tmp_path / "value.json").write_text("changed")
+    with pytest.raises(ValueError, match="hash mismatch"):
+        _verify_tree_manifest(tmp_path)
+
+
+@pytest.mark.parametrize("identities", [
+    {}, {"run_id": "foreign"}, {"artifact_id": "foreign"},
+    {"run_id": "correct", "artifact_id": "foreign"},
+    {"artifact_id": "correct", "run_id": "foreign"},
+    {"run_id": None},
+])
+def test_manifest_verifier_rejects_missing_foreign_or_conflicting_ids(tmp_path, identities):
+    root = tmp_path / "correct"
+    root.mkdir()
+    (root / "value.json").write_text("{}\n")
+    manifest = tree_manifest(root, root.name)
+    manifest.pop("artifact_id")
+    manifest.update(identities)
+    (root / "manifest.json").write_text(json.dumps(manifest))
+    with pytest.raises(ValueError, match="artifact ID"):
+        _verify_tree_manifest(root)
+
+
+@pytest.mark.parametrize("change", ["missing", "extra"])
+def test_evaluation_manifest_verifier_still_checks_complete_file_set(tmp_path, change):
+    from token_efficient_reasoning.artifacts import RunWriter
+
+    (tmp_path / "value.json").write_text("{}\n")
+    RunWriter(tmp_path, tmp_path.name, resume=True).finalize_manifest()
+    if change == "missing":
+        (tmp_path / "value.json").unlink()
+    else:
+        (tmp_path / "extra.json").write_text("{}\n")
+    with pytest.raises(ValueError, match="file set mismatch"):
         _verify_tree_manifest(tmp_path)

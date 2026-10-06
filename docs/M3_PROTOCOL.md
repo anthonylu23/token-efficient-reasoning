@@ -1,6 +1,12 @@
 # Milestone 3 primary experiment protocol
 
-**Status:** Validation bridge and M1 review passed; final test access locked pending freeze
+**Status:** Compute completed 2026-10-03; primary and supplemental reports recovered 2026-10-06
+
+See [execution, report recovery, and results](M3_EXECUTION.md) for output and checkout
+locations. The frozen decision is `continue_to_generalization`; central primary success
+passes, while minimum-viable-result and C4-over-C3 H5 criteria do not. The prerequisites
+and freeze workflow below describe the original protocol; the execution checkout remains
+unchanged while follow-up development and reporting repairs take place separately.
 
 Milestone 3 tests whether structured-sketch SFT shifts the accuracy-versus-reasoning-budget
 frontier on `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`. The experiment preserves the M2 result,

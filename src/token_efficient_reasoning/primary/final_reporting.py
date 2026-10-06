@@ -112,7 +112,10 @@ def _verify_tree_manifest(root: Path) -> dict[str, Any]:
     if not manifest_path.is_file():
         raise ValueError(f"run lacks manifest.json: {root}")
     manifest = _load_json(manifest_path)
-    if manifest.get("artifact_id") != root.name:
+    # Training uses tree_manifest's artifact_id; evaluation uses RunWriter's run_id.
+    # Check every declared identity so conflicting aliases cannot hide a foreign run.
+    identities = [manifest[key] for key in ("artifact_id", "run_id") if key in manifest]
+    if not identities or any(identity != root.name for identity in identities):
         raise ValueError(f"manifest artifact ID does not match run directory: {root}")
     declared = manifest.get("files")
     if not isinstance(declared, dict):
