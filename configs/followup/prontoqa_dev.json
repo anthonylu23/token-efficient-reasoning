@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "role": "development-only-not-evaluation-frozen",
+  "seed": 20260929,
+  "hops": [1, 3, 5],
+  "items_per_hop": 10
+}

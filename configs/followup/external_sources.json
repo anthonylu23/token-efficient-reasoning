@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "source pins only; evaluation protocol and adapters not yet frozen",
+  "recorded_on": "2026-09-27",
+  "sources": [
+    {
+      "name": "svamp",
+      "repository": "https://github.com/arkilpatel/SVAMP",
+      "revision": "78e727689e1c1bebfc4be39c446898e8e10b0518",
+      "data_file": "SVAMP.json",
+      "data_sha256": "5be77703a6d891ae476d7c082787ad361392aa02453b132516cdd5f4e7934e3e",
+      "evaluation_item_count": 1000
+    },
+    {
+      "name": "prontoqa-v1",
+      "repository": "https://github.com/asaparov/prontoqa",
+      "revision": "066f73fc70bfaa92ed2476fd3c41b4951ad6e63a",
+      "upstream_branch": "v1",
+      "generator": "run_experiment.py",
+      "generation_mode": "--model-name json",
+      "generation_parameters_status": "development wrapper validated; evaluation freeze pending"
+    }
+  ]
+}

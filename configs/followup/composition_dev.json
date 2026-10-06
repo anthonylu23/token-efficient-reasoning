@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "dataset_name": "arithmetic-composition-dev-v1",
+  "role": "development-only-not-evaluation-frozen",
+  "master_seed": 20260929,
+  "depths": [2, 4, 8, 12],
+  "heldout_pairs": [["mul", "sub"], ["div", "add"]],
+  "items_per_cell": {"train": 50, "validation": 10, "test_iid": 10, "test_composition": 10},
+  "max_attempts_per_cell": 100000
+}

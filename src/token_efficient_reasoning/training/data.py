@@ -14,6 +14,8 @@ from token_efficient_reasoning.hf_backend import render_model_prompt
 from token_efficient_reasoning.prompting import build_user_prompt
 
 IGNORE_INDEX = -100
+ANSWER_ONLY_CONDITION = "c5_answer_only"
+ANSWER_ONLY_REPRESENTATION = "answer_only"
 
 
 class SupervisedProtocol(Protocol):
@@ -71,7 +73,7 @@ def _target_text(
     checkpoint: CheckpointConfig,
 ) -> str:
     return (
-        example.renderings[representation]
+        ("" if representation == ANSWER_ONLY_REPRESENTATION else example.renderings[representation])
         + checkpoint.reasoning_close
         + checkpoint.answer_open
         + example.answer
@@ -84,7 +86,7 @@ def build_training_examples(
     config: SupervisedProtocol,
     checkpoint: CheckpointConfig,
 ) -> dict[str, list[TrainingExample]]:
-    """Build matched C2-C4 targets in source-manifest order."""
+    """Build matched targets, including the separately declared answer-only follow-up."""
 
     if checkpoint.id != config.checkpoint_id:
         raise ValueError(
@@ -105,9 +107,14 @@ def build_training_examples(
     }
     result: dict[str, list[TrainingExample]] = {}
     for condition in config.conditions:
+        answer_only = condition.representation == ANSWER_ONLY_REPRESENTATION
+        if answer_only != (condition.id == ANSWER_ONLY_CONDITION):
+            raise ValueError("answer-only targets require the reserved follow-up condition ID")
+        if condition.id in result:
+            raise ValueError(f"duplicate training condition: {condition.id}")
         rows: list[TrainingExample] = []
         for example in source:
-            if condition.representation not in example.renderings:
+            if not answer_only and condition.representation not in example.renderings:
                 raise ValueError(f"item {example.id!r} lacks {condition.representation} rendering")
             rows.append(
                 TrainingExample(
@@ -119,7 +126,9 @@ def build_training_examples(
                     depth=example.depth,
                     source_instance_hash=example.instance_hash,
                     user_prompt=prompts[example.id],
-                    reasoning_target=example.renderings[condition.representation],
+                    reasoning_target=(
+                        "" if answer_only else example.renderings[condition.representation]
+                    ),
                     answer_target=example.answer,
                     target_text=_target_text(
                         example,

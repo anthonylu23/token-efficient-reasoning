@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "experiment_name": "followup-answer-only-v1",
+  "source_protocol": "configs/m3/protocol.json",
+  "source_protocol_sha256": "adc19528c604e117ee374fdf4e3325b52736627a5e2c35daf7ab68a40ae0267e",
+  "qlora": "configs/m3/qlora.json",
+  "qlora_sha256": "313484c1fce0899ec71d0489275f343c1066e4fd60b17399d820d6f589bb2fd6",
+  "m0_sha256": "508257ef0fdf389f3daa5236248b4875dd3c08ad2bc49976fadd24b652fd66f3"
+}
