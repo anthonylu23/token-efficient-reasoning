@@ -1,0 +1,3573 @@
+{
+  "rows": [
+    {
+      "c4_accuracy": 0.10833333333333334,
+      "c4_verified_density": 0.062447916666666665,
+      "comparator": "c0",
+      "comparator_accuracy": 0.05316666666666667,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 632109093033067685,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.04466666666666667,
+          0.066
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.05516666666666666,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 18095654949813835456,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.10833333333333334,
+      "c4_verified_density": 0.062447916666666665,
+      "comparator": "c1",
+      "comparator_accuracy": 0.024333333333333332,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 5302565638321555879,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.07283333333333333,
+          0.09516666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.084,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2565346465567760361,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.10833333333333334,
+      "c4_verified_density": 0.062447916666666665,
+      "comparator": "c2",
+      "comparator_accuracy": 0.050833333333333335,
+      "comparator_verified_density": 0.03121875,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2187563102976901660,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.047666666666666656,
+          0.06766666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0575,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 5772017392922752502,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.478,
+          0.5218333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4995,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 2.0003336670003335,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.10833333333333334,
+      "c4_verified_density": 0.062447916666666665,
+      "comparator": "c3",
+      "comparator_accuracy": 0.1435,
+      "comparator_verified_density": 0.07040697189558835,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7082429586212282447,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.047,
+          -0.02282916666666672
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.03516666666666667,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12862771140433626679,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.1115,
+          0.1405
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.126,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.8869564332247557,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.27616666666666667,
+      "c4_verified_density": 0.06852352713894536,
+      "comparator": "c0",
+      "comparator_accuracy": 0.039,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 10847917693275639991,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.21766666666666667,
+          0.2565
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.2371666666666667,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 16901559747536045552,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.313,
+          -0.274
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.2935,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.27616666666666667,
+      "c4_verified_density": 0.06852352713894536,
+      "comparator": "c1",
+      "comparator_accuracy": 0.043333333333333335,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12402067895459618339,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.214,
+          0.2510041666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.2328333333333333,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2843281558286862732,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.3135,
+          -0.2735
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.2935,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.27616666666666667,
+      "c4_verified_density": 0.06852352713894536,
+      "comparator": "c2",
+      "comparator_accuracy": 0.14683333333333334,
+      "comparator_verified_density": 0.046822916666666665,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 9758292373810845617,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.11416666666666665,
+          0.14533333333333331
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.12933333333333336,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4663568075949645437,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.1745,
+          0.2363333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.2053333333333333,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.4634613137572312,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.27616666666666667,
+      "c4_verified_density": 0.06852352713894536,
+      "comparator": "c3",
+      "comparator_accuracy": 0.31683333333333336,
+      "comparator_verified_density": 0.09872785177625676,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1304047951222969487,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.0515,
+          -0.03
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.04066666666666667,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 17060942516343371843,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.0335,
+          0.052
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0425,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.6940648044711605,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.514,
+      "c4_verified_density": 0.07924482437305028,
+      "comparator": "c0",
+      "comparator_accuracy": 0.09783333333333333,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": {
+        "adjusted_p_value": 0.0007999200079992001,
+        "rank": 2,
+        "raw_p_value": 9.999000099990002e-05,
+        "reject_null": true,
+        "step_threshold": 0.0071428571428571435
+      },
+      "hypothesis_id": "c4_gt_c0_test_b64",
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 17798095102877911327,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.39616666666666667,
+          0.43666666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.41616666666666663,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 15525826478369132748,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.5640041666666665,
+          -0.5206666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.5423333333333332,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": {
+        "alternative": "greater",
+        "cluster_count": 2000,
+        "method": "paired sign randomization over replicate-averaged item outcomes",
+        "observed_difference": 0.41616666666666663,
+        "p_value": 9.999000099990002e-05,
+        "randomization_samples": 10000,
+        "randomization_seed": 3359604272324343982
+      },
+      "primary_claim": "central_frontier",
+      "reasoning_budget": 64,
+      "scope": "primary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.514,
+      "c4_verified_density": 0.07924482437305028,
+      "comparator": "c1",
+      "comparator_accuracy": 0.0835,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": {
+        "adjusted_p_value": 0.0007999200079992001,
+        "rank": 4,
+        "raw_p_value": 9.999000099990002e-05,
+        "reject_null": true,
+        "step_threshold": 0.01
+      },
+      "hypothesis_id": "c4_gt_c1_test_b64",
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1228652108719488565,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.4105,
+          0.45083749999999995
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4305,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 8937283831372006885,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.5641666666666667,
+          -0.5205
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.5423333333333332,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": {
+        "alternative": "greater",
+        "cluster_count": 2000,
+        "method": "paired sign randomization over replicate-averaged item outcomes",
+        "observed_difference": 0.4305,
+        "p_value": 9.999000099990002e-05,
+        "randomization_samples": 10000,
+        "randomization_seed": 11507325445946131306
+      },
+      "primary_claim": "central_frontier",
+      "reasoning_budget": 64,
+      "scope": "primary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.514,
+      "c4_verified_density": 0.07924482437305028,
+      "comparator": "c2",
+      "comparator_accuracy": 0.38233333333333336,
+      "comparator_verified_density": 0.05357871779620494,
+      "depth": null,
+      "holm": {
+        "adjusted_p_value": 0.0007999200079992001,
+        "rank": 6,
+        "raw_p_value": 9.999000099990002e-05,
+        "reject_null": true,
+        "step_threshold": 0.016666666666666666
+      },
+      "hypothesis_id": "c4_gt_c2_test_b64",
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11611193467322768459,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.11683333333333333,
+          0.14666666666666667
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.13166666666666665,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 13467438653026706984,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.09833333333333334,
+          0.15283749999999993
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.12583333333333332,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": {
+        "alternative": "greater",
+        "cluster_count": 2000,
+        "method": "paired sign randomization over replicate-averaged item outcomes",
+        "observed_difference": 0.13166666666666665,
+        "p_value": 9.999000099990002e-05,
+        "randomization_samples": 10000,
+        "randomization_seed": 10523178898701826556
+      },
+      "primary_claim": "central_frontier",
+      "reasoning_budget": 64,
+      "scope": "primary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.4790354758856008,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.514,
+      "c4_verified_density": 0.07924482437305028,
+      "comparator": "c3",
+      "comparator_accuracy": 0.5148333333333334,
+      "comparator_verified_density": 0.1058551132408649,
+      "depth": null,
+      "holm": {
+        "adjusted_p_value": 1.0,
+        "rank": 7,
+        "raw_p_value": 0.6344365563443656,
+        "reject_null": false,
+        "step_threshold": 0.025
+      },
+      "hypothesis_id": "c4_gt_c3_test_b64",
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 8809676196690988228,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.006999999999999999,
+          0.005
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.0008333333333333341,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12225432322563591896,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.14683333333333334,
+          0.1875
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.167,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": {
+        "alternative": "greater",
+        "cluster_count": 2000,
+        "method": "paired sign randomization over replicate-averaged item outcomes",
+        "observed_difference": -0.0008333333333333341,
+        "p_value": 0.6344365563443656,
+        "randomization_samples": 10000,
+        "randomization_seed": 139141912639954299
+      },
+      "primary_claim": "h5_structured_vs_telegraphic",
+      "reasoning_budget": 64,
+      "scope": "primary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.748615933107879,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.7533333333333333,
+      "c4_verified_density": 0.08293279674387762,
+      "comparator": "c0",
+      "comparator_accuracy": 0.15333333333333332,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": {
+        "adjusted_p_value": 0.0007999200079992001,
+        "rank": 1,
+        "raw_p_value": 9.999000099990002e-05,
+        "reject_null": true,
+        "step_threshold": 0.00625
+      },
+      "hypothesis_id": "c4_gt_c0_test_b128",
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 785873436763789615,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.5808333333333333,
+          0.6193333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.6,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7875303731882836135,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.7835,
+          -0.7471666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.7658333333333333,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": {
+        "alternative": "greater",
+        "cluster_count": 2000,
+        "method": "paired sign randomization over replicate-averaged item outcomes",
+        "observed_difference": 0.6,
+        "p_value": 9.999000099990002e-05,
+        "randomization_samples": 10000,
+        "randomization_seed": 3871488627386829083
+      },
+      "primary_claim": "central_frontier",
+      "reasoning_budget": 128,
+      "scope": "primary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.7533333333333333,
+      "c4_verified_density": 0.08293279674387762,
+      "comparator": "c1",
+      "comparator_accuracy": 0.15883333333333333,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": {
+        "adjusted_p_value": 0.0007999200079992001,
+        "rank": 3,
+        "raw_p_value": 9.999000099990002e-05,
+        "reject_null": true,
+        "step_threshold": 0.008333333333333333
+      },
+      "hypothesis_id": "c4_gt_c1_test_b128",
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 684208548978187794,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.5756666666666668,
+          0.613
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.5945,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11174399564724636942,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.7845,
+          -0.7473333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.7658333333333333,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": {
+        "alternative": "greater",
+        "cluster_count": 2000,
+        "method": "paired sign randomization over replicate-averaged item outcomes",
+        "observed_difference": 0.5945,
+        "p_value": 9.999000099990002e-05,
+        "randomization_samples": 10000,
+        "randomization_seed": 8087467322532948584
+      },
+      "primary_claim": "central_frontier",
+      "reasoning_budget": 128,
+      "scope": "primary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.7533333333333333,
+      "c4_verified_density": 0.08293279674387762,
+      "comparator": "c2",
+      "comparator_accuracy": 0.6351666666666667,
+      "comparator_verified_density": 0.053877186751541316,
+      "depth": null,
+      "holm": {
+        "adjusted_p_value": 0.0007999200079992001,
+        "rank": 5,
+        "raw_p_value": 9.999000099990002e-05,
+        "reject_null": true,
+        "step_threshold": 0.0125
+      },
+      "hypothesis_id": "c4_gt_c2_test_b128",
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3974798412951170136,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.10416666666666666,
+          0.13216666666666668
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.11816666666666667,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 9930829672156236728,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.026833333333333334,
+          0.017833333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.0045,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": {
+        "alternative": "greater",
+        "cluster_count": 2000,
+        "method": "paired sign randomization over replicate-averaged item outcomes",
+        "observed_difference": 0.11816666666666667,
+        "p_value": 9.999000099990002e-05,
+        "randomization_samples": 10000,
+        "randomization_seed": 532556964104616058
+      },
+      "primary_claim": "central_frontier",
+      "reasoning_budget": 128,
+      "scope": "primary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.5392933771083561,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.7533333333333333,
+      "c4_verified_density": 0.08293279674387762,
+      "comparator": "c3",
+      "comparator_accuracy": 0.9603333333333334,
+      "comparator_verified_density": 0.1056366196720054,
+      "depth": null,
+      "holm": {
+        "adjusted_p_value": 1.0,
+        "rank": 8,
+        "raw_p_value": 1.0,
+        "reject_null": false,
+        "step_threshold": 0.05
+      },
+      "hypothesis_id": "c4_gt_c3_test_b128",
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12276941339686621039,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.22467083333333332,
+          -0.18966666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.207,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4861694076831165824,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.1775,
+          0.21233333333333332
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.19466666666666663,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": {
+        "alternative": "greater",
+        "cluster_count": 2000,
+        "method": "paired sign randomization over replicate-averaged item outcomes",
+        "observed_difference": -0.207,
+        "p_value": 1.0,
+        "randomization_samples": 10000,
+        "randomization_seed": 10841669840652701761
+      },
+      "primary_claim": "h5_structured_vs_telegraphic",
+      "reasoning_budget": 128,
+      "scope": "primary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.7850762074873124,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.9966666666666667,
+      "c4_verified_density": 0.08346538746404396,
+      "comparator": "c0",
+      "comparator_accuracy": 0.23733333333333334,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 6695995091493985268,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.745,
+          0.7733333333333332
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.7593333333333333,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 8620758196248668342,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.9965,
+          -0.9923333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.9945,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.9966666666666667,
+      "c4_verified_density": 0.08346538746404396,
+      "comparator": "c1",
+      "comparator_accuracy": 0.2085,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7698401042125990327,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.7766666666666665,
+          0.8
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.7881666666666667,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 6119093277803288673,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.9965,
+          -0.9923333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.9945,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.9966666666666667,
+      "c4_verified_density": 0.08346538746404396,
+      "comparator": "c2",
+      "comparator_accuracy": 0.9456666666666667,
+      "comparator_verified_density": 0.05342565476157399,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 14711773548268468254,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.0415,
+          0.060666666666666674
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.051,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2761783164595532816,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.06233333333333334,
+          -0.042166666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.05216666666666667,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.5622716808344261,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.9966666666666667,
+      "c4_verified_density": 0.08346538746404396,
+      "comparator": "c3",
+      "comparator_accuracy": 0.9975,
+      "comparator_verified_density": 0.10592057997518124,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 13063110712759003068,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.0024999999999999996,
+          0.0006666666666666668
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.0008333333333333333,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7920484491813202597,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.0003333333333333334,
+          0.004333333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0023333333333333335,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.7879997209569768,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.996,
+      "c4_verified_density": 0.08348294048003445,
+      "comparator": "c0",
+      "comparator_accuracy": 0.3016666666666667,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12031632029309679061,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.6791666666666666,
+          0.7095
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.6943333333333332,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 9510870336707996147,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.9961666666666666,
+          -0.9915
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.994,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.996,
+      "c4_verified_density": 0.08348294048003445,
+      "comparator": "c1",
+      "comparator_accuracy": 0.22366666666666668,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 18382116049437628773,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.7601666666666665,
+          0.7846666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.7723333333333332,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1686065164023273550,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.9961666666666666,
+          -0.9915
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.994,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.996,
+      "c4_verified_density": 0.08348294048003445,
+      "comparator": "c2",
+      "comparator_accuracy": 0.9976666666666667,
+      "comparator_verified_density": 0.05368621707761133,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 5707344588560781552,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.0035,
+          0.00016666666666666663
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.0016666666666666668,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1712774694424469188,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          0.00016666666666666663,
+          0.004833333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0024999999999999996,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.555016259747778,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.996,
+      "c4_verified_density": 0.08348294048003445,
+      "comparator": "c3",
+      "comparator_accuracy": 0.9971666666666666,
+      "comparator_verified_density": 0.10585836921552724,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 17306033818677520506,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.003,
+          0.0005000000000000001
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.0011666666666666665,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 13626600208513966874,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 2000,
+        "confidence_interval": [
+          -0.00016666666666666653,
+          0.004166666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.002,
+        "replicate_observation_count": 6000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.7886286280309448,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.025,
+      "c4_verified_density": 0.0624375,
+      "comparator": "c0",
+      "comparator_accuracy": 0.015,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2495318011711872107,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.0026666666666666666,
+          0.01767499999999988
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.01,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 16306132280984484911,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.025,
+      "c4_verified_density": 0.0624375,
+      "comparator": "c1",
+      "comparator_accuracy": 0.011,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 16984590517996765484,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.005666666666666667,
+          0.022666666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.013999999999999999,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4087586813339292604,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.025,
+      "c4_verified_density": 0.0624375,
+      "comparator": "c2",
+      "comparator_accuracy": 0.007,
+      "comparator_verified_density": 0.0311875,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 13200366341484747508,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.010333333333333332,
+          0.026333333333333334
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.018,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 5734834300304917183,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.468,
+          0.53
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.499,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 2.002004008016032,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.025,
+      "c4_verified_density": 0.0624375,
+      "comparator": "c3",
+      "comparator_accuracy": 0.010333333333333333,
+      "comparator_verified_density": 0.07045833333333333,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 5801659683219606688,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.006666666666666667,
+          0.022666666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.014666666666666665,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 10747429966160325470,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.109,
+          0.15
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.129,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.8861620342992312,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.02033333333333333,
+      "c4_verified_density": 0.0638125,
+      "comparator": "c0",
+      "comparator_accuracy": 0.013,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4675870777418819337,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.0003333333333333335,
+          0.014666666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.007333333333333334,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3702067617758854133,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.061,
+          -0.035
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.048,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.02033333333333333,
+      "c4_verified_density": 0.0638125,
+      "comparator": "c1",
+      "comparator_accuracy": 0.010666666666666666,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4147453651988812511,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.003,
+          0.016666666666666663
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.009666666666666664,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 6874173112582611704,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.062,
+          -0.035
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.048,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.02033333333333333,
+      "c4_verified_density": 0.0638125,
+      "comparator": "c2",
+      "comparator_accuracy": 0.011333333333333334,
+      "comparator_verified_density": 0.046802083333333334,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 14053356071344504101,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.002333333333333333,
+          0.016666666666666663
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.008999999999999998,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7066067265157981303,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.414,
+          0.487
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4506666666666666,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.3634542621856218,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.02033333333333333,
+      "c4_verified_density": 0.0638125,
+      "comparator": "c3",
+      "comparator_accuracy": 0.008,
+      "comparator_verified_density": 0.09553125,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 8619170231268843980,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.005333333333333333,
+          0.019666666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.012333333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12529559028155144846,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.045,
+          0.074
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.059,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.667975139025188,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.02,
+      "c4_verified_density": 0.07572916666666667,
+      "comparator": "c0",
+      "comparator_accuracy": 0.017666666666666667,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 16097157079035981754,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.005,
+          0.01
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0023333333333333335,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 17317681547974083613,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.132,
+          -0.09266666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.112,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 64,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.02,
+      "c4_verified_density": 0.07572916666666667,
+      "comparator": "c1",
+      "comparator_accuracy": 0.014333333333333333,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1716989418029143820,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.0010000000000000002,
+          0.012999999999999998
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.005666666666666667,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 15895813312384472099,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.13133333333333333,
+          -0.093
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.112,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 64,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.02,
+      "c4_verified_density": 0.07572916666666667,
+      "comparator": "c2",
+      "comparator_accuracy": 0.01,
+      "comparator_verified_density": 0.05327604166666667,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7017718219859120388,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.003333333333333333,
+          0.01733333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.01,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 8057044535087462493,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.3976666666666666,
+          0.478
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4383333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 64,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.4214488219767327,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.02,
+      "c4_verified_density": 0.07572916666666667,
+      "comparator": "c3",
+      "comparator_accuracy": 0.012,
+      "comparator_verified_density": 0.103421875,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 9755982838552504191,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.0009999999999999992,
+          0.015333333333333332
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.007999999999999998,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3489849637994285347,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.261,
+          0.3406666666666667
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.3013333333333334,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 64,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.7322354837085159,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.013,
+      "c4_verified_density": 0.07963541666666667,
+      "comparator": "c0",
+      "comparator_accuracy": 0.01,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3116997240201593850,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.0033333333333333327,
+          0.009333333333333334
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0029999999999999996,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2125220904940635032,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.09533333333333333,
+          -0.06233333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.07866666666666668,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 128,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.013,
+      "c4_verified_density": 0.07963541666666667,
+      "comparator": "c1",
+      "comparator_accuracy": 0.013,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 17990264181166869771,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.006333333333333333,
+          0.006666666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11557552332676604671,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.09566666666666666,
+          -0.06266666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.07866666666666668,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 128,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.013,
+      "c4_verified_density": 0.07963541666666667,
+      "comparator": "c2",
+      "comparator_accuracy": 0.012,
+      "comparator_verified_density": 0.053578125,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 14387007279141878637,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.006,
+          0.008
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0009999999999999998,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4839876319468083996,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.39,
+          0.4676666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4293333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 128,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.486341985029649,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.013,
+      "c4_verified_density": 0.07963541666666667,
+      "comparator": "c3",
+      "comparator_accuracy": 0.014666666666666666,
+      "comparator_verified_density": 0.08828471533684705,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1149764431875799902,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.01,
+          0.006
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.001666666666666667,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 10781019806283371142,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.0040000000000000036,
+          0.043666666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.019666666666666666,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 128,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.9020294890550499,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.5246666666666666,
+      "c4_verified_density": 0.07774430203662215,
+      "comparator": "c0",
+      "comparator_accuracy": 0.029333333333333333,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 6275821777715558613,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.4696666666666666,
+          0.52
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4953333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2252531104902205988,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.8376666666666668,
+          -0.8013333333333332
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.8196666666666668,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.5246666666666666,
+      "c4_verified_density": 0.07774430203662215,
+      "comparator": "c1",
+      "comparator_accuracy": 0.043333333333333335,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 8309243891437357831,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.45633333333333337,
+          0.5066666666666667
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4813333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 16536157155332130367,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.8376666666666667,
+          -0.8013333333333332
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.8196666666666668,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.5246666666666666,
+      "c4_verified_density": 0.07774430203662215,
+      "comparator": "c2",
+      "comparator_accuracy": 0.032,
+      "comparator_verified_density": 0.051094390785773255,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 5092083137922180665,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.465,
+          0.5193333333333332
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4926666666666666,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 5120369024404030581,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.5346666666666667,
+          -0.471
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.5033333333333334,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.521581935727264,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.5246666666666666,
+      "c4_verified_density": 0.07774430203662215,
+      "comparator": "c3",
+      "comparator_accuracy": 0.5046666666666667,
+      "comparator_verified_density": 0.0966475752415913,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 8433114793333695165,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.004333333333333334,
+          0.03566666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.02,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7706136926675043115,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.05967499999999993,
+          -0.024333333333333335
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.041999999999999996,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.8044102693966572,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.527,
+      "c4_verified_density": 0.07757100540163792,
+      "comparator": "c0",
+      "comparator_accuracy": 0.07966666666666666,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 6415396976520655605,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.4226666666666667,
+          0.4716666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4473333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 16413668625719711238,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.8413333333333333,
+          -0.806
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.8236666666666667,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.527,
+      "c4_verified_density": 0.07757100540163792,
+      "comparator": "c1",
+      "comparator_accuracy": 0.08466666666666667,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2017196386938355437,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.4176666666666667,
+          0.4676666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.44233333333333325,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 16649691006240442227,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.841,
+          -0.806
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.8236666666666667,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.527,
+      "c4_verified_density": 0.07757100540163792,
+      "comparator": "c2",
+      "comparator_accuracy": 0.4146666666666667,
+      "comparator_verified_density": 0.05084082459512655,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11408499216246798082,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.09233333333333332,
+          0.13166666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.11233333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3336540914605789976,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.033666666666666664,
+          -0.0003333333333333335
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.017,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.5257621413377633,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.527,
+      "c4_verified_density": 0.07757100540163792,
+      "comparator": "c3",
+      "comparator_accuracy": 0.5093333333333333,
+      "comparator_verified_density": 0.09646571848426144,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7804324384031617660,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.002666666666666667,
+          0.03266666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.017666666666666667,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3372932570412861698,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.06233333333333334,
+          -0.028333333333333335
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.04499999999999999,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test_depth",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.8041302819332006,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.11166666666666666,
+      "c4_verified_density": 0.062473958333333336,
+      "comparator": "c0",
+      "comparator_accuracy": 0.07625,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 9009436154810532473,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.017072916666666754,
+          0.054583333333333324
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.03541666666666667,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 14999086302797032266,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.11166666666666666,
+      "c4_verified_density": 0.062473958333333336,
+      "comparator": "c1",
+      "comparator_accuracy": 0.03833333333333333,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 17821852686644039646,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.05416666666666666,
+          0.09291666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.07333333333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 14666063846192671521,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.11166666666666666,
+      "c4_verified_density": 0.062473958333333336,
+      "comparator": "c2",
+      "comparator_accuracy": 0.043333333333333335,
+      "comparator_verified_density": 0.031223958333333333,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12263186661190723870,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.05291666666666666,
+          0.08458333333333332
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.06833333333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 13561785193858928337,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.46541666666666665,
+          0.53375
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4995833333333334,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 2.000834028356964,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.11166666666666666,
+      "c4_verified_density": 0.062473958333333336,
+      "comparator": "c3",
+      "comparator_accuracy": 0.12458333333333334,
+      "comparator_verified_density": 0.07066124322069253,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12106605712919312844,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.03333333333333334,
+          0.007916666666666662
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.01291666666666668,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 13718973149922391998,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.1075,
+          0.15375
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.13,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 16,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.8841333025830259,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.28458333333333335,
+      "c4_verified_density": 0.06838767481905615,
+      "comparator": "c0",
+      "comparator_accuracy": 0.06416666666666666,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 17036111862040838728,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.19125,
+          0.25
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.22041666666666665,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1111953435252103054,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.31876041666666655,
+          -0.2558333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.2870833333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.28458333333333335,
+      "c4_verified_density": 0.06838767481905615,
+      "comparator": "c1",
+      "comparator_accuracy": 0.050416666666666665,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 8705026095041073123,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.20625,
+          0.2633333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.23416666666666663,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4554806645613238172,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.31916666666666665,
+          -0.25666666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.2870833333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.28458333333333335,
+      "c4_verified_density": 0.06838767481905615,
+      "comparator": "c2",
+      "comparator_accuracy": 0.14458333333333334,
+      "comparator_verified_density": 0.046861979166666665,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 13501741652978289528,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.11541666666666667,
+          0.16458333333333336
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.14,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7080519981622826041,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.16375,
+          0.2608333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.2125,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.4593424357053384,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.28458333333333335,
+      "c4_verified_density": 0.06838767481905615,
+      "comparator": "c3",
+      "comparator_accuracy": 0.31708333333333333,
+      "comparator_verified_density": 0.09859154929577464,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4086096085151832169,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.05,
+          -0.015416666666666667
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.032499999999999994,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 9612449088367596796,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.029583333333333336,
+          0.06041666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.04458333333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 32,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.6936464160218553,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.5120833333333333,
+      "c4_verified_density": 0.07967838721639753,
+      "comparator": "c0",
+      "comparator_accuracy": 0.17791666666666667,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2368286392474396121,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.3045833333333333,
+          0.36458333333333326
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.33416666666666667,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7735971959603790828,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.5841666666666667,
+          -0.5166666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.5508333333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 64,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.5120833333333333,
+      "c4_verified_density": 0.07967838721639753,
+      "comparator": "c1",
+      "comparator_accuracy": 0.11083333333333334,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3309872439896768425,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.37,
+          0.4333333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.40125,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 13571346288207579502,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.585,
+          -0.51625
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.5508333333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 64,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.5120833333333333,
+      "c4_verified_density": 0.07967838721639753,
+      "comparator": "c2",
+      "comparator_accuracy": 0.38625,
+      "comparator_verified_density": 0.05354602945359855,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1059735133930410424,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.1025,
+          0.15041666666666667
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.12583333333333332,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12523981339555236406,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.07,
+          0.15958333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.11541666666666664,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 64,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.4880353973854312,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.5120833333333333,
+      "c4_verified_density": 0.07967838721639753,
+      "comparator": "c3",
+      "comparator_accuracy": 0.5095833333333334,
+      "comparator_verified_density": 0.10614862454143757,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 6174862895369606950,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.007083333333333333,
+          0.011666666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0024999999999999988,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11317725337286956527,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.13166666666666665,
+          0.2
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.16583333333333336,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 64,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.7506304256000342,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.7558333333333334,
+      "c4_verified_density": 0.08323507526758629,
+      "comparator": "c0",
+      "comparator_accuracy": 0.2733333333333333,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 13563741551514724072,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.4533333333333333,
+          0.5108333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4825,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7698479349983949434,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.7937604166666665,
+          -0.73625
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.7654166666666665,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 128,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.7558333333333334,
+      "c4_verified_density": 0.08323507526758629,
+      "comparator": "c1",
+      "comparator_accuracy": 0.18875,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 14943645009263045352,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.5375,
+          0.59625
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.5670833333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 5197803789084403666,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.7941666666666666,
+          -0.73625
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.7654166666666665,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 128,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.7558333333333334,
+      "c4_verified_density": 0.08323507526758629,
+      "comparator": "c2",
+      "comparator_accuracy": 0.6425,
+      "comparator_verified_density": 0.053971853045762706,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2474257515329665336,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.09166666666666667,
+          0.13625
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.11333333333333334,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 16386508413916424972,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.04541666666666666,
+          0.02666666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.009166666666666679,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 128,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.5421941358398668,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.7558333333333334,
+      "c4_verified_density": 0.08323507526758629,
+      "comparator": "c3",
+      "comparator_accuracy": 0.9708333333333333,
+      "comparator_verified_density": 0.10633575880004673,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11425746845389415055,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.24333333333333335,
+          -0.18625
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.215,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 8506054966313291775,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.18166666666666664,
+          0.2383333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.20916666666666664,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 128,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.7827571478010623,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.9945833333333334,
+      "c4_verified_density": 0.08412830457752185,
+      "comparator": "c0",
+      "comparator_accuracy": 0.35041666666666665,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 6166678813561005062,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.6195833333333333,
+          0.6691666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.6441666666666667,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 14948809687947075779,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.9966666666666666,
+          -0.9895833333333335
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.9933333333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.9945833333333334,
+      "c4_verified_density": 0.08412830457752185,
+      "comparator": "c1",
+      "comparator_accuracy": 0.29,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 17884039768128146271,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.6820833333333334,
+          0.7266770833333331
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.7045833333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 13861927833437475409,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.9966666666666666,
+          -0.9895833333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.9933333333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.9945833333333334,
+      "c4_verified_density": 0.08412830457752185,
+      "comparator": "c2",
+      "comparator_accuracy": 0.95,
+      "comparator_verified_density": 0.053721163072045386,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12257485865266487105,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.03,
+          0.06
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.04458333333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 16297346190478321117,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.06208333333333334,
+          -0.03166666666666667
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.04625,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.5660179297439536,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.9945833333333334,
+      "c4_verified_density": 0.08412830457752185,
+      "comparator": "c3",
+      "comparator_accuracy": 0.99625,
+      "comparator_verified_density": 0.106555525899768,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 15152178533096032950,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.005416666666666666,
+          0.0016666666666666668
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.0016666666666666668,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 13832944127925686792,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.0008333333333333332,
+          0.006666666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0029166666666666664,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 256,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.7895254973135563,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    },
+    {
+      "c4_accuracy": 0.9929166666666667,
+      "c4_verified_density": 0.08406960165903396,
+      "comparator": "c0",
+      "comparator_accuracy": 0.39125,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7070392902226660151,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.5766666666666667,
+          0.6266666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.6016666666666667,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 10637699216583601837,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.9954166666666666,
+          -0.9875
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.9916666666666666,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.9929166666666667,
+      "c4_verified_density": 0.08406960165903396,
+      "comparator": "c1",
+      "comparator_accuracy": 0.3125,
+      "comparator_verified_density": 0.0,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 14464918732499367515,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.6579166666666667,
+          0.7020833333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.6804166666666666,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4735894866453040973,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.995,
+          -0.9875
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.9916666666666666,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": null,
+      "verified_density_ratio_status": "positive_treatment_over_zero_control",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.9929166666666667,
+      "c4_verified_density": 0.08406960165903396,
+      "comparator": "c2",
+      "comparator_accuracy": 0.9958333333333333,
+      "comparator_verified_density": 0.0537642593444767,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4448507993932745395,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.0075,
+          0.00125
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.002916666666666666,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 9088754684927709176,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.0029166666666666664,
+          0.007083333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0020833333333333333,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 1.5636707858353598,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": true
+    },
+    {
+      "c4_accuracy": 0.9929166666666667,
+      "c4_verified_density": 0.08406960165903396,
+      "comparator": "c3",
+      "comparator_accuracy": 0.9958333333333333,
+      "comparator_verified_density": 0.10662222648069315,
+      "depth": null,
+      "holm": null,
+      "hypothesis_id": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 18231255200249293078,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          -0.007083333333333333,
+          0.00125
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.002916666666666667,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_invalid_event_rate_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3590226699930201556,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 800,
+        "confidence_interval": [
+          0.0016666666666666663,
+          0.009583333333333334
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.005416666666666666,
+        "replicate_observation_count": 2400,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "paired_randomization": null,
+      "primary_claim": null,
+      "reasoning_budget": 512,
+      "scope": "descriptive_secondary",
+      "split": "test_compositional",
+      "task_family": null,
+      "treatment": "c4",
+      "verified_density_ratio": 0.7884810178322157,
+      "verified_density_ratio_status": "finite",
+      "verified_density_threshold_passed": false
+    }
+  ],
+  "schema_version": 1
+}

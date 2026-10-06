@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="28" text-anchor="middle" font-family="sans-serif" font-size="20">M3 test: Verified transitions / reasoning token</text>
+<line x1="90" y1="470" x2="870" y2="470" stroke="#111827"/>
+<line x1="90" y1="55" x2="90" y2="470" stroke="#111827"/>
+<line x1="90" y1="470.00" x2="870" y2="470.00" stroke="#e5e7eb"/>
+<text x="80" y="474.00" text-anchor="end" font-family="sans-serif" font-size="12">0.00</text>
+<line x1="90" y1="387.00" x2="870" y2="387.00" stroke="#e5e7eb"/>
+<text x="80" y="391.00" text-anchor="end" font-family="sans-serif" font-size="12">0.02</text>
+<line x1="90" y1="304.00" x2="870" y2="304.00" stroke="#e5e7eb"/>
+<text x="80" y="308.00" text-anchor="end" font-family="sans-serif" font-size="12">0.04</text>
+<line x1="90" y1="221.00" x2="870" y2="221.00" stroke="#e5e7eb"/>
+<text x="80" y="225.00" text-anchor="end" font-family="sans-serif" font-size="12">0.07</text>
+<line x1="90" y1="138.00" x2="870" y2="138.00" stroke="#e5e7eb"/>
+<text x="80" y="142.00" text-anchor="end" font-family="sans-serif" font-size="12">0.09</text>
+<line x1="90" y1="55.00" x2="870" y2="55.00" stroke="#e5e7eb"/>
+<text x="80" y="59.00" text-anchor="end" font-family="sans-serif" font-size="12">0.11</text>
+<text x="90.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">16</text>
+<text x="246.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">32</text>
+<text x="402.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">64</text>
+<text x="558.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">128</text>
+<text x="714.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">256</text>
+<text x="870.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">512</text>
+<polyline points="90.00,470.00 246.00,470.00 402.00,470.00 558.00,470.00 714.00,470.00 870.00,470.00" fill="none" stroke="#6b7280" stroke-width="2.5"/>
+<circle cx="90.00" cy="470.00" r="4" fill="#6b7280"/>
+<circle cx="246.00" cy="470.00" r="4" fill="#6b7280"/>
+<circle cx="402.00" cy="470.00" r="4" fill="#6b7280"/>
+<circle cx="558.00" cy="470.00" r="4" fill="#6b7280"/>
+<circle cx="714.00" cy="470.00" r="4" fill="#6b7280"/>
+<circle cx="870.00" cy="470.00" r="4" fill="#6b7280"/>
+<line x1="105" y1="522" x2="129" y2="522" stroke="#6b7280" stroke-width="3"/>
+<text x="135" y="526" font-family="sans-serif" font-size="13">C0</text>
+<polyline points="90.00,470.00 246.00,470.00 402.00,470.00 558.00,470.00 714.00,470.00 870.00,470.00" fill="none" stroke="#8b5cf6" stroke-width="2.5"/>
+<circle cx="90.00" cy="470.00" r="4" fill="#8b5cf6"/>
+<circle cx="246.00" cy="470.00" r="4" fill="#8b5cf6"/>
+<circle cx="402.00" cy="470.00" r="4" fill="#8b5cf6"/>
+<circle cx="558.00" cy="470.00" r="4" fill="#8b5cf6"/>
+<circle cx="714.00" cy="470.00" r="4" fill="#8b5cf6"/>
+<circle cx="870.00" cy="470.00" r="4" fill="#8b5cf6"/>
+<line x1="250" y1="522" x2="274" y2="522" stroke="#8b5cf6" stroke-width="3"/>
+<text x="280" y="526" font-family="sans-serif" font-size="13">C1</text>
+<polyline points="90.00,353.51 246.00,295.28 402.00,270.07 558.00,268.96 714.00,270.64 870.00,269.67" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<circle cx="90.00" cy="353.51" r="4" fill="#2563eb"/>
+<circle cx="246.00" cy="295.28" r="4" fill="#2563eb"/>
+<circle cx="402.00" cy="270.07" r="4" fill="#2563eb"/>
+<circle cx="558.00" cy="268.96" r="4" fill="#2563eb"/>
+<circle cx="714.00" cy="270.64" r="4" fill="#2563eb"/>
+<circle cx="870.00" cy="269.67" r="4" fill="#2563eb"/>
+<line x1="395" y1="522" x2="419" y2="522" stroke="#2563eb" stroke-width="3"/>
+<text x="425" y="526" font-family="sans-serif" font-size="13">C2</text>
+<polyline points="90.00,207.28 246.00,101.60 402.00,75.01 558.00,75.82 714.00,74.76 870.00,74.99" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+<circle cx="90.00" cy="207.28" r="4" fill="#f59e0b"/>
+<circle cx="246.00" cy="101.60" r="4" fill="#f59e0b"/>
+<circle cx="402.00" cy="75.01" r="4" fill="#f59e0b"/>
+<circle cx="558.00" cy="75.82" r="4" fill="#f59e0b"/>
+<circle cx="714.00" cy="74.76" r="4" fill="#f59e0b"/>
+<circle cx="870.00" cy="74.99" r="4" fill="#f59e0b"/>
+<line x1="540" y1="522" x2="564" y2="522" stroke="#f59e0b" stroke-width="3"/>
+<text x="570" y="526" font-family="sans-serif" font-size="13">C3</text>
+<polyline points="90.00,236.98 246.00,214.31 402.00,174.30 558.00,160.54 714.00,158.55 870.00,158.49" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+<circle cx="90.00" cy="236.98" r="4" fill="#16a34a"/>
+<circle cx="246.00" cy="214.31" r="4" fill="#16a34a"/>
+<circle cx="402.00" cy="174.30" r="4" fill="#16a34a"/>
+<circle cx="558.00" cy="160.54" r="4" fill="#16a34a"/>
+<circle cx="714.00" cy="158.55" r="4" fill="#16a34a"/>
+<circle cx="870.00" cy="158.49" r="4" fill="#16a34a"/>
+<line x1="685" y1="522" x2="709" y2="522" stroke="#16a34a" stroke-width="3"/>
+<text x="715" y="526" font-family="sans-serif" font-size="13">C4</text>
+<text x="480.0" y="502" text-anchor="middle" font-family="sans-serif" font-size="14">Reasoning-token budget</text>
+<text x="20" y="262.5" text-anchor="middle" font-family="sans-serif" font-size="14" transform="rotate(-90 20 262.5)">Verified transitions / reasoning token</text>
+</svg>

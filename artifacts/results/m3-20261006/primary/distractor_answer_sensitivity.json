@@ -1,0 +1,212 @@
+{
+  "collision_item_ids": [
+    "arith-test-d12-53522413d0509d57-c41ec5c32d",
+    "arith-test-d12-5f853c148e38fca9-f00b9e3b58",
+    "arith-test-d12-6971c1082e95ad42-5d628796cf",
+    "arith-test-d12-c8bd957a339ef128-fc8deaa2bc",
+    "arith-test-d12-eeea600d9492fc3e-3ae97b8f26",
+    "arith-test-d2-3f4a741cef625c12-3f5b21ebdd",
+    "arith-test-d2-6bc2de845b1edd2d-1de1777c2f",
+    "arith-test-d2-812f60aa420721e1-8d21d2c1f1",
+    "arith-test-d2-a72b4a572937a364-96bf836703",
+    "arith-test-d2-db1eecf7e2ddb9d3-8a568d3deb",
+    "arith-test-d4-5b1de9d8c9f8dd66-2ec90effbd",
+    "arith-test-d4-a32b5a3b09e7b01a-2d221ce31b",
+    "arith-test-d4-d156fc40a1a3c8dc-f1e36f83ab",
+    "arith-test-d8-08196270e0c7e0ef-aaa7f9b6e7",
+    "arith-test-d8-1d97accd072682b2-e9fd1a67af",
+    "arith-test-d8-47b3ec50a3159b7e-86079888e5",
+    "arith-test-d8-52ab38b573fa3dcf-acd6df5b16",
+    "arith-test-d8-8b2f5742b89f87ae-b38b1b3ae2",
+    "arith-test-d8-92237efc61791637-093f2f5a20",
+    "arith-test-d8-b0f103efe07b4718-b9f74700fe"
+  ],
+  "definition": "exclude arithmetic items whose explicitly irrelevant marker count equals the reference answer; do not alter primary inference or multiplicity",
+  "rows": [
+    {
+      "c4_accuracy_excluding_collisions": 0.5148148148148148,
+      "comparator": "c0",
+      "comparator_accuracy_excluding_collisions": 0.09747474747474748,
+      "excluded_problem_count": 20,
+      "paired_accuracy_difference_excluding_collisions": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1690172479341238888,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1980,
+        "confidence_interval": [
+          0.3966329966329966,
+          0.43788299663299657
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.41734006734006734,
+        "replicate_observation_count": 5940,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "retained_problem_count": 5940,
+      "scope": "preregistered_sensitivity_not_primary_inference"
+    },
+    {
+      "c4_accuracy_excluding_collisions": 0.5148148148148148,
+      "comparator": "c1",
+      "comparator_accuracy_excluding_collisions": 0.08367003367003367,
+      "excluded_problem_count": 20,
+      "paired_accuracy_difference_excluding_collisions": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11480860154662025509,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1980,
+        "confidence_interval": [
+          0.41077441077441074,
+          0.4511784511784511
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.43114478114478105,
+        "replicate_observation_count": 5940,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "retained_problem_count": 5940,
+      "scope": "preregistered_sensitivity_not_primary_inference"
+    },
+    {
+      "c4_accuracy_excluding_collisions": 0.5148148148148148,
+      "comparator": "c2",
+      "comparator_accuracy_excluding_collisions": 0.38333333333333336,
+      "excluded_problem_count": 20,
+      "paired_accuracy_difference_excluding_collisions": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 5881807506078463817,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1980,
+        "confidence_interval": [
+          0.1168308080808081,
+          0.14663720538720534
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.13148148148148148,
+        "replicate_observation_count": 5940,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "retained_problem_count": 5940,
+      "scope": "preregistered_sensitivity_not_primary_inference"
+    },
+    {
+      "c4_accuracy_excluding_collisions": 0.5148148148148148,
+      "comparator": "c3",
+      "comparator_accuracy_excluding_collisions": 0.5154882154882154,
+      "excluded_problem_count": 20,
+      "paired_accuracy_difference_excluding_collisions": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 9088806253526826580,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1980,
+        "confidence_interval": [
+          -0.0065656565656565654,
+          0.005218855218855218
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.0006734006734006739,
+        "replicate_observation_count": 5940,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "retained_problem_count": 5940,
+      "scope": "preregistered_sensitivity_not_primary_inference"
+    },
+    {
+      "c4_accuracy_excluding_collisions": 0.7533670033670034,
+      "comparator": "c0",
+      "comparator_accuracy_excluding_collisions": 0.15353535353535352,
+      "excluded_problem_count": 20,
+      "paired_accuracy_difference_excluding_collisions": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 5387369784913259396,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1980,
+        "confidence_interval": [
+          0.5808080808080808,
+          0.6188552188552189
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.5998316498316498,
+        "replicate_observation_count": 5940,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "retained_problem_count": 5940,
+      "scope": "preregistered_sensitivity_not_primary_inference"
+    },
+    {
+      "c4_accuracy_excluding_collisions": 0.7533670033670034,
+      "comparator": "c1",
+      "comparator_accuracy_excluding_collisions": 0.15808080808080807,
+      "excluded_problem_count": 20,
+      "paired_accuracy_difference_excluding_collisions": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3903967590734012310,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1980,
+        "confidence_interval": [
+          0.5767676767676768,
+          0.6134680134680135
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.5952861952861952,
+        "replicate_observation_count": 5940,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "retained_problem_count": 5940,
+      "scope": "preregistered_sensitivity_not_primary_inference"
+    },
+    {
+      "c4_accuracy_excluding_collisions": 0.7533670033670034,
+      "comparator": "c2",
+      "comparator_accuracy_excluding_collisions": 0.6368686868686869,
+      "excluded_problem_count": 20,
+      "paired_accuracy_difference_excluding_collisions": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11249520519253297853,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1980,
+        "confidence_interval": [
+          0.10235690235690235,
+          0.1306397306397306
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.11649831649831649,
+        "replicate_observation_count": 5940,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "retained_problem_count": 5940,
+      "scope": "preregistered_sensitivity_not_primary_inference"
+    },
+    {
+      "c4_accuracy_excluding_collisions": 0.7533670033670034,
+      "comparator": "c3",
+      "comparator_accuracy_excluding_collisions": 0.95993265993266,
+      "excluded_problem_count": 20,
+      "paired_accuracy_difference_excluding_collisions": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 402940501712277737,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1980,
+        "confidence_interval": [
+          -0.2244107744107744,
+          -0.18905723905723903
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.20656565656565656,
+        "replicate_observation_count": 5940,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "retained_problem_count": 5940,
+      "scope": "preregistered_sensitivity_not_primary_inference"
+    }
+  ],
+  "schema_version": 1
+}

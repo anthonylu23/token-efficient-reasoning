@@ -1,0 +1,1061 @@
+{
+  "rows": [
+    {
+      "comparator": "c0",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1060179607300022924,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.4063333333333334,
+          0.4646666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4353333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": "directed_graph_traversal",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c0",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3471634420568914888,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.3683333333333333,
+          0.4246666666666667
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.397,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c0",
+      "depth": 2,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3155630925430105818,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.6786666666666666,
+          0.7366666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.708,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c0",
+      "depth": 4,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7010044751640520888,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.9333333333333332,
+          0.958
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.9459999999999998,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c0",
+      "depth": 8,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1108260902880031014,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          -0.020666666666666663,
+          0.002666666666666667
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.008666666666666665,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c0",
+      "depth": 12,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7991862785885371186,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.008,
+          0.031999999999999994
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.01933333333333333,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12866369423037260642,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.39666666666666667,
+          0.4543416666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.42566666666666664,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": "directed_graph_traversal",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 191709796465556818,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.4083333333333333,
+          0.4626666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4353333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": 2,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 14760958674407707289,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.8026666666666666,
+          0.8413333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.822,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": 4,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 16294889689626253123,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.8539999999999999,
+          0.8913333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.8726666666666666,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": 8,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3549104244664558595,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          -0.0006666666666666665,
+          0.022666666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.010666666666666668,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": 12,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3333867452120968502,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.005333333333333332,
+          0.02933333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.016666666666666663,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 17161030465791765606,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.002333333333333333,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.001,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": "directed_graph_traversal",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4083885910768882580,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.2373333333333333,
+          0.29266666666666663
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.2643333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": 2,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11900229504324236494,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": 4,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 5826769275973318240,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.4519833333333335,
+          0.5393333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.4953333333333333,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": 8,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 58227015128111235,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.0006666666666666661,
+          0.024
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.012,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": 12,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 10938578280959512812,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.006,
+          0.033333333333333326
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.01933333333333333,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1161924425342785760,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.002,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.0006666666666666666,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": "directed_graph_traversal",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 15511125818554887082,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.013,
+          0.010666666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.0010000000000000018,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": 2,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 15880896450407665563,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": 4,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 6263023388119330471,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": 8,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3197934098806511067,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          -0.041333333333333326,
+          -0.002666666666666668
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.021333333333333333,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": 12,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 680981425169806586,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.004666666666666666,
+          0.031999999999999994
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.017999999999999995,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 64,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c0",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 1575871715579946035,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.6603333333333333,
+          0.7123333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.6866666666666666,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": "directed_graph_traversal",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c0",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7291875597728900705,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.48666666666666664,
+          0.5403333333333332
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.5133333333333334,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c0",
+      "depth": 2,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7019431283990979995,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.7193333333333333,
+          0.776
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.748,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c0",
+      "depth": 4,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 16022444636634529418,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.6813333333333332,
+          0.7413333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.7113333333333333,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c0",
+      "depth": 8,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 10957760835622683018,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.9213333333333333,
+          0.95
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.936,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c0",
+      "depth": 12,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 14492772031250798589,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          -0.005333333333333334,
+          0.016
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.004666666666666667,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 7411594655224808544,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.5796666666666668,
+          0.6333333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.6066666666666667,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": "directed_graph_traversal",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3080827588095241462,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.5563333333333332,
+          0.609
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.5823333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": 2,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3254357236475742637,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.776,
+          0.8206666666666668
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.7986666666666666,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": 4,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11143576553879810349,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.6826666666666666,
+          0.7353333333333334
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.7093333333333333,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": 8,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 283237438527894171,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.8673333333333333,
+          0.9033333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.886,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c1",
+      "depth": 12,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 4938468982099578989,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          -0.028,
+          -0.0033333333333333335
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.016,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2764783313553917098,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.003333333333333333,
+          0.001
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.001,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": "directed_graph_traversal",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 648733117232155958,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          0.21133333333333335,
+          0.2643333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.23733333333333334,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": 2,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11932030323555774829,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": 4,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 3615781906161682474,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": 8,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 11538038601557876573,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.42333333333333334,
+          0.5086666666666666
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.466,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c2",
+      "depth": 12,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 8040384003180870281,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          -0.004666666666666666,
+          0.018666666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.006666666666666666,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 2758243907779326126,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.2756666666666666,
+          -0.22166666666666665
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.24866666666666665,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": "directed_graph_traversal",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": null,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 12787922776948528395,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 1000,
+        "confidence_interval": [
+          -0.188,
+          -0.143
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.1653333333333333,
+        "replicate_observation_count": 3000,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic",
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": 2,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 870526529307831532,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": 4,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 17577364174097226786,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          0.0,
+          0.002
+        ],
+        "confidence_level": 0.95,
+        "estimate": 0.0006666666666666666,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": 8,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 14132343973424354826,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          -0.008666666666666666,
+          -0.0013333333333333333
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.004666666666666666,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    },
+    {
+      "comparator": "c3",
+      "depth": 12,
+      "paired_accuracy_difference": {
+        "bootstrap_samples": 10000,
+        "bootstrap_seed": 15867340130675833254,
+        "bootstrap_unit": "item_id",
+        "cluster_count": 500,
+        "confidence_interval": [
+          -0.856,
+          -0.792
+        ],
+        "confidence_level": 0.95,
+        "estimate": -0.824,
+        "replicate_observation_count": 1500,
+        "within_item_reduction": "arithmetic mean across paired replicate blocks"
+      },
+      "reasoning_budget": 128,
+      "split": "test",
+      "task_family": null,
+      "treatment": "c4"
+    }
+  ],
+  "schema_version": 1
+}

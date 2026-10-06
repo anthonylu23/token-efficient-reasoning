@@ -1,0 +1,21 @@
+{
+  "archive": "reports-and-freeze.tar.gz",
+  "archive_contents": "Full recovered reports, implementation snapshot, and original freeze",
+  "archive_members": 107,
+  "archive_sha256": "82376ad955e8f0658a5e40cdeb51a6a3c4894746d7ba1899f3459d6a11269b52",
+  "byte_for_byte_verified": true,
+  "excluded": [
+    "raw generation runs",
+    "training runs and model weights",
+    "development corpora"
+  ],
+  "generation_count": 342000,
+  "readable_copies": "primary/ and budget/; large aggregate tables are inside the archive",
+  "schema_version": 1,
+  "source_manifest_sha256": {
+    "budget": "dbe1481c004b194d1c34a0e9bd47133acbde54e36ff0ce1af6e28356cd260a22",
+    "freeze": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+    "primary": "8c0c78d0ecf1e0cd7163c0b43a98b97a2171fd94e105eb2c2c01e8cd86eccfb1",
+    "recovery": "b17f4dda38d534a453706ddbe4b7073de56c42c2b641dcf6ae19f788811b9dd7"
+  }
+}

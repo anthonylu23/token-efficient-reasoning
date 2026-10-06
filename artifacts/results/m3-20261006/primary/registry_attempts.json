@@ -1,0 +1,4457 @@
+{
+  "attempt_count": 171,
+  "attempts": [
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c2-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:55.807128+00:00",
+      "run_id": "m3-train-r1-c2-seed314159",
+      "run_spec_sha256": "fdfbf38cf212ea3cefa53d36116c84b746a4ae04b5aa66bf874ffdba7ac4278d",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c3-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:55.982303+00:00",
+      "run_id": "m3-train-r1-c3-seed314159",
+      "run_spec_sha256": "4fd07613f44306195242d2bb37fca9baf82cf989953017129964ccbaea0c980b",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c4-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:56.149133+00:00",
+      "run_id": "m3-train-r1-c4-seed314159",
+      "run_spec_sha256": "420c30bbdb91a94c713af8d6f91b5d937b79829395a23f0b39d91883c097501f",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c2-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:56.295433+00:00",
+      "run_id": "m3-train-r2-c2-seed271828",
+      "run_spec_sha256": "b9199da580c74a5ed8bffefcfef8f055d26198ff2011621a264c5e087cc42059",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c3-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:56.430481+00:00",
+      "run_id": "m3-train-r2-c3-seed271828",
+      "run_spec_sha256": "ad69e70cc233c7e0f370958fac7b289129b5905aa814a6c8132c444d6c3e3632",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c4-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:56.581474+00:00",
+      "run_id": "m3-train-r2-c4-seed271828",
+      "run_spec_sha256": "7d90343be8f09f354dcf996dab8c12e633e026ce2bb64d730f614459cafea9ff",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c2-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:56.727648+00:00",
+      "run_id": "m3-train-r3-c2-seed161803",
+      "run_spec_sha256": "37f929712550a695dd7ce9890b9cfc5af91d4882ff67142056da7cc7410e7647",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c3-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:56.902614+00:00",
+      "run_id": "m3-train-r3-c3-seed161803",
+      "run_spec_sha256": "e0de700f43b5e0df5f4ab55f7ce9d542321513bcde3560f25f420a1f12ef28e3",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c4-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:57.043610+00:00",
+      "run_id": "m3-train-r3-c4-seed161803",
+      "run_spec_sha256": "b0de906ef430d8ec5cee0647fb27eaa7ba008c243f0abb7f4b2f672314af777a",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:57.197482+00:00",
+      "run_id": "m3-eval-r1-c0-test",
+      "run_spec_sha256": "61f1bb916db1042abd76477607fd3da78974ee1f245e3c9e501e4a0bd78c2a91",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:57.351801+00:00",
+      "run_id": "m3-eval-r1-c0-test_depth",
+      "run_spec_sha256": "78efcddb4a67bcb67f28b811eb9a8d80811a63d24de0c801185bb0132e5d012d",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:57.488166+00:00",
+      "run_id": "m3-eval-r1-c0-test_compositional",
+      "run_spec_sha256": "5fba0d9740826f08ecfe38f88539a7074b5c683cf87628ec5c95621b5f886f69",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:57.629341+00:00",
+      "run_id": "m3-eval-r1-c1-test",
+      "run_spec_sha256": "c30837a5ee9c071165b1def93a45c5388a4acd1c4c7a146e8ef5a0a80d185c1b",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:57.763708+00:00",
+      "run_id": "m3-eval-r1-c1-test_depth",
+      "run_spec_sha256": "0b236aa80c9fb0082613b80d7b25d958344df902629e20ae8e9765a60a266311",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:57.927722+00:00",
+      "run_id": "m3-eval-r1-c1-test_compositional",
+      "run_spec_sha256": "3b9e34eb48a56d849b773edba20238da1c8beabb4f493257dd04496c0596041e",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:58.072396+00:00",
+      "run_id": "m3-eval-r1-c2-test",
+      "run_spec_sha256": "6065fdef54d743f1eaee23462302855531ad0642d6580858e135d418a16edac0",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:58.255727+00:00",
+      "run_id": "m3-eval-r1-c2-test_depth",
+      "run_spec_sha256": "d55525828a13936e79f57f38efb7fc511ae5b02f9540cd83eef0f73f91cd3efc",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:58.393902+00:00",
+      "run_id": "m3-eval-r1-c2-test_compositional",
+      "run_spec_sha256": "502add0156476d68ba435197da81fd498b4f80d42cebd07c4109c5d8f5c55bae",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:58.532315+00:00",
+      "run_id": "m3-eval-r1-c3-test",
+      "run_spec_sha256": "3fa26f6f8b78bbf32bf83f2f5a1d754c1f574265a52955a0b944c750b9e4273b",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:58.667477+00:00",
+      "run_id": "m3-eval-r1-c3-test_depth",
+      "run_spec_sha256": "c9c3376b15e989bdd5a3693af02279e8e2fed26d0357432cf2bd3d6f6b1a53e4",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:58.801458+00:00",
+      "run_id": "m3-eval-r1-c3-test_compositional",
+      "run_spec_sha256": "6f4127a5030d7271c78b09dbd7f4b1e0052097bfd11641121dbdc0144b017ad2",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:58.939903+00:00",
+      "run_id": "m3-eval-r1-c4-test",
+      "run_spec_sha256": "584ddc62c95e677fefcf6ed518e2611782c035fb2d3550c8b79031895da83d65",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:59.105100+00:00",
+      "run_id": "m3-eval-r1-c4-test_depth",
+      "run_spec_sha256": "b74de3fc5e9ccad05501c77be1fdfe759c89dd5d60f5dcd7eed30c6102925056",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:59.243271+00:00",
+      "run_id": "m3-eval-r1-c4-test_compositional",
+      "run_spec_sha256": "318b6b091266caed73a8e026f81676bebd87fb63271150b649729be86003c2dc",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:59.380363+00:00",
+      "run_id": "m3-eval-r2-c0-test",
+      "run_spec_sha256": "9bba1f9a2692f61048d1344623c3d0ad7291978efc61c3043724fd2199b29fa9",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:59.517192+00:00",
+      "run_id": "m3-eval-r2-c0-test_depth",
+      "run_spec_sha256": "b0706b2784c50029627e2289ffd17219707cb8984f3c2b50d1d921a17f7d6307",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:59.651364+00:00",
+      "run_id": "m3-eval-r2-c0-test_compositional",
+      "run_spec_sha256": "cc69f8fbf0397ef074db14ca8133edf3524372d346014ed2128ee348c683b5aa",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:59.786326+00:00",
+      "run_id": "m3-eval-r2-c1-test",
+      "run_spec_sha256": "5cb3df4122b52189d0f8dcbc807c4e5e05225c73cfbc3fbd3a0573fd0f61ee2e",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:38:59.920885+00:00",
+      "run_id": "m3-eval-r2-c1-test_depth",
+      "run_spec_sha256": "4568cb914d07ed2db675b674dbba3981007fdfb815a564e92d435d20407a407e",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:00.054033+00:00",
+      "run_id": "m3-eval-r2-c1-test_compositional",
+      "run_spec_sha256": "d398a4bd2518693f0c6a84f501e95bc268eb2ae33b89076052e70e36a53dd271",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:00.190875+00:00",
+      "run_id": "m3-eval-r2-c2-test",
+      "run_spec_sha256": "25cd0850a9391ad3fe0310c1f78e337250ceb9566a8645bed4f0d37d4a18f034",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:00.327933+00:00",
+      "run_id": "m3-eval-r2-c2-test_depth",
+      "run_spec_sha256": "2b5c63ae3f0a028eee34f1f2a027b51e29562f762bcdb06f5b3317feda40328e",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:00.463082+00:00",
+      "run_id": "m3-eval-r2-c2-test_compositional",
+      "run_spec_sha256": "70fe050c72b586c966a622eaad58ee03c3ca37bc1dbce7bf79b88d035c69018e",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:00.593385+00:00",
+      "run_id": "m3-eval-r2-c3-test",
+      "run_spec_sha256": "9f2f025e959c813bad84810782f264944b49ffc1609e9ac0817c6ddb94b40b5f",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:00.726488+00:00",
+      "run_id": "m3-eval-r2-c3-test_depth",
+      "run_spec_sha256": "41a567db04d58934f801460dabcbfcf1208aa2196665e723b622735055346867",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:00.862044+00:00",
+      "run_id": "m3-eval-r2-c3-test_compositional",
+      "run_spec_sha256": "33cfca759ad57e6cb132a1294f7c511eec22e39b19061d6758f3d6b871bd3406",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:01.006080+00:00",
+      "run_id": "m3-eval-r2-c4-test",
+      "run_spec_sha256": "f49a7d68aafc8acff42ee381889bba11e17aa7a897ef70e796e65cded853dfa7",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:01.146712+00:00",
+      "run_id": "m3-eval-r2-c4-test_depth",
+      "run_spec_sha256": "7aae9963a03c937956e88eb7297e3a38773c6cabaf67489ce07bee1082f2ae31",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:01.282752+00:00",
+      "run_id": "m3-eval-r2-c4-test_compositional",
+      "run_spec_sha256": "82aece8c165ec7aa8de61ae62acaaab89131db64d29cbc59cb5cae516320b8e5",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:01.420328+00:00",
+      "run_id": "m3-eval-r3-c0-test",
+      "run_spec_sha256": "cf5ef4594e9f2386f9b2f832a95e1b44f134d8e8029cef427a8e68c3a52a9118",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:01.555290+00:00",
+      "run_id": "m3-eval-r3-c0-test_depth",
+      "run_spec_sha256": "6398e8e56fe72e0af15ee381cb7d5b86e59ebd8ae18b922831a8cf59e652020d",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:01.714366+00:00",
+      "run_id": "m3-eval-r3-c0-test_compositional",
+      "run_spec_sha256": "7cc86460cbbdc6728b37170839d4d06f35d08f13d1b87beb72823af2ecc59949",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:01.859291+00:00",
+      "run_id": "m3-eval-r3-c1-test",
+      "run_spec_sha256": "7ecfd1dc95f1caa79dcafc75941fc721d31b8df607bdb625e99c4d6bcf4d49b5",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:01.996197+00:00",
+      "run_id": "m3-eval-r3-c1-test_depth",
+      "run_spec_sha256": "be0cd74b4476afa2fd44940e0a66e4f419b8c964f05d399c9745a9fa2c89a44b",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:02.129856+00:00",
+      "run_id": "m3-eval-r3-c1-test_compositional",
+      "run_spec_sha256": "e80c3c646e9759198ccca484a38afcbb205e13c0d58563ba96b3952e5d885902",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:02.262009+00:00",
+      "run_id": "m3-eval-r3-c2-test",
+      "run_spec_sha256": "cba422da35ffebea88bd38c32e33970efde5f23347ab9ee893c2549cb10eed5b",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:02.395314+00:00",
+      "run_id": "m3-eval-r3-c2-test_depth",
+      "run_spec_sha256": "482e2e42c73f96615aa50b1c8a1fde915dfb7362c88768c4815823e90b3a5e72",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:02.535707+00:00",
+      "run_id": "m3-eval-r3-c2-test_compositional",
+      "run_spec_sha256": "bdbd82a111e4ed1e6aa7075339d1e350229a36a9303fb33c8c1fae86dc2367e3",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:02.670436+00:00",
+      "run_id": "m3-eval-r3-c3-test",
+      "run_spec_sha256": "a46627a6a238f98034980a3197ba059c13ff6e8ec1867a95c08cdc34ea905f20",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:02.808085+00:00",
+      "run_id": "m3-eval-r3-c3-test_depth",
+      "run_spec_sha256": "be37fd06f058e43f72a8998b56517fcee420a3e0b1c178106856a1be65c0faf7",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:02.942546+00:00",
+      "run_id": "m3-eval-r3-c3-test_compositional",
+      "run_spec_sha256": "db989547c8830caf32221818f90f6bcc95b21619031bfc03ed2141b2e017f0e6",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:03.077316+00:00",
+      "run_id": "m3-eval-r3-c4-test",
+      "run_spec_sha256": "49dd945a3a0093f6c8f56a548d5aedeaa4eb45f13aff788eadfeee39e2d87acc",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:03.206962+00:00",
+      "run_id": "m3-eval-r3-c4-test_depth",
+      "run_spec_sha256": "c3051811326b873b3a418a9e4ecc763eb79968506a963ac652304fd934bd07f7",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {},
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:03.342552+00:00",
+      "run_id": "m3-eval-r3-c4-test_compositional",
+      "run_spec_sha256": "a71e76da5df8c39d4bf7815011d2334870f18ad86c64fc03e281794cb96d73a7",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "planned"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "training_seed": 314159
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c2-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T00:39:03.484139+00:00",
+      "run_id": "m3-train-r1-c2-seed314159",
+      "run_spec_sha256": null,
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "global_step": 500,
+        "manifest_files": 41,
+        "peak_allocated_bytes": 4371570176,
+        "phase": "primary",
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c2-seed314159",
+        "run_spec_sha256": "fdfbf38cf212ea3cefa53d36116c84b746a4ae04b5aa66bf874ffdba7ac4278d",
+        "trainable_parameters_changed": true
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c2-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T01:25:04.341512+00:00",
+      "run_id": "m3-train-r1-c2-seed314159",
+      "run_spec_sha256": "fdfbf38cf212ea3cefa53d36116c84b746a4ae04b5aa66bf874ffdba7ac4278d",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "reason": "training and fresh-process reload verified"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c2-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T01:25:15.760215+00:00",
+      "run_id": "m3-train-r1-c2-seed314159",
+      "run_spec_sha256": "fdfbf38cf212ea3cefa53d36116c84b746a4ae04b5aa66bf874ffdba7ac4278d",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "training_seed": 314159
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c3-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T01:25:15.903773+00:00",
+      "run_id": "m3-train-r1-c3-seed314159",
+      "run_spec_sha256": null,
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "global_step": 500,
+        "manifest_files": 41,
+        "peak_allocated_bytes": 4212248064,
+        "phase": "primary",
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c3-seed314159",
+        "run_spec_sha256": "4fd07613f44306195242d2bb37fca9baf82cf989953017129964ccbaea0c980b",
+        "trainable_parameters_changed": true
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c3-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T02:07:36.945669+00:00",
+      "run_id": "m3-train-r1-c3-seed314159",
+      "run_spec_sha256": "4fd07613f44306195242d2bb37fca9baf82cf989953017129964ccbaea0c980b",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "reason": "training and fresh-process reload verified"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c3-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T02:07:47.848420+00:00",
+      "run_id": "m3-train-r1-c3-seed314159",
+      "run_spec_sha256": "4fd07613f44306195242d2bb37fca9baf82cf989953017129964ccbaea0c980b",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "training_seed": 314159
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c4-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T02:07:47.980460+00:00",
+      "run_id": "m3-train-r1-c4-seed314159",
+      "run_spec_sha256": null,
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "global_step": 500,
+        "manifest_files": 41,
+        "peak_allocated_bytes": 4259347456,
+        "phase": "primary",
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c4-seed314159",
+        "run_spec_sha256": "420c30bbdb91a94c713af8d6f91b5d937b79829395a23f0b39d91883c097501f",
+        "trainable_parameters_changed": true
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c4-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T02:50:34.640364+00:00",
+      "run_id": "m3-train-r1-c4-seed314159",
+      "run_spec_sha256": "420c30bbdb91a94c713af8d6f91b5d937b79829395a23f0b39d91883c097501f",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "reason": "training and fresh-process reload verified"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r1-c4-seed314159",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T02:50:44.958225+00:00",
+      "run_id": "m3-train-r1-c4-seed314159",
+      "run_spec_sha256": "420c30bbdb91a94c713af8d6f91b5d937b79829395a23f0b39d91883c097501f",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "training_seed": 271828
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c2-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T02:50:45.097236+00:00",
+      "run_id": "m3-train-r2-c2-seed271828",
+      "run_spec_sha256": null,
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "global_step": 500,
+        "manifest_files": 41,
+        "peak_allocated_bytes": 4371564032,
+        "phase": "primary",
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c2-seed271828",
+        "run_spec_sha256": "b9199da580c74a5ed8bffefcfef8f055d26198ff2011621a264c5e087cc42059",
+        "trainable_parameters_changed": true
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c2-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T03:36:37.669735+00:00",
+      "run_id": "m3-train-r2-c2-seed271828",
+      "run_spec_sha256": "b9199da580c74a5ed8bffefcfef8f055d26198ff2011621a264c5e087cc42059",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "reason": "training and fresh-process reload verified"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c2-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T03:36:48.291764+00:00",
+      "run_id": "m3-train-r2-c2-seed271828",
+      "run_spec_sha256": "b9199da580c74a5ed8bffefcfef8f055d26198ff2011621a264c5e087cc42059",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "training_seed": 271828
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c3-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T03:36:48.428556+00:00",
+      "run_id": "m3-train-r2-c3-seed271828",
+      "run_spec_sha256": null,
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "global_step": 500,
+        "manifest_files": 41,
+        "peak_allocated_bytes": 4227813376,
+        "phase": "primary",
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c3-seed271828",
+        "run_spec_sha256": "ad69e70cc233c7e0f370958fac7b289129b5905aa814a6c8132c444d6c3e3632",
+        "trainable_parameters_changed": true
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c3-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T04:18:52.058520+00:00",
+      "run_id": "m3-train-r2-c3-seed271828",
+      "run_spec_sha256": "ad69e70cc233c7e0f370958fac7b289129b5905aa814a6c8132c444d6c3e3632",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "reason": "training and fresh-process reload verified"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c3-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T04:19:02.508573+00:00",
+      "run_id": "m3-train-r2-c3-seed271828",
+      "run_spec_sha256": "ad69e70cc233c7e0f370958fac7b289129b5905aa814a6c8132c444d6c3e3632",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "training_seed": 271828
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c4-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T04:19:02.693038+00:00",
+      "run_id": "m3-train-r2-c4-seed271828",
+      "run_spec_sha256": null,
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "global_step": 500,
+        "manifest_files": 41,
+        "peak_allocated_bytes": 4259345920,
+        "phase": "primary",
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c4-seed271828",
+        "run_spec_sha256": "7d90343be8f09f354dcf996dab8c12e633e026ce2bb64d730f614459cafea9ff",
+        "trainable_parameters_changed": true
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c4-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T05:03:43.419462+00:00",
+      "run_id": "m3-train-r2-c4-seed271828",
+      "run_spec_sha256": "7d90343be8f09f354dcf996dab8c12e633e026ce2bb64d730f614459cafea9ff",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "reason": "training and fresh-process reload verified"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r2-c4-seed271828",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T05:03:57.195260+00:00",
+      "run_id": "m3-train-r2-c4-seed271828",
+      "run_spec_sha256": "7d90343be8f09f354dcf996dab8c12e633e026ce2bb64d730f614459cafea9ff",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "training_seed": 161803
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c2-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T05:03:57.339693+00:00",
+      "run_id": "m3-train-r3-c2-seed161803",
+      "run_spec_sha256": null,
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "global_step": 500,
+        "manifest_files": 41,
+        "peak_allocated_bytes": 4371573248,
+        "phase": "primary",
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c2-seed161803",
+        "run_spec_sha256": "37f929712550a695dd7ce9890b9cfc5af91d4882ff67142056da7cc7410e7647",
+        "trainable_parameters_changed": true
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c2-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T05:50:28.102404+00:00",
+      "run_id": "m3-train-r3-c2-seed161803",
+      "run_spec_sha256": "37f929712550a695dd7ce9890b9cfc5af91d4882ff67142056da7cc7410e7647",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "reason": "training and fresh-process reload verified"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c2-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T05:50:40.044080+00:00",
+      "run_id": "m3-train-r3-c2-seed161803",
+      "run_spec_sha256": "37f929712550a695dd7ce9890b9cfc5af91d4882ff67142056da7cc7410e7647",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "training_seed": 161803
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c3-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T05:50:40.196593+00:00",
+      "run_id": "m3-train-r3-c3-seed161803",
+      "run_spec_sha256": null,
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "global_step": 500,
+        "manifest_files": 41,
+        "peak_allocated_bytes": 4228346368,
+        "phase": "primary",
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c3-seed161803",
+        "run_spec_sha256": "e0de700f43b5e0df5f4ab55f7ce9d542321513bcde3560f25f420a1f12ef28e3",
+        "trainable_parameters_changed": true
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c3-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T06:33:27.276879+00:00",
+      "run_id": "m3-train-r3-c3-seed161803",
+      "run_spec_sha256": "e0de700f43b5e0df5f4ab55f7ce9d542321513bcde3560f25f420a1f12ef28e3",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "reason": "training and fresh-process reload verified"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c3-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T06:33:39.721409+00:00",
+      "run_id": "m3-train-r3-c3-seed161803",
+      "run_spec_sha256": "e0de700f43b5e0df5f4ab55f7ce9d542321513bcde3560f25f420a1f12ef28e3",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "training_seed": 161803
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c4-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T06:33:39.861756+00:00",
+      "run_id": "m3-train-r3-c4-seed161803",
+      "run_spec_sha256": null,
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "global_step": 500,
+        "manifest_files": 41,
+        "peak_allocated_bytes": 4259355136,
+        "phase": "primary",
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c4-seed161803",
+        "run_spec_sha256": "b0de906ef430d8ec5cee0647fb27eaa7ba008c243f0abb7f4b2f672314af777a",
+        "trainable_parameters_changed": true
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c4-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T07:16:24.037117+00:00",
+      "run_id": "m3-train-r3-c4-seed161803",
+      "run_spec_sha256": "b0de906ef430d8ec5cee0647fb27eaa7ba008c243f0abb7f4b2f672314af777a",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "reason": "training and fresh-process reload verified"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training/m3-train-r3-c4-seed161803",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T07:16:36.389174+00:00",
+      "run_id": "m3-train-r3-c4-seed161803",
+      "run_spec_sha256": "b0de906ef430d8ec5cee0647fb27eaa7ba008c243f0abb7f4b2f672314af777a",
+      "run_type": "training",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c0",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T07:16:36.529156+00:00",
+      "run_id": "m3-eval-r1-c0-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.14666666666666667,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c0",
+        "forced_reasoning_rate": 0.6988333333333333,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.7573941917030607,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.99875,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c0",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c0-test",
+            "run_spec_sha256": "61f1bb916db1042abd76477607fd3da78974ee1f245e3c9e501e4a0bd78c2a91",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T11:21:23.957803+00:00",
+      "run_id": "m3-eval-r1-c0-test",
+      "run_spec_sha256": "61f1bb916db1042abd76477607fd3da78974ee1f245e3c9e501e4a0bd78c2a91",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c0",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T11:21:25.270201+00:00",
+      "run_id": "m3-eval-r1-c0-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.027666666666666666,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c0",
+        "forced_reasoning_rate": 0.949,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 3.7515396044001292,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.9945,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c0",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c0-test_depth",
+            "run_spec_sha256": "78efcddb4a67bcb67f28b811eb9a8d80811a63d24de0c801185bb0132e5d012d",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T14:12:03.702972+00:00",
+      "run_id": "m3-eval-r1-c0-test_depth",
+      "run_spec_sha256": "78efcddb4a67bcb67f28b811eb9a8d80811a63d24de0c801185bb0132e5d012d",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c0",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T14:12:05.034869+00:00",
+      "run_id": "m3-eval-r1-c0-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.22270833333333334,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c0",
+        "forced_reasoning_rate": 0.6579166666666667,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.297804041331401,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.985625,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c0",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c0-test_compositional",
+            "run_spec_sha256": "5fba0d9740826f08ecfe38f88539a7074b5c683cf87628ec5c95621b5f886f69",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c0-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T15:32:46.179174+00:00",
+      "run_id": "m3-eval-r1-c0-test_compositional",
+      "run_spec_sha256": "5fba0d9740826f08ecfe38f88539a7074b5c683cf87628ec5c95621b5f886f69",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c1",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T15:32:47.476713+00:00",
+      "run_id": "m3-eval-r1-c1-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.12233333333333334,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c1",
+        "forced_reasoning_rate": 0.5868333333333333,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.5800140976617114,
+        "median_reasoning_tokens": 62.0,
+        "region_parse_success_rate": 0.9573333333333334,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c1",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c1-test",
+            "run_spec_sha256": "c30837a5ee9c071165b1def93a45c5388a4acd1c4c7a146e8ef5a0a80d185c1b",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T19:16:21.390073+00:00",
+      "run_id": "m3-eval-r1-c1-test",
+      "run_spec_sha256": "c30837a5ee9c071165b1def93a45c5388a4acd1c4c7a146e8ef5a0a80d185c1b",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c1",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T19:16:22.603751+00:00",
+      "run_id": "m3-eval-r1-c1-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.028,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c1",
+        "forced_reasoning_rate": 0.748,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 3.454489138854978,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.9798333333333333,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c1",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c1-test_depth",
+            "run_spec_sha256": "0b236aa80c9fb0082613b80d7b25d958344df902629e20ae8e9765a60a266311",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T21:50:26.269388+00:00",
+      "run_id": "m3-eval-r1-c1-test_depth",
+      "run_spec_sha256": "0b236aa80c9fb0082613b80d7b25d958344df902629e20ae8e9765a60a266311",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c1",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T21:50:27.489300+00:00",
+      "run_id": "m3-eval-r1-c1-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.1625,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c1",
+        "forced_reasoning_rate": 0.6079166666666667,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.426993453623727,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.970625,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c1",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c1-test_compositional",
+            "run_spec_sha256": "3b9e34eb48a56d849b773edba20238da1c8beabb4f493257dd04496c0596041e",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c1-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T23:14:44.875336+00:00",
+      "run_id": "m3-eval-r1-c1-test_compositional",
+      "run_spec_sha256": "3b9e34eb48a56d849b773edba20238da1c8beabb4f493257dd04496c0596041e",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-28T23:14:46.416830+00:00",
+      "run_id": "m3-eval-r1-c2-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.5263333333333333,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.5103333333333333,
+        "condition_id": "c2",
+        "forced_reasoning_rate": 0.5514166666666667,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 3.0970933955954387,
+        "median_reasoning_tokens": 54.5,
+        "region_parse_success_rate": 0.99975,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r1-c2-seed314159",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c2",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c2-test",
+            "run_spec_sha256": "6065fdef54d743f1eaee23462302855531ad0642d6580858e135d418a16edac0",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": 314159
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.7295833333333334
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T03:40:14.248212+00:00",
+      "run_id": "m3-eval-r1-c2-test",
+      "run_spec_sha256": "6065fdef54d743f1eaee23462302855531ad0642d6580858e135d418a16edac0",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T03:40:15.725698+00:00",
+      "run_id": "m3-eval-r1-c2-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.07616666666666666,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.059,
+        "condition_id": "c2",
+        "forced_reasoning_rate": 0.752,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 5.416096966360075,
+        "median_reasoning_tokens": 96.0,
+        "region_parse_success_rate": 0.9998333333333334,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r1-c2-seed314159",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c2",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c2-test_depth",
+            "run_spec_sha256": "d55525828a13936e79f57f38efb7fc511ae5b02f9540cd83eef0f73f91cd3efc",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": 314159
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.5953333333333334
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T07:45:03.046726+00:00",
+      "run_id": "m3-eval-r1-c2-test_depth",
+      "run_spec_sha256": "d55525828a13936e79f57f38efb7fc511ae5b02f9540cd83eef0f73f91cd3efc",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T07:45:04.674380+00:00",
+      "run_id": "m3-eval-r1-c2-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.52875,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.5120833333333333,
+        "condition_id": "c2",
+        "forced_reasoning_rate": 0.550625,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.9879389342366873,
+        "median_reasoning_tokens": 54.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r1-c2-seed314159",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c2",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c2-test_compositional",
+            "run_spec_sha256": "502add0156476d68ba435197da81fd498b4f80d42cebd07c4109c5d8f5c55bae",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": 314159
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.729375
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c2-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T09:27:57.078048+00:00",
+      "run_id": "m3-eval-r1-c2-test_compositional",
+      "run_spec_sha256": "502add0156476d68ba435197da81fd498b4f80d42cebd07c4109c5d8f5c55bae",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T09:27:58.368453+00:00",
+      "run_id": "m3-eval-r1-c3-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.6495,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.62575,
+        "condition_id": "c3",
+        "forced_reasoning_rate": 0.3774166666666667,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.146919836348621,
+        "median_reasoning_tokens": 32.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r1-c3-seed314159",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c3",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c3-test",
+            "run_spec_sha256": "3fa26f6f8b78bbf32bf83f2f5a1d754c1f574265a52955a0b944c750b9e4273b",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": 314159
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.7008333333333333
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T12:21:31.352841+00:00",
+      "run_id": "m3-eval-r1-c3-test",
+      "run_spec_sha256": "3fa26f6f8b78bbf32bf83f2f5a1d754c1f574265a52955a0b944c750b9e4273b",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T12:21:32.824497+00:00",
+      "run_id": "m3-eval-r1-c3-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.1745,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.16233333333333333,
+        "condition_id": "c3",
+        "forced_reasoning_rate": 0.6665,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 4.099490116767896,
+        "median_reasoning_tokens": 87.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r1-c3-seed314159",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c3",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c3-test_depth",
+            "run_spec_sha256": "c9c3376b15e989bdd5a3693af02279e8e2fed26d0357432cf2bd3d6f6b1a53e4",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": 314159
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.474
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T15:19:25.218569+00:00",
+      "run_id": "m3-eval-r1-c3-test_depth",
+      "run_spec_sha256": "c9c3376b15e989bdd5a3693af02279e8e2fed26d0357432cf2bd3d6f6b1a53e4",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T15:19:26.931909+00:00",
+      "run_id": "m3-eval-r1-c3-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.6454166666666666,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.6279166666666667,
+        "condition_id": "c3",
+        "forced_reasoning_rate": 0.37375,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.0780531566857827,
+        "median_reasoning_tokens": 32.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r1-c3-seed314159",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c3",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c3-test_compositional",
+            "run_spec_sha256": "6f4127a5030d7271c78b09dbd7f4b1e0052097bfd11641121dbdc0144b017ad2",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": 314159
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.7022916666666666
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c3-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T16:26:38.065411+00:00",
+      "run_id": "m3-eval-r1-c3-test_compositional",
+      "run_spec_sha256": "6f4127a5030d7271c78b09dbd7f4b1e0052097bfd11641121dbdc0144b017ad2",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T16:26:39.356842+00:00",
+      "run_id": "m3-eval-r1-c4-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.6175,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.5805,
+        "condition_id": "c4",
+        "forced_reasoning_rate": 0.4166666666666667,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.413827055509668,
+        "median_reasoning_tokens": 37.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r1-c4-seed314159",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c4",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c4-test",
+            "run_spec_sha256": "584ddc62c95e677fefcf6ed518e2611782c035fb2d3550c8b79031895da83d65",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": 314159
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.6065
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T19:46:59.497033+00:00",
+      "run_id": "m3-eval-r1-c4-test",
+      "run_spec_sha256": "584ddc62c95e677fefcf6ed518e2611782c035fb2d3550c8b79031895da83d65",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T19:47:01.303657+00:00",
+      "run_id": "m3-eval-r1-c4-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.18783333333333332,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.164,
+        "condition_id": "c4",
+        "forced_reasoning_rate": 0.67,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 4.504289936785741,
+        "median_reasoning_tokens": 96.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r1-c4-seed314159",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c4",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c4-test_depth",
+            "run_spec_sha256": "b74de3fc5e9ccad05501c77be1fdfe759c89dd5d60f5dcd7eed30c6102925056",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": 314159
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.3785
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T23:06:53.421829+00:00",
+      "run_id": "m3-eval-r1-c4-test_depth",
+      "run_spec_sha256": "b74de3fc5e9ccad05501c77be1fdfe759c89dd5d60f5dcd7eed30c6102925056",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "decoding_seed": 1729,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-29T23:06:55.086894+00:00",
+      "run_id": "m3-eval-r1-c4-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.6170833333333333,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.57625,
+        "condition_id": "c4",
+        "forced_reasoning_rate": 0.4175,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.442811575821058,
+        "median_reasoning_tokens": 43.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r1-c4-seed314159",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c4",
+            "decoding_seed": 1729,
+            "phase": "primary",
+            "replicate": 1,
+            "run_id": "m3-eval-r1-c4-test_compositional",
+            "run_spec_sha256": "318b6b091266caed73a8e026f81676bebd87fb63271150b649729be86003c2dc",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": 314159
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.6083333333333333
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r1-c4-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T00:28:45.345422+00:00",
+      "run_id": "m3-eval-r1-c4-test_compositional",
+      "run_spec_sha256": "318b6b091266caed73a8e026f81676bebd87fb63271150b649729be86003c2dc",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c0",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T00:28:47.108446+00:00",
+      "run_id": "m3-eval-r2-c0-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.14591666666666667,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c0",
+        "forced_reasoning_rate": 0.7021666666666667,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.7825504953377727,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.9985,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c0",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c0-test",
+            "run_spec_sha256": "9bba1f9a2692f61048d1344623c3d0ad7291978efc61c3043724fd2199b29fa9",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T04:36:06.794111+00:00",
+      "run_id": "m3-eval-r2-c0-test",
+      "run_spec_sha256": "9bba1f9a2692f61048d1344623c3d0ad7291978efc61c3043724fd2199b29fa9",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c0",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T04:36:08.089131+00:00",
+      "run_id": "m3-eval-r2-c0-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.027666666666666666,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c0",
+        "forced_reasoning_rate": 0.947,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 3.7753433699870174,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.9928333333333333,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c0",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c0-test_depth",
+            "run_spec_sha256": "b0706b2784c50029627e2289ffd17219707cb8984f3c2b50d1d921a17f7d6307",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T07:27:17.207516+00:00",
+      "run_id": "m3-eval-r2-c0-test_depth",
+      "run_spec_sha256": "b0706b2784c50029627e2289ffd17219707cb8984f3c2b50d1d921a17f7d6307",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c0",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T07:27:18.758934+00:00",
+      "run_id": "m3-eval-r2-c0-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.22270833333333334,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c0",
+        "forced_reasoning_rate": 0.6604166666666667,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.3084565498968974,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.9854166666666667,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c0",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c0-test_compositional",
+            "run_spec_sha256": "cc69f8fbf0397ef074db14ca8133edf3524372d346014ed2128ee348c683b5aa",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c0-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T08:48:29.314908+00:00",
+      "run_id": "m3-eval-r2-c0-test_compositional",
+      "run_spec_sha256": "cc69f8fbf0397ef074db14ca8133edf3524372d346014ed2128ee348c683b5aa",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c1",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T08:48:30.597925+00:00",
+      "run_id": "m3-eval-r2-c1-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.1255,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c1",
+        "forced_reasoning_rate": 0.5783333333333334,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.5198158069994143,
+        "median_reasoning_tokens": 62.0,
+        "region_parse_success_rate": 0.9559166666666666,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c1",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c1-test",
+            "run_spec_sha256": "5cb3df4122b52189d0f8dcbc807c4e5e05225c73cfbc3fbd3a0573fd0f61ee2e",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T12:26:17.223340+00:00",
+      "run_id": "m3-eval-r2-c1-test",
+      "run_spec_sha256": "5cb3df4122b52189d0f8dcbc807c4e5e05225c73cfbc3fbd3a0573fd0f61ee2e",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c1",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T12:26:18.815135+00:00",
+      "run_id": "m3-eval-r2-c1-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.030166666666666668,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c1",
+        "forced_reasoning_rate": 0.741,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 3.470917347412246,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.98,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c1",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c1-test_depth",
+            "run_spec_sha256": "4568cb914d07ed2db675b674dbba3981007fdfb815a564e92d435d20407a407e",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T15:01:06.880077+00:00",
+      "run_id": "m3-eval-r2-c1-test_depth",
+      "run_spec_sha256": "4568cb914d07ed2db675b674dbba3981007fdfb815a564e92d435d20407a407e",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c1",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T15:01:08.333486+00:00",
+      "run_id": "m3-eval-r2-c1-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.168125,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c1",
+        "forced_reasoning_rate": 0.6085416666666666,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.4298142644448673,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.9716666666666667,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c1",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c1-test_compositional",
+            "run_spec_sha256": "d398a4bd2518693f0c6a84f501e95bc268eb2ae33b89076052e70e36a53dd271",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c1-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T16:25:36.203218+00:00",
+      "run_id": "m3-eval-r2-c1-test_compositional",
+      "run_spec_sha256": "d398a4bd2518693f0c6a84f501e95bc268eb2ae33b89076052e70e36a53dd271",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T16:25:37.453608+00:00",
+      "run_id": "m3-eval-r2-c2-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.5244166666666666,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.51025,
+        "condition_id": "c2",
+        "forced_reasoning_rate": 0.5514166666666667,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 3.094064657015959,
+        "median_reasoning_tokens": 54.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r2-c2-seed271828",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c2",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c2-test",
+            "run_spec_sha256": "25cd0850a9391ad3fe0310c1f78e337250ceb9566a8645bed4f0d37d4a18f034",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": 271828
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.7295833333333334
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T20:51:06.330947+00:00",
+      "run_id": "m3-eval-r2-c2-test",
+      "run_spec_sha256": "25cd0850a9391ad3fe0310c1f78e337250ceb9566a8645bed4f0d37d4a18f034",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-09-30T20:51:08.022969+00:00",
+      "run_id": "m3-eval-r2-c2-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.0785,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.064,
+        "condition_id": "c2",
+        "forced_reasoning_rate": 0.7553333333333333,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 5.549216343058273,
+        "median_reasoning_tokens": 72.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r2-c2-seed271828",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c2",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c2-test_depth",
+            "run_spec_sha256": "2b5c63ae3f0a028eee34f1f2a027b51e29562f762bcdb06f5b3317feda40328e",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": 271828
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.5928333333333333
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T01:03:14.297918+00:00",
+      "run_id": "m3-eval-r2-c2-test_depth",
+      "run_spec_sha256": "2b5c63ae3f0a028eee34f1f2a027b51e29562f762bcdb06f5b3317feda40328e",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T01:03:16.029298+00:00",
+      "run_id": "m3-eval-r2-c2-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.5258333333333334,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.51125,
+        "condition_id": "c2",
+        "forced_reasoning_rate": 0.550625,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 3.1255097962739335,
+        "median_reasoning_tokens": 54.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r2-c2-seed271828",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c2",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c2-test_compositional",
+            "run_spec_sha256": "70fe050c72b586c966a622eaad58ee03c3ca37bc1dbce7bf79b88d035c69018e",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": 271828
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.729375
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c2-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T02:51:36.962225+00:00",
+      "run_id": "m3-eval-r2-c2-test_compositional",
+      "run_spec_sha256": "70fe050c72b586c966a622eaad58ee03c3ca37bc1dbce7bf79b88d035c69018e",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T02:51:38.640131+00:00",
+      "run_id": "m3-eval-r2-c3-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.6550833333333334,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.62525,
+        "condition_id": "c3",
+        "forced_reasoning_rate": 0.3774166666666667,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.3694376000616857,
+        "median_reasoning_tokens": 32.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r2-c3-seed271828",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c3",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c3-test",
+            "run_spec_sha256": "9f2f025e959c813bad84810782f264944b49ffc1609e9ac0817c6ddb94b40b5f",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": 271828
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.70075
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T06:00:01.871834+00:00",
+      "run_id": "m3-eval-r2-c3-test",
+      "run_spec_sha256": "9f2f025e959c813bad84810782f264944b49ffc1609e9ac0817c6ddb94b40b5f",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T06:00:03.829475+00:00",
+      "run_id": "m3-eval-r2-c3-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.13883333333333334,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.12633333333333333,
+        "condition_id": "c3",
+        "forced_reasoning_rate": 0.6531666666666667,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 4.001330301581416,
+        "median_reasoning_tokens": 68.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r2-c3-seed271828",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c3",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c3-test_depth",
+            "run_spec_sha256": "41a567db04d58934f801460dabcbfcf1208aa2196665e723b622735055346867",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": 271828
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.48383333333333334
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T08:53:05.384246+00:00",
+      "run_id": "m3-eval-r2-c3-test_depth",
+      "run_spec_sha256": "41a567db04d58934f801460dabcbfcf1208aa2196665e723b622735055346867",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T08:53:06.992383+00:00",
+      "run_id": "m3-eval-r2-c3-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.65625,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.6283333333333333,
+        "condition_id": "c3",
+        "forced_reasoning_rate": 0.37375,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.087212639131661,
+        "median_reasoning_tokens": 32.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r2-c3-seed271828",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c3",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c3-test_compositional",
+            "run_spec_sha256": "33cfca759ad57e6cb132a1294f7c511eec22e39b19061d6758f3d6b871bd3406",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": 271828
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.7022916666666666
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c3-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T10:00:36.557973+00:00",
+      "run_id": "m3-eval-r2-c3-test_compositional",
+      "run_spec_sha256": "33cfca759ad57e6cb132a1294f7c511eec22e39b19061d6758f3d6b871bd3406",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T10:00:38.201150+00:00",
+      "run_id": "m3-eval-r2-c4-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.6035833333333334,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.5810833333333333,
+        "condition_id": "c4",
+        "forced_reasoning_rate": 0.4166666666666667,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.4015509291916,
+        "median_reasoning_tokens": 37.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r2-c4-seed271828",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c4",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c4-test",
+            "run_spec_sha256": "f49a7d68aafc8acff42ee381889bba11e17aa7a897ef70e796e65cded853dfa7",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": 271828
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.6073333333333333
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T13:19:48.763305+00:00",
+      "run_id": "m3-eval-r2-c4-test",
+      "run_spec_sha256": "f49a7d68aafc8acff42ee381889bba11e17aa7a897ef70e796e65cded853dfa7",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T13:19:50.480791+00:00",
+      "run_id": "m3-eval-r2-c4-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.20133333333333334,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.17633333333333334,
+        "condition_id": "c4",
+        "forced_reasoning_rate": 0.6688333333333333,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 4.507894119343099,
+        "median_reasoning_tokens": 96.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r2-c4-seed271828",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c4",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c4-test_depth",
+            "run_spec_sha256": "7aae9963a03c937956e88eb7297e3a38773c6cabaf67489ce07bee1082f2ae31",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": 271828
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.3863333333333333
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T16:39:12.512407+00:00",
+      "run_id": "m3-eval-r2-c4-test_depth",
+      "run_spec_sha256": "7aae9963a03c937956e88eb7297e3a38773c6cabaf67489ce07bee1082f2ae31",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "decoding_seed": 2718,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T16:39:14.255158+00:00",
+      "run_id": "m3-eval-r2-c4-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.60625,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.5810416666666667,
+        "condition_id": "c4",
+        "forced_reasoning_rate": 0.4166666666666667,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.322273414550388,
+        "median_reasoning_tokens": 37.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r2-c4-seed271828",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c4",
+            "decoding_seed": 2718,
+            "phase": "primary",
+            "replicate": 2,
+            "run_id": "m3-eval-r2-c4-test_compositional",
+            "run_spec_sha256": "82aece8c165ec7aa8de61ae62acaaab89131db64d29cbc59cb5cae516320b8e5",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": 271828
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.6091666666666666
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r2-c4-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T17:56:26.663860+00:00",
+      "run_id": "m3-eval-r2-c4-test_compositional",
+      "run_spec_sha256": "82aece8c165ec7aa8de61ae62acaaab89131db64d29cbc59cb5cae516320b8e5",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c0",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T17:56:28.107650+00:00",
+      "run_id": "m3-eval-r3-c0-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.14858333333333335,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c0",
+        "forced_reasoning_rate": 0.7013333333333334,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.797294875096607,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.9988333333333334,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c0",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c0-test",
+            "run_spec_sha256": "cf5ef4594e9f2386f9b2f832a95e1b44f134d8e8029cef427a8e68c3a52a9118",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T22:05:19.599896+00:00",
+      "run_id": "m3-eval-r3-c0-test",
+      "run_spec_sha256": "cf5ef4594e9f2386f9b2f832a95e1b44f134d8e8029cef427a8e68c3a52a9118",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c0",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-01T22:05:21.241473+00:00",
+      "run_id": "m3-eval-r3-c0-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.027,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c0",
+        "forced_reasoning_rate": 0.946,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 3.716577624246944,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.994,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c0",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c0-test_depth",
+            "run_spec_sha256": "6398e8e56fe72e0af15ee381cb7d5b86e59ebd8ae18b922831a8cf59e652020d",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T00:54:22.492243+00:00",
+      "run_id": "m3-eval-r3-c0-test_depth",
+      "run_spec_sha256": "6398e8e56fe72e0af15ee381cb7d5b86e59ebd8ae18b922831a8cf59e652020d",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c0",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T00:54:23.935293+00:00",
+      "run_id": "m3-eval-r3-c0-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.22125,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c0",
+        "forced_reasoning_rate": 0.65375,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.274831581420925,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.9839583333333334,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c0",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c0-test_compositional",
+            "run_spec_sha256": "7cc86460cbbdc6728b37170839d4d06f35d08f13d1b87beb72823af2ecc59949",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c0-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T02:14:17.530079+00:00",
+      "run_id": "m3-eval-r3-c0-test_compositional",
+      "run_spec_sha256": "7cc86460cbbdc6728b37170839d4d06f35d08f13d1b87beb72823af2ecc59949",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c1",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T02:14:18.927685+00:00",
+      "run_id": "m3-eval-r3-c1-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.12325,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c1",
+        "forced_reasoning_rate": 0.5829166666666666,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.52600230172649,
+        "median_reasoning_tokens": 63.0,
+        "region_parse_success_rate": 0.95475,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c1",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c1-test",
+            "run_spec_sha256": "7ecfd1dc95f1caa79dcafc75941fc721d31b8df607bdb625e99c4d6bcf4d49b5",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T05:52:53.578307+00:00",
+      "run_id": "m3-eval-r3-c1-test",
+      "run_spec_sha256": "7ecfd1dc95f1caa79dcafc75941fc721d31b8df607bdb625e99c4d6bcf4d49b5",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c1",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T05:52:55.190668+00:00",
+      "run_id": "m3-eval-r3-c1-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.030333333333333334,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c1",
+        "forced_reasoning_rate": 0.7518333333333334,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 3.4499151582513004,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.9798333333333333,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c1",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c1-test_depth",
+            "run_spec_sha256": "be0cd74b4476afa2fd44940e0a66e4f419b8c964f05d399c9745a9fa2c89a44b",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T08:26:57.242362+00:00",
+      "run_id": "m3-eval-r3-c1-test_depth",
+      "run_spec_sha256": "be0cd74b4476afa2fd44940e0a66e4f419b8c964f05d399c9745a9fa2c89a44b",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c1",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T08:26:58.524880+00:00",
+      "run_id": "m3-eval-r3-c1-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.16479166666666667,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.0,
+        "condition_id": "c1",
+        "forced_reasoning_rate": 0.611875,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.472302544476697,
+        "median_reasoning_tokens": 64.0,
+        "region_parse_success_rate": 0.9691666666666666,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": null,
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c1",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c1-test_compositional",
+            "run_spec_sha256": "e80c3c646e9759198ccca484a38afcbb205e13c0d58563ba96b3952e5d885902",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": null
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.0
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c1-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T09:53:12.512025+00:00",
+      "run_id": "m3-eval-r3-c1-test_compositional",
+      "run_spec_sha256": "e80c3c646e9759198ccca484a38afcbb205e13c0d58563ba96b3952e5d885902",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T09:53:13.803620+00:00",
+      "run_id": "m3-eval-r3-c2-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.5285,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.5101666666666667,
+        "condition_id": "c2",
+        "forced_reasoning_rate": 0.5514166666666667,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 3.0996846256395028,
+        "median_reasoning_tokens": 54.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r3-c2-seed161803",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c2",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c2-test",
+            "run_spec_sha256": "cba422da35ffebea88bd38c32e33970efde5f23347ab9ee893c2549cb10eed5b",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": 161803
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.7295
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T14:19:17.469439+00:00",
+      "run_id": "m3-eval-r3-c2-test",
+      "run_spec_sha256": "cba422da35ffebea88bd38c32e33970efde5f23347ab9ee893c2549cb10eed5b",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T14:19:19.113577+00:00",
+      "run_id": "m3-eval-r3-c2-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.08883333333333333,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.075,
+        "condition_id": "c2",
+        "forced_reasoning_rate": 0.7638333333333334,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 5.391072937818089,
+        "median_reasoning_tokens": 96.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r3-c2-seed161803",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c2",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c2-test_depth",
+            "run_spec_sha256": "482e2e42c73f96615aa50b1c8a1fde915dfb7362c88768c4815823e90b3a5e72",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": 161803
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.5843333333333334
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T18:23:31.336213+00:00",
+      "run_id": "m3-eval-r3-c2-test_depth",
+      "run_spec_sha256": "482e2e42c73f96615aa50b1c8a1fde915dfb7362c88768c4815823e90b3a5e72",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c2",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T18:23:32.782139+00:00",
+      "run_id": "m3-eval-r3-c2-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.5266666666666666,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.508125,
+        "condition_id": "c2",
+        "forced_reasoning_rate": 0.550625,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.97729759418425,
+        "median_reasoning_tokens": 54.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r3-c2-seed161803",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c2",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c2-test_compositional",
+            "run_spec_sha256": "bdbd82a111e4ed1e6aa7075339d1e350229a36a9303fb33c8c1fae86dc2367e3",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": 161803
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.7291666666666666
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c2-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T20:06:02.985901+00:00",
+      "run_id": "m3-eval-r3-c2-test_compositional",
+      "run_spec_sha256": "bdbd82a111e4ed1e6aa7075339d1e350229a36a9303fb33c8c1fae86dc2367e3",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T20:06:04.525294+00:00",
+      "run_id": "m3-eval-r3-c3-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.6605,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.625,
+        "condition_id": "c3",
+        "forced_reasoning_rate": 0.3775,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.1296620038112937,
+        "median_reasoning_tokens": 32.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r3-c3-seed161803",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c3",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c3-test",
+            "run_spec_sha256": "a46627a6a238f98034980a3197ba059c13ff6e8ec1867a95c08cdc34ea905f20",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": 161803
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.7005833333333333
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T22:58:46.172859+00:00",
+      "run_id": "m3-eval-r3-c3-test",
+      "run_spec_sha256": "a46627a6a238f98034980a3197ba059c13ff6e8ec1867a95c08cdc34ea905f20",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-02T22:58:47.644120+00:00",
+      "run_id": "m3-eval-r3-c3-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.21616666666666667,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.20483333333333334,
+        "condition_id": "c3",
+        "forced_reasoning_rate": 0.6665,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 4.117527182957312,
+        "median_reasoning_tokens": 67.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r3-c3-seed161803",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c3",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c3-test_depth",
+            "run_spec_sha256": "be37fd06f058e43f72a8998b56517fcee420a3e0b1c178106856a1be65c0faf7",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": 161803
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.4735
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-03T01:57:56.727922+00:00",
+      "run_id": "m3-eval-r3-c3-test_depth",
+      "run_spec_sha256": "be37fd06f058e43f72a8998b56517fcee420a3e0b1c178106856a1be65c0faf7",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c3",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-03T01:57:58.196701+00:00",
+      "run_id": "m3-eval-r3-c3-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.6554166666666666,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.6272916666666667,
+        "condition_id": "c3",
+        "forced_reasoning_rate": 0.37375,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.052548671583257,
+        "median_reasoning_tokens": 32.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r3-c3-seed161803",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c3",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c3-test_compositional",
+            "run_spec_sha256": "db989547c8830caf32221818f90f6bcc95b21619031bfc03ed2141b2e017f0e6",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": 161803
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.7022916666666666
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c3-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-03T03:04:36.032738+00:00",
+      "run_id": "m3-eval-r3-c3-test_compositional",
+      "run_spec_sha256": "db989547c8830caf32221818f90f6bcc95b21619031bfc03ed2141b2e017f0e6",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-03T03:04:37.577550+00:00",
+      "run_id": "m3-eval-r3-c4-test",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.6011666666666666,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.58125,
+        "condition_id": "c4",
+        "forced_reasoning_rate": 0.4166666666666667,
+        "item_generation_count": 12000,
+        "mean_latency_seconds": 2.4251967881648646,
+        "median_reasoning_tokens": 37.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r3-c4-seed161803",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c4",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c4-test",
+            "run_spec_sha256": "49dd945a3a0093f6c8f56a548d5aedeaa4eb45f13aff788eadfeee39e2d87acc",
+            "run_type": "evaluation",
+            "split": "test",
+            "training_seed": 161803
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.6064166666666667
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test",
+      "phase": "primary",
+      "recorded_at": "2026-10-03T06:25:42.438262+00:00",
+      "run_id": "m3-eval-r3-c4-test",
+      "run_spec_sha256": "49dd945a3a0093f6c8f56a548d5aedeaa4eb45f13aff788eadfeee39e2d87acc",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test_depth"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-03T06:25:43.840291+00:00",
+      "run_id": "m3-eval-r3-c4-test_depth",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.17583333333333334,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.1625,
+        "condition_id": "c4",
+        "forced_reasoning_rate": 0.6688333333333333,
+        "item_generation_count": 6000,
+        "mean_latency_seconds": 4.512795200077041,
+        "median_reasoning_tokens": 96.0,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r3-c4-seed161803",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c4",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c4-test_depth",
+            "run_spec_sha256": "c3051811326b873b3a418a9e4ecc763eb79968506a963ac652304fd934bd07f7",
+            "run_type": "evaluation",
+            "split": "test_depth",
+            "training_seed": 161803
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test_depth",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.3855
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test_depth",
+      "phase": "primary",
+      "recorded_at": "2026-10-03T09:45:17.003646+00:00",
+      "run_id": "m3-eval-r3-c4-test_depth",
+      "run_spec_sha256": "c3051811326b873b3a418a9e4ecc763eb79968506a963ac652304fd934bd07f7",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    },
+    {
+      "details": {
+        "condition_id": "c4",
+        "decoding_seed": 3141,
+        "resume": false,
+        "split": "test_compositional"
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-03T09:45:18.549971+00:00",
+      "run_id": "m3-eval-r3-c4-test_compositional",
+      "run_spec_sha256": null,
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "running"
+    },
+    {
+      "details": {
+        "accuracy": 0.6025,
+        "budget_violation_count": 0,
+        "complete_replay_rate": 0.5825,
+        "condition_id": "c4",
+        "forced_reasoning_rate": 0.4166666666666667,
+        "item_generation_count": 4800,
+        "mean_latency_seconds": 2.3409899095086923,
+        "median_reasoning_tokens": 37.5,
+        "region_parse_success_rate": 1.0,
+        "run_context": {
+          "freeze": {
+            "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+            "manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+            "prerequisite_evidence_bound": true,
+            "prerequisite_semantics_validated": true,
+            "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+            "schema_version": 2,
+            "test_access_authorized": true,
+            "workspace_matches_current": true,
+            "workspace_sha256": "5a591a9b005815bcda9b8656c9e11b1feaa86ab5ce4ffa86f5f7fe24465622ce"
+          },
+          "phase": "primary",
+          "run_spec": {
+            "adapter_run_id": "m3-train-r3-c4-seed161803",
+            "budgets": [
+              16,
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "condition_id": "c4",
+            "decoding_seed": 3141,
+            "phase": "primary",
+            "replicate": 3,
+            "run_id": "m3-eval-r3-c4-test_compositional",
+            "run_spec_sha256": "a71e76da5df8c39d4bf7815011d2334870f18ad86c64fc03e281794cb96d73a7",
+            "run_type": "evaluation",
+            "split": "test_compositional",
+            "training_seed": 161803
+          },
+          "schema_version": 1
+        },
+        "run_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test_compositional",
+        "schema_version": 1,
+        "trace_parse_success_rate": 0.6091666666666666
+      },
+      "path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation/m3-eval-r3-c4-test_compositional",
+      "phase": "primary",
+      "recorded_at": "2026-10-03T11:03:10.196661+00:00",
+      "run_id": "m3-eval-r3-c4-test_compositional",
+      "run_spec_sha256": "a71e76da5df8c39d4bf7815011d2334870f18ad86c64fc03e281794cb96d73a7",
+      "run_type": "evaluation",
+      "schema_version": 1,
+      "status": "complete"
+    }
+  ],
+  "registry_path": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/experiment_registry.jsonl",
+  "registry_sha256": "ae7031740262389700bbbd571e8f482a020d40bfff581ebf8585915d82431dab",
+  "schema_version": 1,
+  "terminal_statuses": {
+    "m3-eval-r1-c0-test": "complete",
+    "m3-eval-r1-c0-test_compositional": "complete",
+    "m3-eval-r1-c0-test_depth": "complete",
+    "m3-eval-r1-c1-test": "complete",
+    "m3-eval-r1-c1-test_compositional": "complete",
+    "m3-eval-r1-c1-test_depth": "complete",
+    "m3-eval-r1-c2-test": "complete",
+    "m3-eval-r1-c2-test_compositional": "complete",
+    "m3-eval-r1-c2-test_depth": "complete",
+    "m3-eval-r1-c3-test": "complete",
+    "m3-eval-r1-c3-test_compositional": "complete",
+    "m3-eval-r1-c3-test_depth": "complete",
+    "m3-eval-r1-c4-test": "complete",
+    "m3-eval-r1-c4-test_compositional": "complete",
+    "m3-eval-r1-c4-test_depth": "complete",
+    "m3-eval-r2-c0-test": "complete",
+    "m3-eval-r2-c0-test_compositional": "complete",
+    "m3-eval-r2-c0-test_depth": "complete",
+    "m3-eval-r2-c1-test": "complete",
+    "m3-eval-r2-c1-test_compositional": "complete",
+    "m3-eval-r2-c1-test_depth": "complete",
+    "m3-eval-r2-c2-test": "complete",
+    "m3-eval-r2-c2-test_compositional": "complete",
+    "m3-eval-r2-c2-test_depth": "complete",
+    "m3-eval-r2-c3-test": "complete",
+    "m3-eval-r2-c3-test_compositional": "complete",
+    "m3-eval-r2-c3-test_depth": "complete",
+    "m3-eval-r2-c4-test": "complete",
+    "m3-eval-r2-c4-test_compositional": "complete",
+    "m3-eval-r2-c4-test_depth": "complete",
+    "m3-eval-r3-c0-test": "complete",
+    "m3-eval-r3-c0-test_compositional": "complete",
+    "m3-eval-r3-c0-test_depth": "complete",
+    "m3-eval-r3-c1-test": "complete",
+    "m3-eval-r3-c1-test_compositional": "complete",
+    "m3-eval-r3-c1-test_depth": "complete",
+    "m3-eval-r3-c2-test": "complete",
+    "m3-eval-r3-c2-test_compositional": "complete",
+    "m3-eval-r3-c2-test_depth": "complete",
+    "m3-eval-r3-c3-test": "complete",
+    "m3-eval-r3-c3-test_compositional": "complete",
+    "m3-eval-r3-c3-test_depth": "complete",
+    "m3-eval-r3-c4-test": "complete",
+    "m3-eval-r3-c4-test_compositional": "complete",
+    "m3-eval-r3-c4-test_depth": "complete",
+    "m3-train-r1-c2-seed314159": "complete",
+    "m3-train-r1-c3-seed314159": "complete",
+    "m3-train-r1-c4-seed314159": "complete",
+    "m3-train-r2-c2-seed271828": "complete",
+    "m3-train-r2-c3-seed271828": "complete",
+    "m3-train-r2-c4-seed271828": "complete",
+    "m3-train-r3-c2-seed161803": "complete",
+    "m3-train-r3-c3-seed161803": "complete",
+    "m3-train-r3-c4-seed161803": "complete"
+  },
+  "unsuccessful_attempt_count": 0
+}

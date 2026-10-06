@@ -1,0 +1,12 @@
+{
+  "all_training_runs_passed": true,
+  "evaluation_root": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/evaluation",
+  "evaluation_run_count": 45,
+  "freeze_dir": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/freeze",
+  "freeze_manifest_sha256": "34d20ba79e56d7ec4805e104e7c74328b3227030696d02b318e5c173d416e7db",
+  "generation_count": 342000,
+  "run_plan_sha256": "2f1a63c6e67b5a0708b991a20b074ea120641133892390a66ff05e1fc54f438d",
+  "schema_version": 1,
+  "training_root": "/home/anthonylu/Documents/Projects/token-efficient-reasoning/artifacts/m3/primary/training",
+  "training_run_count": 9
+}

@@ -1,0 +1,42 @@
+{
+  "analysis_version": "m3-primary-v2",
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 8675309,
+  "bootstrap_unit": "item_id",
+  "central_primary_comparators": [
+    "c0",
+    "c1",
+    "c2"
+  ],
+  "confidence_level": 0.95,
+  "diagnostic_limitations": "The saved evaluator distinguishes verified-prefix and invalid parsed transitions and reports repetition. It does not separately classify reversals versus other unproductive branches; those are retained in raw generations and the invalid-transition count rather than inferred post hoc.",
+  "distractor_answer_sensitivity": "exclude arithmetic items whose explicitly irrelevant marker count equals the reference answer; descriptive sensitivity only",
+  "familywise_alpha": 0.05,
+  "h5_comparator": "c3",
+  "matched_accuracy_rule": "lowest frozen C4 budget whose pooled per-generation accuracy is at least the comparator frontier point; reduction uses pooled median reasoning tokens",
+  "multiplicity_method": "holm",
+  "primary_budgets": [
+    64,
+    128
+  ],
+  "primary_comparators": [
+    "c0",
+    "c1",
+    "c2",
+    "c3"
+  ],
+  "primary_density_comparator": "c2",
+  "primary_hypothesis_count": 8,
+  "primary_hypothesis_families": {
+    "central_frontier": "C4 greater than C0, C1, and C2 at budgets 64 and 128",
+    "h5_structured_vs_telegraphic": "C4/R3 greater accuracy than C3/R2 under the same reasoning-token cap at budgets 64 and 128",
+    "multiplicity_scope": "one Holm family containing all eight tests"
+  },
+  "primary_inference_split": "test",
+  "primary_test": "one-sided paired sign randomization, C4 greater",
+  "reliable_depth_rule": "greatest frozen controlled depth with pooled per-generation accuracy at least 0.800",
+  "schema_version": 1,
+  "secondary_comparators": [],
+  "verified_density_zero_control_rule": "When control density is zero, positive treatment density is an extended infinite rate ratio and passes any finite minimum ratio; both zero is undefined and fails. JSON numeric ratio is null in either boundary case.",
+  "within_item_reduction": "arithmetic mean across the three paired training/decoding blocks"
+}

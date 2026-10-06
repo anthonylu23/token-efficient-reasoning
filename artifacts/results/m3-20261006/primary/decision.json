@@ -1,0 +1,22 @@
+{
+  "exactly_one_outcome_selected": true,
+  "outcome": "continue_to_generalization",
+  "precedence": [
+    "revise_representation when shorter traces materially regress validity",
+    "investigate_pause_or_latent_computation for retained shallow but lost high-depth performance",
+    "stop_or_reframe when an in-distribution signal disappears compositionally",
+    "continue_to_generalization for a gain or clear reduction without validity degradation",
+    "stop_or_reframe otherwise"
+  ],
+  "reason": "C4 improves a fixed-budget point or clears the matched-accuracy token-reduction threshold without a material validity regression.",
+  "schema_version": 1,
+  "signals": {
+    "clear_token_reduction": true,
+    "compositional_retained": true,
+    "fixed_budget_gain": true,
+    "high_depth_drop": false,
+    "shallow_retained": true,
+    "shorter_than_c0_at_matched_accuracy": true,
+    "validity_regression": false
+  }
+}

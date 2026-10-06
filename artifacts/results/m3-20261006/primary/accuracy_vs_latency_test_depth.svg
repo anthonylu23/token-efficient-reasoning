@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="28" text-anchor="middle" font-family="sans-serif" font-size="20">M3 test_depth: accuracy versus observed latency</text>
+<line x1="90" y1="470" x2="870" y2="470" stroke="#111827"/>
+<line x1="90" y1="55" x2="90" y2="470" stroke="#111827"/>
+<line x1="90" y1="470.00" x2="870" y2="470.00" stroke="#e5e7eb"/>
+<text x="80" y="474.00" text-anchor="end" font-family="sans-serif" font-size="12">0.00</text>
+<line x1="90" y1="387.00" x2="870" y2="387.00" stroke="#e5e7eb"/>
+<text x="80" y="391.00" text-anchor="end" font-family="sans-serif" font-size="12">0.20</text>
+<line x1="90" y1="304.00" x2="870" y2="304.00" stroke="#e5e7eb"/>
+<text x="80" y="308.00" text-anchor="end" font-family="sans-serif" font-size="12">0.40</text>
+<line x1="90" y1="221.00" x2="870" y2="221.00" stroke="#e5e7eb"/>
+<text x="80" y="225.00" text-anchor="end" font-family="sans-serif" font-size="12">0.60</text>
+<line x1="90" y1="138.00" x2="870" y2="138.00" stroke="#e5e7eb"/>
+<text x="80" y="142.00" text-anchor="end" font-family="sans-serif" font-size="12">0.80</text>
+<line x1="90" y1="55.00" x2="870" y2="55.00" stroke="#e5e7eb"/>
+<text x="80" y="59.00" text-anchor="end" font-family="sans-serif" font-size="12">1.00</text>
+<text x="90.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">0.914365706961602</text>
+<text x="116.90" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">1.066653141355763</text>
+<text x="143.79" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">1.2348279321622104</text>
+<text x="170.69" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">1.2532328499263774</text>
+<text x="197.59" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">1.268300527576978</text>
+<text x="224.48" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">1.40195188177377</text>
+<text x="251.38" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">1.456558793441703</text>
+<text x="278.28" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">1.8773668068479747</text>
+<text x="305.17" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">1.9162389761656522</text>
+<text x="332.07" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">1.9696854464566955</text>
+<text x="358.97" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">1.9984781051389873</text>
+<text x="385.86" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">2.075038928710545</text>
+<text x="412.76" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">2.898785271096664</text>
+<text x="439.66" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">2.9573070576243725</text>
+<text x="466.55" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">3.1035038062899063</text>
+<text x="493.45" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">3.107728126384318</text>
+<text x="520.34" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">3.1288204758310068</text>
+<text x="547.24" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">5.098273686858515</text>
+<text x="574.14" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">5.167337748055346</text>
+<text x="601.03" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">5.16921622010693</text>
+<text x="627.93" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">5.17641005960262</text>
+<text x="654.83" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">5.358302600710032</text>
+<text x="681.72" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">6.345542852220126</text>
+<text x="708.62" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">6.368749886608372</text>
+<text x="735.52" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">7.778566172287489</text>
+<text x="762.41" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">7.8249761675409975</text>
+<text x="789.31" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">8.073282219969977</text>
+<text x="816.21" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">9.961120547011806</text>
+<text x="843.10" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">10.048688985783917</text>
+<text x="870.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">11.437679715302462</text>
+<polyline points="90.00,463.77 197.59,464.61 358.97,462.67 412.76,465.85 654.83,457.83 843.10,436.94" fill="none" stroke="#6b7280" stroke-width="2.5"/>
+<circle cx="90.00" cy="463.77" r="4" fill="#6b7280"/>
+<circle cx="197.59" cy="464.61" r="4" fill="#6b7280"/>
+<circle cx="358.97" cy="462.67" r="4" fill="#6b7280"/>
+<circle cx="412.76" cy="465.85" r="4" fill="#6b7280"/>
+<circle cx="654.83" cy="457.83" r="4" fill="#6b7280"/>
+<circle cx="843.10" cy="436.94" r="4" fill="#6b7280"/>
+<line x1="105" y1="522" x2="129" y2="522" stroke="#6b7280" stroke-width="3"/>
+<text x="135" y="526" font-family="sans-serif" font-size="13">C0</text>
+<polyline points="116.90,465.44 224.48,465.57 385.86,464.05 439.66,464.61 627.93,452.02 789.31,434.86" fill="none" stroke="#8b5cf6" stroke-width="2.5"/>
+<circle cx="116.90" cy="465.44" r="4" fill="#8b5cf6"/>
+<circle cx="224.48" cy="465.57" r="4" fill="#8b5cf6"/>
+<circle cx="385.86" cy="464.05" r="4" fill="#8b5cf6"/>
+<circle cx="439.66" cy="464.61" r="4" fill="#8b5cf6"/>
+<circle cx="627.93" cy="452.02" r="4" fill="#8b5cf6"/>
+<circle cx="789.31" cy="434.86" r="4" fill="#8b5cf6"/>
+<line x1="250" y1="522" x2="274" y2="522" stroke="#8b5cf6" stroke-width="3"/>
+<text x="280" y="526" font-family="sans-serif" font-size="13">C1</text>
+<polyline points="143.79,467.09 278.28,465.30 466.55,465.85 547.24,465.02 816.21,456.72 870.00,297.91" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<circle cx="143.79" cy="467.09" r="4" fill="#2563eb"/>
+<circle cx="278.28" cy="465.30" r="4" fill="#2563eb"/>
+<circle cx="466.55" cy="465.85" r="4" fill="#2563eb"/>
+<circle cx="547.24" cy="465.02" r="4" fill="#2563eb"/>
+<circle cx="816.21" cy="456.72" r="4" fill="#2563eb"/>
+<circle cx="870.00" cy="297.91" r="4" fill="#2563eb"/>
+<line x1="395" y1="522" x2="419" y2="522" stroke="#2563eb" stroke-width="3"/>
+<text x="425" y="526" font-family="sans-serif" font-size="13">C2</text>
+<polyline points="251.38,465.71 332.07,466.68 520.34,465.02 574.14,463.91 681.72,260.56 708.62,258.63" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+<circle cx="251.38" cy="465.71" r="4" fill="#f59e0b"/>
+<circle cx="332.07" cy="466.68" r="4" fill="#f59e0b"/>
+<circle cx="520.34" cy="465.02" r="4" fill="#f59e0b"/>
+<circle cx="574.14" cy="463.91" r="4" fill="#f59e0b"/>
+<circle cx="681.72" cy="260.56" r="4" fill="#f59e0b"/>
+<circle cx="708.62" cy="258.63" r="4" fill="#f59e0b"/>
+<line x1="540" y1="522" x2="564" y2="522" stroke="#f59e0b" stroke-width="3"/>
+<text x="570" y="526" font-family="sans-serif" font-size="13">C3</text>
+<polyline points="170.69,459.62 305.17,461.56 493.45,461.70 601.03,464.61 735.52,252.26 762.41,251.29" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+<circle cx="170.69" cy="459.62" r="4" fill="#16a34a"/>
+<circle cx="305.17" cy="461.56" r="4" fill="#16a34a"/>
+<circle cx="493.45" cy="461.70" r="4" fill="#16a34a"/>
+<circle cx="601.03" cy="464.61" r="4" fill="#16a34a"/>
+<circle cx="735.52" cy="252.26" r="4" fill="#16a34a"/>
+<circle cx="762.41" cy="251.29" r="4" fill="#16a34a"/>
+<line x1="685" y1="522" x2="709" y2="522" stroke="#16a34a" stroke-width="3"/>
+<text x="715" y="526" font-family="sans-serif" font-size="13">C4</text>
+<text x="480.0" y="502" text-anchor="middle" font-family="sans-serif" font-size="14">Mean observed batch-completion latency (seconds)</text>
+<text x="20" y="262.5" text-anchor="middle" font-family="sans-serif" font-size="14" transform="rotate(-90 20 262.5)">Exact-answer accuracy</text>
+</svg>

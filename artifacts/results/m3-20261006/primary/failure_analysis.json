@@ -1,0 +1,3420 @@
+{
+  "item_count": 19,
+  "items": [
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "4",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "I start with a counter value of 4.\n\nFirst, I subtract 2 from 4, resulting in 2.\n\nNext, I subtract 1 from 2, which gives me 1.\n\nThen, I multiply 1 by 3, giving me 3.\n\nAfter that, I subtract 3 from",
+          "token_counts": {
+            "answer": 2,
+            "prompt": 136,
+            "reasoning": 64,
+            "sampled_total": 69
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 9,
+            "repeated_line_count": 3,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'I start with a counter value of 4.' | r1:invalid R1 arithmetic line: 'I start with a counter value of 4.' | r2:invalid R2 arithmetic line: 'I start with a counter value of 4.' | r3:invalid R3 arithmetic line: 'I start with a counter value of 4.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "Step-by-step calculation:\n4 - 2 = 2\n2 -",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, subtract 2 from 4, resulting in 2. Next, subtract 1 from 2, giving 1. Then, multiply 1 by 3 to get 3. Subtract 3 from 3, leaving 0. Add 4 to 0, resulting in 4. Add",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 273,
+            "reasoning": 64,
+            "sampled_total": 80
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, subtract 2 from 4, resulting in 2. Next, subtract 1 from 2, giving 1. Then, multiply 1 by 3 to get 3. Subtract 3 from 3, leaving 0. Add 4 to 0, resulting in 4. Add' | r1:invalid R1 arithmetic line: 'First, subtract 2 from 4, resulting in 2. Next, subtract 1 from 2, giving 1. Then, multiply 1 by 3 to get 3. Subtract 3 from 3, leaving 0. Add 4 to 0, resulting in 4. Add' | r2:invalid R2 arithmetic line: 'First, subtract 2 from 4, resulting in 2. Next, subtract 1 from 2, giving 1. Then, multiply 1 by 3 to get 3. Subtract 3 from 3, leaving 0. Add 4 to 0, resulting in 4. Add' | r3:invalid R3 arithmetic line: 'First, subtract 2 from 4, resulting in 2. Next, subtract 1 from 2, giving 1. Then, multiply 1 by 3 to get 3. Subtract 3 from 3, leaving 0. Add 4 to 0, resulting in 4. Add'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "3",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: The current value is 4. Subtracting 2 gives 2.\nStep 2: The current value is 2. Subtracting 1 gives 1.\nStep 3: The current value is 1. Multiplying by 3 gives 3.\nStep 4: The current",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 136,
+            "reasoning": 64,
+            "sampled_total": 68
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 3,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'Step 4: The current'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 3
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "10",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "1:4-2=2\n2:2-1=1\n3:1*3=3\n4:3-3=0\n5:0+4=4\n6:4+1=5\n7:5+2=7\n8:7+3=10",
+          "token_counts": {
+            "answer": 2,
+            "prompt": 136,
+            "reasoning": 64,
+            "sampled_total": 69
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 8,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 8,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 8
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "1",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "s1=4>sub(2)>2\ns2=2>sub(1)>1\ns3=1>mul(3)>3\ns4=3>sub(3)>0\ns5=0>add(4)>4\ns6=4>add(1)>",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 136,
+            "reasoning": 64,
+            "sampled_total": 68
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 5,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 6,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 arithmetic line: 's6=4>add(1)>'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 5
+          }
+        }
+      },
+      "depth": 12,
+      "item_id": "arith-test-d12-02a1f371fecf9d04-e97731c716",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_accuracy_gain",
+        "c4_invalid_transition",
+        "c4_trace_parse_failure"
+      ],
+      "reference_answer": "1",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "\\boxed{7}",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, the counter starts at 4.\n\nNext, subtract 2 from the counter: 4 - 2 = 2.\n\nThen, subtract 1 from the counter: 2 - 1 = 1.\n\nAfter that, multiply the counter by 3: 1 \u00d7 3 = 3.\n\nSubtract 3 from the counter: 3 - 3 = 0.\n\nAdd 4 to the counter: 0 + 4 = 4.\n\nAdd 1 to the counter: 4 + 1 = 5.\n\nAdd 2 to the counter: 5 + 2 = 7",
+          "token_counts": {
+            "answer": 5,
+            "prompt": 136,
+            "reasoning": 128,
+            "sampled_total": 136
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 15,
+            "repeated_line_count": 6,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, the counter starts at 4.' | r1:invalid R1 arithmetic line: 'First, the counter starts at 4.' | r2:invalid R2 arithmetic line: 'First, the counter starts at 4.' | r3:invalid R3 arithmetic line: 'First, the counter starts at 4.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "malformed",
+          "parsed_answer": "",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, the counter starts at 4.\n\nThen, subtract 2: 4 - 2 = 2.\n\nNext, subtract 1: 2 - 1 = 1.\n\nMultiply by 3: 1 * 3 = 3.\n\nSubtract 3: 3 - 3 = 0.\n\nAdd 4: 0 + 4 = 4.\n\nAdd 1: 4 + 1 = 5.\n\nAdd 2: 5 + 2 = 7.\n\nAdd 3: 7 + 3 = 10.\n\nSubtract 1: 10",
+          "token_counts": {
+            "answer": 0,
+            "prompt": 273,
+            "reasoning": 128,
+            "sampled_total": 131
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 19,
+            "repeated_line_count": 8,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, the counter starts at 4.' | r1:invalid R1 arithmetic line: 'First, the counter starts at 4.' | r2:invalid R2 arithmetic line: 'First, the counter starts at 4.' | r3:invalid R3 arithmetic line: 'First, the counter starts at 4.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "0",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: The current value is 4. Subtracting 2 gives 2.\nStep 2: The current value is 2. Subtracting 1 gives 1.\nStep 3: The current value is 1. Multiplying by 3 gives 3.\nStep 4: The current value is 3. Subtracting 3 gives 0.\nStep 5: The current value is 0. Adding 4 gives 4.\nStep 6: The current value is 4. Adding 1 gives 5.\nStep 7: The current value is 5. Adding 2 gives",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 136,
+            "reasoning": 128,
+            "sampled_total": 132
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 6,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'Step 7: The current value is 5. Adding 2 gives'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 6
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "1",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "1:4-2=2\n2:2-1=1\n3:1*3=3\n4:3-3=0\n5:0+4=4\n6:4+1=5\n7:5+2=7\n8:7+3=10\n9:10-1=9\n10:9-4=5\n11:5-3=2\n12:2-1=1",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 136,
+            "reasoning": 100,
+            "sampled_total": 105
+          },
+          "trace_diagnostics": {
+            "complete_trace": true,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 12,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 12,
+            "repeated_line_count": 0,
+            "replay_valid": true,
+            "replayed_answer": "1",
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 12
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "2",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "s1=4>sub(2)>2\ns2=2>sub(1)>1\ns3=1>mul(3)>3\ns4=3>sub(3)>0\ns5=0>add(4)>4\ns6=4>add(1)>5\ns7=5>add(2)>7\ns8=7>add(3)>10\ns9=10>sub(1)>9\ns10=9>sub(4)>5\ns11=5>sub(3)>2\ns12",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 136,
+            "reasoning": 128,
+            "sampled_total": 132
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 11,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 12,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 arithmetic line: 's12'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 11
+          }
+        }
+      },
+      "depth": 12,
+      "item_id": "arith-test-d12-02a1f371fecf9d04-e97731c716",
+      "reasoning_budget": 128,
+      "reasons": [
+        "c4_accuracy_regression",
+        "c4_invalid_transition",
+        "c4_trace_parse_failure"
+      ],
+      "reference_answer": "1",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "The final value of the counter is \\boxed{1}.",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, I start with the counter value of 18.\n\nNext, I multiply 18 by 4 to get 72.\n\nThen, I divide 72 by 8 to obtain 9.\n\nAfter that, I multiply 9 by 2 to reach 18.\n\nSubtracting",
+          "token_counts": {
+            "answer": 12,
+            "prompt": 145,
+            "reasoning": 64,
+            "sampled_total": 79
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 9,
+            "repeated_line_count": 3,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, I start with the counter value of 18.' | r1:invalid R1 arithmetic line: 'First, I start with the counter value of 18.' | r2:invalid R2 arithmetic line: 'First, I start with the counter value of 18.' | r3:invalid R3 arithmetic line: 'First, I start with the counter value of 18.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "<answer>2",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, multiply 18 by 4 to get 72.\n\nNext, divide 72 by 8 to obtain 9.\n\nThen, multiply 9 by 2 to reach 18.\n\nAfter that, divide 18 by 9 to get 2.\n\nSubtract 1 from",
+          "token_counts": {
+            "answer": 4,
+            "prompt": 282,
+            "reasoning": 64,
+            "sampled_total": 71
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 9,
+            "repeated_line_count": 3,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, multiply 18 by 4 to get 72.' | r1:invalid R1 arithmetic line: 'First, multiply 18 by 4 to get 72.' | r2:invalid R2 arithmetic line: 'First, multiply 18 by 4 to get 72.' | r3:invalid R3 arithmetic line: 'First, multiply 18 by 4 to get 72.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "<answer>\n<answer>18</answer></answer></answer></answer",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: The current value is 18. Multiplying by 4 gives 72.\nStep 2: The current value is 72. Dividing by 8 gives 9.\nStep 3: The current value is 9. Multiplying by 2 gives 18.",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 145,
+            "reasoning": 64,
+            "sampled_total": 80
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 3,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 3,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 3
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "2",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "1:18*4=72\n2:72/8=9\n3:9*2=18\n4:18/9=2\n5:2-1=1\n6:1+3=4\n7:4/2=2\n8:2",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 145,
+            "reasoning": 64,
+            "sampled_total": 68
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 7,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 8,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r2:invalid R2 arithmetic line: '8:2'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 7
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "0",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "s1=18>mul(4)>72\ns2=72>div(8)>9\ns3=9>mul(2)>18\ns4=18>div(9)>2\ns5=2>sub(1)>1\ns6=1",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 145,
+            "reasoning": 64,
+            "sampled_total": 68
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 5,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 6,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 arithmetic line: 's6=1'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 5
+          }
+        }
+      },
+      "depth": 12,
+      "item_id": "arith-test-d12-2131dde09925d52b-06fcf2ebf8",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_accuracy_regression"
+      ],
+      "reference_answer": "1",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "The final value of the counter after performing all the operations is \\boxed{7",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "I start with a counter value of 22.\n\nFirst, I add 10 to the counter, which brings it to 32.\n\nNext, I add 5 to the counter, making it 37.\n\nThen, I multiply the counter by 2, resulting in 74.\n\nAfter that",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 80
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 9,
+            "repeated_line_count": 3,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'I start with a counter value of 22.' | r1:invalid R1 arithmetic line: 'I start with a counter value of 22.' | r2:invalid R2 arithmetic line: 'I start with a counter value of 22.' | r3:invalid R3 arithmetic line: 'I start with a counter value of 22.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "Step-by-step:\nStart: 22\nAdd 10:",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "I start with 22. Adding 10 gives me 32. Adding 5 makes it 37. Multiplying by 2 results in 74. Dividing by 2 brings it to 37. Adding 9 leads to 46. Multiplying by 4 gives",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 257,
+            "reasoning": 64,
+            "sampled_total": 80
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'I start with 22. Adding 10 gives me 32. Adding 5 makes it 37. Multiplying by 2 results in 74. Dividing by 2 brings it to 37. Adding 9 leads to 46. Multiplying by 4 gives' | r1:invalid R1 arithmetic line: 'I start with 22. Adding 10 gives me 32. Adding 5 makes it 37. Multiplying by 2 results in 74. Dividing by 2 brings it to 37. Adding 9 leads to 46. Multiplying by 4 gives' | r2:invalid R2 arithmetic line: 'I start with 22. Adding 10 gives me 32. Adding 5 makes it 37. Multiplying by 2 results in 74. Dividing by 2 brings it to 37. Adding 9 leads to 46. Multiplying by 4 gives' | r3:invalid R3 arithmetic line: 'I start with 22. Adding 10 gives me 32. Adding 5 makes it 37. Multiplying by 2 results in 74. Dividing by 2 brings it to 37. Adding 9 leads to 46. Multiplying by 4 gives'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "38",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: The current value is 22. Adding 10 gives 32.\nStep 2: The current value is 32. Adding 5 gives 37.\nStep 3: The current value is 37. Multiplying by 2 gives 74.\nStep",
+          "token_counts": {
+            "answer": 2,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 69
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 3,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'Step'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 3
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "184",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "1:22+10=32\n2:32+5=37\n3:37*2=74\n4:74/2=37\n5:37+9=46\n6:46*4=184\n7:",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 6,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r2:invalid R2 arithmetic line: '7:'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 6
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "37",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "s1=22>add(10)>32\ns2=32>add(5)>37\ns3=37>mul(2)>74\ns4=74>div(2)>37\ns5=37>add(9)>4",
+          "token_counts": {
+            "answer": 2,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 69
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 1,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 5,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 5,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 4
+          }
+        }
+      },
+      "depth": 8,
+      "item_id": "arith-test-d8-01738fbbc1f21bb2-0d59fe5e41",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_invalid_transition"
+      ],
+      "reference_answer": "182",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "Let me break down the problem step by step. \n\nStarting with the number",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Okay, so I have this problem about a number machine that does a series of operations on a number. The number that's being processed is 16, and I need to figure out what number comes out of the machine after all these operations. The machine's commands are: subtract 6, then divide by",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 80
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: \"Okay, so I have this problem about a number machine that does a series of operations on a number. The number that's being processed is 16, and I need to figure out what number comes out of the machine after all these operations. The machine's commands are: subtract 6, then divide by\" | r1:invalid R1 arithmetic line: \"Okay, so I have this problem about a number machine that does a series of operations on a number. The number that's being processed is 16, and I need to figure out what number comes out of the machine after all these operations. The machine's commands are: subtract 6, then divide by\" | r2:invalid R2 arithmetic line: \"Okay, so I have this problem about a number machine that does a series of operations on a number. The number that's being processed is 16, and I need to figure out what number comes out of the machine after all these operations. The machine's commands are: subtract 6, then divide by\" | r3:invalid R3 arithmetic line: \"Okay, so I have this problem about a number machine that does a series of operations on a number. The number that's being processed is 16, and I need to figure out what number comes out of the machine after all these operations. The machine's commands are: subtract 6, then divide by\"",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "First, subtract 6 from 16, which gives 10.",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "<answer>16</answer>",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 257,
+            "reasoning": 8,
+            "sampled_total": 25
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: '<answer>16</answer>' | r1:invalid R1 arithmetic line: '<answer>16</answer>' | r2:invalid R2 arithmetic line: '<answer>16</answer>' | r3:invalid R3 arithmetic line: '<answer>16</answer>'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "1",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: The current value is 16. Subtracting 6 gives 10.\nStep 2: The current value is 10. Dividing by 5 gives 2.\nStep 3: The current value is 2. Dividing by 2 gives 1.\nStep",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 68
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 3,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'Step'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 3
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "28",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "1:16-6=10\n2:10/5=2\n3:2/2=1\n4:1+6=7\n5:7*2=14\n6:14+4=18\n7:18+10=28",
+          "token_counts": {
+            "answer": 2,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 69
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 7,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 7
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "1",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "s1=16>sub(6)>10\ns2=10>div(5)>2\ns3=2>div(2)>1\ns4=1>add(6)>7\ns5=7>mul(2)>14\ns6=14",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 68
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 5,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 6,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 arithmetic line: 's6=14'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 5
+          }
+        }
+      },
+      "depth": 8,
+      "item_id": "arith-test-d8-02bbded9e073cb45-a0e44fc8b2",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_trace_parse_failure"
+      ],
+      "reference_answer": "19",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "The final value of the counter is -12.",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "The counter starts at 6.\n\nFirst, add 1 to the counter: 6 + 1 = 7.\n\nNext, add 3 to the counter: 7 + 3 = 10.\n\nThen, subtract 10 from the counter: 10 - 10 = 0.\n\nAfter that, multiply the counter by 2: 0 \u00d7 2 = 0.\n\nSubtract 9 from the counter: 0 - 9 = -9.\n\nSubtract 3 from the counter: -9 - 3 = -12.\n\nFinally, subtract 2 from the counter:",
+          "token_counts": {
+            "answer": 11,
+            "prompt": 117,
+            "reasoning": 128,
+            "sampled_total": 142
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 15,
+            "repeated_line_count": 6,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'The counter starts at 6.' | r1:invalid R1 arithmetic line: 'The counter starts at 6.' | r2:invalid R2 arithmetic line: 'The counter starts at 6.' | r3:invalid R3 arithmetic line: 'The counter starts at 6.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "The counter starts at 6. Adding 1, then adding 3,",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "The counter starts at 6. Adding 1 makes it 7, adding 3 brings it to 10, subtracting 10 brings it back to 0, multiplying by 2 gives 0, subtracting 9 results in -9, subtracting 3 brings it to -12, subtracting 2 ends at -14.",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 254,
+            "reasoning": 75,
+            "sampled_total": 92
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'The counter starts at 6. Adding 1 makes it 7, adding 3 brings it to 10, subtracting 10 brings it back to 0, multiplying by 2 gives 0, subtracting 9 results in -9, subtracting 3 brings it to -12, subtracting 2 ends at -14.' | r1:invalid R1 arithmetic line: 'The counter starts at 6. Adding 1 makes it 7, adding 3 brings it to 10, subtracting 10 brings it back to 0, multiplying by 2 gives 0, subtracting 9 results in -9, subtracting 3 brings it to -12, subtracting 2 ends at -14.' | r2:invalid R2 arithmetic line: 'The counter starts at 6. Adding 1 makes it 7, adding 3 brings it to 10, subtracting 10 brings it back to 0, multiplying by 2 gives 0, subtracting 9 results in -9, subtracting 3 brings it to -12, subtracting 2 ends at -14.' | r3:invalid R3 arithmetic line: 'The counter starts at 6. Adding 1 makes it 7, adding 3 brings it to 10, subtracting 10 brings it back to 0, multiplying by 2 gives 0, subtracting 9 results in -9, subtracting 3 brings it to -12, subtracting 2 ends at -14.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "9",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: The current value is 6. Adding 1 gives 7.\nStep 2: The current value is 7. Adding 3 gives 10.\nStep 3: The current value is 10. Adding 9 gives 19.\nStep 4: The current value is 19. Subtracting 10 gives 9.\nStep 5: The current value is 9. Multiplying by 2 gives 18.\nStep 6: The current value is 18. Subtracting 9 gives 9.\nStep 7: The current value is",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 117,
+            "reasoning": 128,
+            "sampled_total": 132
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 6,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'Step 7: The current value is'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 6
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "4",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "1:6+1=7\n2:7+3=10\n3:10+9=19\n4:19-10=9\n5:9*2=18\n6:18-9=9\n7:9-3=6\n8:6-2=4",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 117,
+            "reasoning": 70,
+            "sampled_total": 75
+          },
+          "trace_diagnostics": {
+            "complete_trace": true,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 8,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 8,
+            "repeated_line_count": 0,
+            "replay_valid": true,
+            "replayed_answer": "4",
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 8
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "-32",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "s1=6>add(1)>7\ns2=7>add(3)>10\ns3=10>sub(9)>1\ns4=1>sub(10)>-9\ns5=-9>mul(2)>-18\ns6=-18>sub(9)>-27\ns7=-27>sub(3)>-30\ns8=-30>sub(2)>-32",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 117,
+            "reasoning": 102,
+            "sampled_total": 109
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 6,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 8,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 8,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 2
+          }
+        }
+      },
+      "depth": 8,
+      "item_id": "arith-test-d8-04dd6b35c519554c-0f28a1f749",
+      "reasoning_budget": 128,
+      "reasons": [
+        "c4_accuracy_regression",
+        "c4_invalid_transition"
+      ],
+      "reference_answer": "4",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "\\boxed{136}",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, start with the initial counter value of 19.\n\nAdd 10 to the counter, resulting in 29.\n\nAdd 5 to the counter, which brings it to 34.\n\nMultiply the counter by 4, making it 136.\n\nSubtract 4 from the counter,",
+          "token_counts": {
+            "answer": 7,
+            "prompt": 121,
+            "reasoning": 64,
+            "sampled_total": 74
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 9,
+            "repeated_line_count": 3,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, start with the initial counter value of 19.' | r1:invalid R1 arithmetic line: 'First, start with the initial counter value of 19.' | r2:invalid R2 arithmetic line: 'First, start with the initial counter value of 19.' | r3:invalid R3 arithmetic line: 'First, start with the initial counter value of 19.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "19 + 10 = 29  \n29 + 5",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, add 10 to 19, which gives 29.\n\nNext, add 5 to 29, resulting in 34.\n\nThen, multiply 34 by 4 to get 136.\n\nSubtract 4 from 136, which equals 13",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 258,
+            "reasoning": 64,
+            "sampled_total": 80
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 2,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, add 10 to 19, which gives 29.' | r1:invalid R1 arithmetic line: 'First, add 10 to 19, which gives 29.' | r2:invalid R2 arithmetic line: 'First, add 10 to 19, which gives 29.' | r3:invalid R3 arithmetic line: 'First, add 10 to 19, which gives 29.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "<answer>\n<answer>204</answer></answer></answer>",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: The current value is 19. Adding 10 gives 29.\nStep 2: The current value is 29. Adding 5 gives 34.\nStep 3: The current value is 34. Adding 10 gives 44.\nStep",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 121,
+            "reasoning": 64,
+            "sampled_total": 80
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 3,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'Step'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 3
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "696",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "1:19+10=29\n2:29+5=34\n3:34+10=44\n4:44*4=176\n5:176-4=172\n6:172*4=6",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 121,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 1,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 6,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 6,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 5
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "164",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "s1=19>add(10)>29\ns2=29>add(5)>34\ns3=34>add(10)>44\ns4=44>mul(4)>176\ns5=176>sub(",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 121,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 5,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 arithmetic line: 's5=176>sub('",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 4
+          }
+        }
+      },
+      "depth": 8,
+      "item_id": "arith-test-d8-0a316c117ff3a5b6-0a6a6bbdfa",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_accuracy_regression"
+      ],
+      "reference_answer": "696",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "The starting number is 8. After performing all the operations, the final number",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, identify the starting number: 8.\n\nApply the first command: add 5 to 8, resulting in 13.\n\nNext, subtract 6 from 13, giving 7.\n\nThen, multiply 7 by 4, which equals 28.\n\nSubtract 6 from 2",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 80
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 9,
+            "repeated_line_count": 3,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, identify the starting number: 8.' | r1:invalid R1 arithmetic line: 'First, identify the starting number: 8.' | r2:invalid R2 arithmetic line: 'First, identify the starting number: 8.' | r3:invalid R3 arithmetic line: 'First, identify the starting number: 8.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "After performing all the operations step by step, the number that leaves the machine is",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, the number is added to 5.\n\nThen, the result is subtracted by 6.\n\nNext, the difference is multiplied by 4.\n\nAfter that, the product is multiplied by 3.\n\nThen, the product is divided by 4.\n\nFollowing that, the quotient is divided by 7.\n\nFinally",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 257,
+            "reasoning": 64,
+            "sampled_total": 80
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 13,
+            "repeated_line_count": 5,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, the number is added to 5.' | r1:invalid R1 arithmetic line: 'First, the number is added to 5.' | r2:invalid R2 arithmetic line: 'First, the number is added to 5.' | r3:invalid R3 arithmetic line: 'First, the number is added to 5.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "24",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: The current value is 8. Adding 5 gives 13.\nStep 2: The current value is 13. Subtracting 6 gives 7.\nStep 3: The current value is 7. Multiplying by 4 gives 28.\nStep 4:",
+          "token_counts": {
+            "answer": 2,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 69
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 3,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'Step 4:'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 3
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "28",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "1:8+5=13\n2:13-6=7\n3:7*4=28\n4:28*3=84\n5:84/4=21\n6:21+7=28\n7:28/4=",
+          "token_counts": {
+            "answer": 2,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 69
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 6,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r2:invalid R2 arithmetic line: '7:28/4='",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 6
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "1",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "s1=8>add(5)>13\ns2=13>sub(6)>7\ns3=7>mul(4)>28\ns4=28>mul(3)>84\ns5=84>div(4)>21\ns6",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 120,
+            "reasoning": 64,
+            "sampled_total": 68
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 5,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 6,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 arithmetic line: 's6'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 5
+          }
+        }
+      },
+      "depth": 8,
+      "item_id": "arith-test-d8-2a9e68687b081e92-cdec7a8771",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_accuracy_gain"
+      ],
+      "reference_answer": "1",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "The final value of the counter is \\boxed{4.5}.",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, I start with a counter value of 24.\n\nNext, I subtract 7 from 24, which gives me 17.\n\nThen, I subtract 4 from 17, resulting in 13.\n\nAfter that, I divide 13 by 2 to get 6.5.\n\nDividing 6.5 by 2 again brings the counter down to 3.25.\n\nI then multiply 3.25 by 2, which equals 6.5.\n\nSubtracting 2 from 6.5 gives me 4.5.\n\nFinally, adding 7",
+          "token_counts": {
+            "answer": 14,
+            "prompt": 118,
+            "reasoning": 128,
+            "sampled_total": 145
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 15,
+            "repeated_line_count": 6,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, I start with a counter value of 24.' | r1:invalid R1 arithmetic line: 'First, I start with a counter value of 24.' | r2:invalid R2 arithmetic line: 'First, I start with a counter value of 24.' | r3:invalid R3 arithmetic line: 'First, I start with a counter value of 24.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "allowance_exhausted",
+          "correct": true,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "Step-by-step calculation:\n\nStart with 24.\nSubtract 7:",
+          "reasoning_termination": "eos",
+          "reasoning_text": "<answer>14</answer>",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 255,
+            "reasoning": 8,
+            "sampled_total": 24
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: '<answer>14</answer>' | r1:invalid R1 arithmetic line: '<answer>14</answer>' | r2:invalid R2 arithmetic line: '<answer>14</answer>' | r3:invalid R3 arithmetic line: '<answer>14</answer>'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "1",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: The current value is 24. Subtracting 7 gives 17.\nStep 2: The current value is 17. Subtracting 4 gives 13.\nStep 3: The current value is 13. Subtracting 9 gives 4.\nStep 4: The current value is 4. Dividing by 2 gives 2.\nStep 5: The current value is 2. Dividing by 2 gives 1.\nStep 6: The current value is 1. Multiplying by 2 gives 2.\nStep 7: The current",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 118,
+            "reasoning": 128,
+            "sampled_total": 132
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 6,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'Step 7: The current'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 6
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "7",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "1:24-7=17\n2:17-4=13\n3:13-9=4\n4:4/2=2\n5:2/2=1\n6:1*2=2\n7:2-2=0\n8:0+7=7",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 118,
+            "reasoning": 68,
+            "sampled_total": 73
+          },
+          "trace_diagnostics": {
+            "complete_trace": true,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 8,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 8,
+            "repeated_line_count": 0,
+            "replay_valid": true,
+            "replayed_answer": "7",
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 8
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "11.5",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "s1=24>sub(7)>17\ns2=17>sub(4)>13\ns3=13>div(2)>6.5\ns4=6.5>div(2)>3.25\ns5=3.25>mul(2)>6.5\ns6=6.5>sub(2)>4.5\ns7=4.5>add(7)>11.5",
+          "token_counts": {
+            "answer": 4,
+            "prompt": 118,
+            "reasoning": 102,
+            "sampled_total": 110
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 arithmetic line: 's3=13>div(2)>6.5'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        }
+      },
+      "depth": 8,
+      "item_id": "arith-test-d8-556579e4f99161f8-25d20e13e6",
+      "reasoning_budget": 128,
+      "reasons": [
+        "c4_trace_parse_failure"
+      ],
+      "reference_answer": "7",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N21",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Alright, so I'm trying to figure out where the packet ends up when it starts at N08 and follows this specific routing path. Let me break this down step by step.\n\nFirst, the packet starts at N08. The routing path given is: red, then black, then gold, then green,",
+          "token_counts": {
+            "answer": 4,
+            "prompt": 353,
+            "reasoning": 64,
+            "sampled_total": 71
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 3,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: \"Alright, so I'm trying to figure out where the packet ends up when it starts at N08 and follows this specific routing path. Let me break this down step by step.\" | r1:invalid R1 graph line: \"Alright, so I'm trying to figure out where the packet ends up when it starts at N08 and follows this specific routing path. Let me break this down step by step.\" | r2:invalid R2 graph line: \"Alright, so I'm trying to figure out where the packet ends up when it starts at N08 and follows this specific routing path. Let me break this down step by step.\" | r3:invalid R3 graph line: \"Alright, so I'm trying to figure out where the packet ends up when it starts at N08 and follows this specific routing path. Let me break this down step by step.\"",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N21",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Alright, let's break down the problem step by step. The packet starts at N08 and follows a specific route based on the colors of the links. \n\n1. **Starting at N08**: The first step is to find the link from N08. From the list, N08 has a",
+          "token_counts": {
+            "answer": 4,
+            "prompt": 490,
+            "reasoning": 64,
+            "sampled_total": 71
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 3,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: \"Alright, let's break down the problem step by step. The packet starts at N08 and follows a specific route based on the colors of the links. \" | r1:invalid R1 graph line: \"Alright, let's break down the problem step by step. The packet starts at N08 and follows a specific route based on the colors of the links. \" | r2:invalid R2 graph line: \"Alright, let's break down the problem step by step. The packet starts at N08 and follows a specific route based on the colors of the links. \" | r3:invalid R3 graph line: \"Alright, let's break down the problem step by step. The packet starts at N08 and follows a specific route based on the colors of the links. \"",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N10",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: From N08, following red reaches N07.\nStep 2: From N07, following black reaches N18.\nStep 3: From N18, following gold reaches N12.\nStep 4: From N12, following green reaches N10.",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 353,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 4
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N11",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "1:N08-red>N07\n2:N07-black>N18\n3:N18-gold>N12\n4:N12-green>N10\n5:N10-green>N15\n6:N15-blue>N20\n7:N20-gold>N11",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 353,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 7,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 7
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N2",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "e1(N08,red,N07)\ne2(N07,black,N18)\ne3(N18,gold,N12)\ne4(N12,green,N10)\ne5(N10,green,N15)\ne6(N15,blue,N2",
+          "token_counts": {
+            "answer": 2,
+            "prompt": 353,
+            "reasoning": 64,
+            "sampled_total": 69
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 5,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 6,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 graph line: 'e6(N15,blue,N2'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 5
+          }
+        }
+      },
+      "depth": 12,
+      "item_id": "graph-test-d12-00213e8f09153f10-6f00906c25",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_invalid_transition",
+        "c4_trace_parse_failure"
+      ],
+      "reference_answer": "N04",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "directed_graph_traversal"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N07",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Okay, so I have this problem where a packet starts at node N08, and I need to route it through a router table using specific labels in a given order: red, black, gold, green, green, blue, gold, black, black, green, white, white. I need to follow each step as the packet moves through the network.\n\nFirst, the packet starts at N08. The first label is red. So I look at the outgoing links from N08. The router table shows N08 has red to N07. So the packet moves to N07.\n\nNext, the label",
+          "token_counts": {
+            "answer": 4,
+            "prompt": 353,
+            "reasoning": 128,
+            "sampled_total": 135
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 5,
+            "repeated_line_count": 1,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: 'Okay, so I have this problem where a packet starts at node N08, and I need to route it through a router table using specific labels in a given order: red, black, gold, green, green, blue, gold, black, black, green, white, white. I need to follow each step as the packet moves through the network.' | r1:invalid R1 graph line: 'Okay, so I have this problem where a packet starts at node N08, and I need to route it through a router table using specific labels in a given order: red, black, gold, green, green, blue, gold, black, black, green, white, white. I need to follow each step as the packet moves through the network.' | r2:invalid R2 graph line: 'Okay, so I have this problem where a packet starts at node N08, and I need to route it through a router table using specific labels in a given order: red, black, gold, green, green, blue, gold, black, black, green, white, white. I need to follow each step as the packet moves through the network.' | r3:invalid R3 graph line: 'Okay, so I have this problem where a packet starts at node N08, and I need to route it through a router table using specific labels in a given order: red, black, gold, green, green, blue, gold, black, black, green, white, white. I need to follow each step as the packet moves through the network.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "The packet ends at node N13.",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, the packet starts at node N08.\n\nIt takes the red link from N08 to N07.\n\nFrom N07, it follows the black link to N18.\n\nAt N18, the packet follows the gold link to N12.\n\nFrom N12, it takes the green link to N10.\n\nAt N10, the packet follows the red link to N23.\n\nFrom N23, it takes the green link to N02.\n\nAt N02, the packet follows the blue link to N13.\n\nAt N13, it takes the green link",
+          "token_counts": {
+            "answer": 9,
+            "prompt": 490,
+            "reasoning": 128,
+            "sampled_total": 140
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 17,
+            "repeated_line_count": 7,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: 'First, the packet starts at node N08.' | r1:invalid R1 graph line: 'First, the packet starts at node N08.' | r2:invalid R2 graph line: 'First, the packet starts at node N08.' | r3:invalid R3 graph line: 'First, the packet starts at node N08.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N16",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: From N08, following red reaches N07.\nStep 2: From N07, following black reaches N18.\nStep 3: From N18, following gold reaches N12.\nStep 4: From N12, following green reaches N10.\nStep 5: From N10, following green reaches N15.\nStep 6: From N15, following blue reaches N20.\nStep 7: From N20, following gold reaches N11.\nStep 8: From N11, following black reaches N16.",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 353,
+            "reasoning": 128,
+            "sampled_total": 134
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 8,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 8,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 8
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "N04",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "1:N08-red>N07\n2:N07-black>N18\n3:N18-gold>N12\n4:N12-green>N10\n5:N10-green>N15\n6:N15-blue>N20\n7:N20-gold>N11\n8:N11-black>N16\n9:N16-black>N13\n10:N13-green>N05\n11:N05-white>N00\n12:N00-white>N04",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 353,
+            "reasoning": 112,
+            "sampled_total": 119
+          },
+          "trace_diagnostics": {
+            "complete_trace": true,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 12,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 12,
+            "repeated_line_count": 0,
+            "replay_valid": true,
+            "replayed_answer": "N04",
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 12
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N00",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "e1(N08,red,N07)\ne2(N07,black,N18)\ne3(N18,gold,N12)\ne4(N12,green,N10)\ne5(N10,green,N15)\ne6(N15,blue,N20)\ne7(N20,gold,N11)\ne8(N11,black,N16)\ne9(N16,black,N13)\ne10(N13,green,N05)\ne11(N05,white,N00)\ne12(N0",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 353,
+            "reasoning": 128,
+            "sampled_total": 134
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 11,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 12,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 graph line: 'e12(N0'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 11
+          }
+        }
+      },
+      "depth": 12,
+      "item_id": "graph-test-d12-00213e8f09153f10-6f00906c25",
+      "reasoning_budget": 128,
+      "reasons": [
+        "c4_accuracy_regression",
+        "c4_invalid_transition",
+        "c4_trace_parse_failure"
+      ],
+      "reference_answer": "N04",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "directed_graph_traversal"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "To determine the final node, I'll follow each edge step by step based on",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Okay, so I have this problem where I need to follow a series of directed edges starting from node N10 on a map. The edges are labeled with colors, and I have to follow them in a specific order: blue, gold, white, white, gold, black, blue, green, gold, green",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 351,
+            "reasoning": 64,
+            "sampled_total": 80
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges starting from node N10 on a map. The edges are labeled with colors, and I have to follow them in a specific order: blue, gold, white, white, gold, black, blue, green, gold, green' | r1:invalid R1 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges starting from node N10 on a map. The edges are labeled with colors, and I have to follow them in a specific order: blue, gold, white, white, gold, black, blue, green, gold, green' | r2:invalid R2 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges starting from node N10 on a map. The edges are labeled with colors, and I have to follow them in a specific order: blue, gold, white, white, gold, black, blue, green, gold, green' | r3:invalid R3 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges starting from node N10 on a map. The edges are labeled with colors, and I have to follow them in a specific order: blue, gold, white, white, gold, black, blue, green, gold, green'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N20",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "To determine the final node after following the given edge directions, we'll follow each step sequentially.\n\n1. Start at N10.\n2. Follow the first blue edge to N20.\n3. From N20, follow the next gold edge to N15.\n4. From N15, follow",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 488,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 6,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: \"To determine the final node after following the given edge directions, we'll follow each step sequentially.\" | r1:invalid R1 graph line: \"To determine the final node after following the given edge directions, we'll follow each step sequentially.\" | r2:invalid R2 graph line: \"To determine the final node after following the given edge directions, we'll follow each step sequentially.\" | r3:invalid R3 graph line: \"To determine the final node after following the given edge directions, we'll follow each step sequentially.\"",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N00",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: From N10, following blue reaches N15.\nStep 2: From N15, following gold reaches N25.\nStep 3: From N25, following white reaches N08.\nStep 4: From N08, following white reaches N00.",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 351,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 4
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N21",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "1:N10-blue>N15\n2:N15-gold>N25\n3:N25-white>N08\n4:N08-white>N00\n5:N00-gold>N06\n6:N06-black>N13\n7:N13-blue>N21",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 351,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 7,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 7
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N1",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "e1(N10,blue,N15)\ne2(N15,gold,N25)\ne3(N25,white,N08)\ne4(N08,white,N00)\ne5(N00,gold,N06)\ne6(N06,black,N1",
+          "token_counts": {
+            "answer": 2,
+            "prompt": 351,
+            "reasoning": 64,
+            "sampled_total": 69
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 5,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 6,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 graph line: 'e6(N06,black,N1'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 5
+          }
+        }
+      },
+      "depth": 12,
+      "item_id": "graph-test-d12-34bf2078573e1c19-0a39b0f8e6",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_accuracy_regression"
+      ],
+      "reference_answer": "N20",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "directed_graph_traversal"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N05",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Alright, so I've got this problem about navigating a directed map with labeled edges. The goal is to start at N08 and follow a specific sequence of edge colors: white, then white, then black, and finally green. I need to figure out which node I end up at after following these steps. Let",
+          "token_counts": {
+            "answer": 4,
+            "prompt": 167,
+            "reasoning": 64,
+            "sampled_total": 71
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: \"Alright, so I've got this problem about navigating a directed map with labeled edges. The goal is to start at N08 and follow a specific sequence of edge colors: white, then white, then black, and finally green. I need to figure out which node I end up at after following these steps. Let\" | r1:invalid R1 graph line: \"Alright, so I've got this problem about navigating a directed map with labeled edges. The goal is to start at N08 and follow a specific sequence of edge colors: white, then white, then black, and finally green. I need to figure out which node I end up at after following these steps. Let\" | r2:invalid R2 graph line: \"Alright, so I've got this problem about navigating a directed map with labeled edges. The goal is to start at N08 and follow a specific sequence of edge colors: white, then white, then black, and finally green. I need to figure out which node I end up at after following these steps. Let\" | r3:invalid R3 graph line: \"Alright, so I've got this problem about navigating a directed map with labeled edges. The goal is to start at N08 and follow a specific sequence of edge colors: white, then white, then black, and finally green. I need to figure out which node I end up at after following these steps. Let\"",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N08 - white -> N02",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Alright, let's figure out this problem step by step. We start at node N08. The instructions are to follow white, then white, then black, then green edges. \n\nFirst, from N08, we take a white edge. Looking at the edges, N08 has a white edge to",
+          "token_counts": {
+            "answer": 10,
+            "prompt": 304,
+            "reasoning": 64,
+            "sampled_total": 77
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 3,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: \"Alright, let's figure out this problem step by step. We start at node N08. The instructions are to follow white, then white, then black, then green edges. \" | r1:invalid R1 graph line: \"Alright, let's figure out this problem step by step. We start at node N08. The instructions are to follow white, then white, then black, then green edges. \" | r2:invalid R2 graph line: \"Alright, let's figure out this problem step by step. We start at node N08. The instructions are to follow white, then white, then black, then green edges. \" | r3:invalid R3 graph line: \"Alright, let's figure out this problem step by step. We start at node N08. The instructions are to follow white, then white, then black, then green edges. \"",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N06",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: From N08, following white reaches N02.\nStep 2: From N02, following white reaches N09.\nStep 3: From N09, following black reaches N04.\nStep 4: From N04, following green reaches N06.",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 167,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 3,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 1
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "N06",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "1:N08-white>N02\n2:N02-white>N10\n3:N10-black>N01\n4:N01-green>N06",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 167,
+            "reasoning": 35,
+            "sampled_total": 42
+          },
+          "trace_diagnostics": {
+            "complete_trace": true,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": true,
+            "replayed_answer": "N06",
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 4
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "N06",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "e1(N08,white,N02)\ne2(N02,white,N09)\ne3(N09,black,N04)\ne4(N04,green,N06)",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 167,
+            "reasoning": 44,
+            "sampled_total": 51
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 3,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 1
+          }
+        }
+      },
+      "depth": 4,
+      "item_id": "graph-test-d4-5cb1706a1871fef0-1338ddb0b8",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_invalid_transition"
+      ],
+      "reference_answer": "N06",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "directed_graph_traversal"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N08 (start) \u2192 N08 (no edge yet) \u2192",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Okay, so I need to figure out the final node after following a specific path on this directed map. Let me start by understanding the problem step by step. \n\nFirst, the starting point is N08. Then, I need to follow edges in the order: white, white, black, green. Each time, I follow the edge that is labeled with the specified color. I'll have to trace each step carefully, making sure I follow the correct edge each time.\n\nLet me list out the edges again to keep track:\n\n1. N01 - black -> N04\n2. N01 - green -> N",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 167,
+            "reasoning": 128,
+            "sampled_total": 144
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 8,
+            "repeated_line_count": 2,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: 'Okay, so I need to figure out the final node after following a specific path on this directed map. Let me start by understanding the problem step by step. ' | r1:invalid R1 graph line: 'Okay, so I need to figure out the final node after following a specific path on this directed map. Let me start by understanding the problem step by step. ' | r2:invalid R2 graph line: 'Okay, so I need to figure out the final node after following a specific path on this directed map. Let me start by understanding the problem step by step. ' | r3:invalid R3 graph line: 'Okay, so I need to figure out the final node after following a specific path on this directed map. Let me start by understanding the problem step by step. '",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "N00",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "Okay, so I need to figure out the final node after following the edges in the specified order. Let's break it down step by step. Starting at N08, the first edge is white, which goes to N02. Then another white edge from N02 goes to N09. Next, a black edge from N09 goes to N10. Finally, a white edge from N10 goes to N00. So the final node is N00.",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 304,
+            "reasoning": 101,
+            "sampled_total": 108
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: \"Okay, so I need to figure out the final node after following the edges in the specified order. Let's break it down step by step. Starting at N08, the first edge is white, which goes to N02. Then another white edge from N02 goes to N09. Next, a black edge from N09 goes to N10. Finally, a white edge from N10 goes to N00. So the final node is N00.\" | r1:invalid R1 graph line: \"Okay, so I need to figure out the final node after following the edges in the specified order. Let's break it down step by step. Starting at N08, the first edge is white, which goes to N02. Then another white edge from N02 goes to N09. Next, a black edge from N09 goes to N10. Finally, a white edge from N10 goes to N00. So the final node is N00.\" | r2:invalid R2 graph line: \"Okay, so I need to figure out the final node after following the edges in the specified order. Let's break it down step by step. Starting at N08, the first edge is white, which goes to N02. Then another white edge from N02 goes to N09. Next, a black edge from N09 goes to N10. Finally, a white edge from N10 goes to N00. So the final node is N00.\" | r3:invalid R3 graph line: \"Okay, so I need to figure out the final node after following the edges in the specified order. Let's break it down step by step. Starting at N08, the first edge is white, which goes to N02. Then another white edge from N02 goes to N09. Next, a black edge from N09 goes to N10. Finally, a white edge from N10 goes to N00. So the final node is N00.\"",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "N06",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "Step 1: From N08, following white reaches N02.\nStep 2: From N02, following white reaches N09.\nStep 3: From N09, following black reaches N04.\nStep 4: From N04, following green reaches N06.",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 167,
+            "reasoning": 64,
+            "sampled_total": 71
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 3,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 1
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "N06",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "1:N08-white>N02\n2:N02-white>N10\n3:N10-black>N01\n4:N01-green>N06",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 167,
+            "reasoning": 35,
+            "sampled_total": 42
+          },
+          "trace_diagnostics": {
+            "complete_trace": true,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": true,
+            "replayed_answer": "N06",
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 4
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "N06",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "e1(N08,white,N02)\ne2(N02,white,N09)\ne3(N09,black,N04)\ne4(N04,green,N06)",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 167,
+            "reasoning": 44,
+            "sampled_total": 51
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 3,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 1
+          }
+        }
+      },
+      "depth": 4,
+      "item_id": "graph-test-d4-5cb1706a1871fef0-1338ddb0b8",
+      "reasoning_budget": 128,
+      "reasons": [
+        "c4_invalid_transition"
+      ],
+      "reference_answer": "N06",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "directed_graph_traversal"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N02",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Okay, so I need to figure out which node I end up on after following a specific path through this directed map. Let me start by understanding the problem step by step.\n\nFirst, the starting point is N08. Then, I have to follow a sequence of gold edges, then blue, then gold, and",
+          "token_counts": {
+            "answer": 4,
+            "prompt": 259,
+            "reasoning": 64,
+            "sampled_total": 71
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 3,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: 'Okay, so I need to figure out which node I end up on after following a specific path through this directed map. Let me start by understanding the problem step by step.' | r1:invalid R1 graph line: 'Okay, so I need to figure out which node I end up on after following a specific path through this directed map. Let me start by understanding the problem step by step.' | r2:invalid R2 graph line: 'Okay, so I need to figure out which node I end up on after following a specific path through this directed map. Let me start by understanding the problem step by step.' | r3:invalid R3 graph line: 'Okay, so I need to figure out which node I end up on after following a specific path through this directed map. Let me start by understanding the problem step by step.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "The final node reached is N01.",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "To determine the final node after following the specified edges in order, we start at N08. Following the gold edge from N08 leads to N12. Next, moving along the blue edge from N12 takes us to N18. Then, along the gold edge from N18, we",
+          "token_counts": {
+            "answer": 9,
+            "prompt": 396,
+            "reasoning": 64,
+            "sampled_total": 76
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: 'To determine the final node after following the specified edges in order, we start at N08. Following the gold edge from N08 leads to N12. Next, moving along the blue edge from N12 takes us to N18. Then, along the gold edge from N18, we' | r1:invalid R1 graph line: 'To determine the final node after following the specified edges in order, we start at N08. Following the gold edge from N08 leads to N12. Next, moving along the blue edge from N12 takes us to N18. Then, along the gold edge from N18, we' | r2:invalid R2 graph line: 'To determine the final node after following the specified edges in order, we start at N08. Following the gold edge from N08 leads to N12. Next, moving along the blue edge from N12 takes us to N18. Then, along the gold edge from N18, we' | r3:invalid R3 graph line: 'To determine the final node after following the specified edges in order, we start at N08. Following the gold edge from N08 leads to N12. Next, moving along the blue edge from N12 takes us to N18. Then, along the gold edge from N18, we'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N07",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: From N08, following gold reaches N12.\nStep 2: From N12, following blue reaches N18.\nStep 3: From N18, following gold reaches N02.\nStep 4: From N02, following blue reaches N07.",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 259,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 4
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N05",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "1:N08-gold>N12\n2:N12-blue>N18\n3:N18-gold>N02\n4:N02-blue>N07\n5:N07-white>N15\n6:N15-gold>N05\n7:N05-red>N0",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 259,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 6,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r2:invalid R2 graph line: '7:N05-red>N0'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 6
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N0",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "e1(N08,gold,N12)\ne2(N12,blue,N18)\ne3(N18,gold,N02)\ne4(N02,blue,N07)\ne5(N07,white,N15)\ne6(N15,gold,N0",
+          "token_counts": {
+            "answer": 2,
+            "prompt": 259,
+            "reasoning": 64,
+            "sampled_total": 69
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 5,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 6,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 graph line: 'e6(N15,gold,N0'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 5
+          }
+        }
+      },
+      "depth": 8,
+      "item_id": "graph-test-d8-006ffc9af6378bed-cb68f264ad",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_invalid_transition",
+        "c4_trace_parse_failure"
+      ],
+      "reference_answer": "N06",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "directed_graph_traversal"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N01",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Okay, so I have this problem where I need to follow a series of directed edges on a map, starting from N05. The edges are labeled with colors, and I need to follow them in a specific order: blue, white, blue, black, white, red, black, and then gold. Hmm",
+          "token_counts": {
+            "answer": 4,
+            "prompt": 259,
+            "reasoning": 64,
+            "sampled_total": 71
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges on a map, starting from N05. The edges are labeled with colors, and I need to follow them in a specific order: blue, white, blue, black, white, red, black, and then gold. Hmm' | r1:invalid R1 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges on a map, starting from N05. The edges are labeled with colors, and I need to follow them in a specific order: blue, white, blue, black, white, red, black, and then gold. Hmm' | r2:invalid R2 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges on a map, starting from N05. The edges are labeled with colors, and I need to follow them in a specific order: blue, white, blue, black, white, red, black, and then gold. Hmm' | r3:invalid R3 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges on a map, starting from N05. The edges are labeled with colors, and I need to follow them in a specific order: blue, white, blue, black, white, red, black, and then gold. Hmm'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N01",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Okay, so I'm trying to figure out where I end up after following these directed edges on the map. Let me start by understanding the problem step by step.\n\nFirst, I need to map out all the edges and see the order in which I follow them. I start at N05. The first edge I",
+          "token_counts": {
+            "answer": 4,
+            "prompt": 396,
+            "reasoning": 64,
+            "sampled_total": 71
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 3,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: \"Okay, so I'm trying to figure out where I end up after following these directed edges on the map. Let me start by understanding the problem step by step.\" | r1:invalid R1 graph line: \"Okay, so I'm trying to figure out where I end up after following these directed edges on the map. Let me start by understanding the problem step by step.\" | r2:invalid R2 graph line: \"Okay, so I'm trying to figure out where I end up after following these directed edges on the map. Let me start by understanding the problem step by step.\" | r3:invalid R3 graph line: \"Okay, so I'm trying to figure out where I end up after following these directed edges on the map. Let me start by understanding the problem step by step.\"",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N14",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: From N05, following blue reaches N08.\nStep 2: From N08, following white reaches N15.\nStep 3: From N15, following blue reaches N16.\nStep 4: From N16, following black reaches N14.",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 259,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 4
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N12",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "1:N05-blue>N08\n2:N08-white>N15\n3:N15-blue>N16\n4:N16-black>N14\n5:N14-white>N02\n6:N02-red>N09\n7:N09-black>N12\n8",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 259,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 7,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 8,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r2:invalid R2 graph line: '8'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 7
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N02",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "e1(N05,blue,N08)\ne2(N08,white,N15)\ne3(N15,blue,N16)\ne4(N16,black,N14)\ne5(N14,white,N02)\ne6(N02,red,N0",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 259,
+            "reasoning": 64,
+            "sampled_total": 70
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 5,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 6,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 graph line: 'e6(N02,red,N0'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 5
+          }
+        }
+      },
+      "depth": 8,
+      "item_id": "graph-test-d8-136d21567d541bad-4072a3aef7",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_accuracy_regression"
+      ],
+      "reference_answer": "N01",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "directed_graph_traversal"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N17",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Okay, so I have this problem where I need to follow a series of directed edges on a map, starting from node N11. The edges are labeled with colors: green, green, green, white, white, black, green, green. I need to figure out which node I end up at after following each edge step by step.\n\nFirst, I'll start at N11. The first edge I need to take is green. Looking at the edges from N11, I see N11 -blue-> N17. Wait, that's a blue edge, not green. Hmm, maybe I misread",
+          "token_counts": {
+            "answer": 4,
+            "prompt": 259,
+            "reasoning": 128,
+            "sampled_total": 135
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 3,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges on a map, starting from node N11. The edges are labeled with colors: green, green, green, white, white, black, green, green. I need to figure out which node I end up at after following each edge step by step.' | r1:invalid R1 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges on a map, starting from node N11. The edges are labeled with colors: green, green, green, white, white, black, green, green. I need to figure out which node I end up at after following each edge step by step.' | r2:invalid R2 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges on a map, starting from node N11. The edges are labeled with colors: green, green, green, white, white, black, green, green. I need to figure out which node I end up at after following each edge step by step.' | r3:invalid R3 graph line: 'Okay, so I have this problem where I need to follow a series of directed edges on a map, starting from node N11. The edges are labeled with colors: green, green, green, white, white, black, green, green. I need to figure out which node I end up at after following each edge step by step.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N08",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, identify the nodes connected by green edges starting from N11: N11 - green -> N17 and N11 - green -> N12. Choose N12 for the next step.\n\nNext, find green edges from N12: N12 - green -> N18. Move to N18.\n\nThen, green edges from N18: N18 - green -> N08. Proceed to N08.\n\nFor the next green edge from N08: N08 - green -> N05. Move to N05.\n\nFrom N05, green edges",
+          "token_counts": {
+            "answer": 4,
+            "prompt": 396,
+            "reasoning": 128,
+            "sampled_total": 135
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 9,
+            "repeated_line_count": 3,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 graph line: 'First, identify the nodes connected by green edges starting from N11: N11 - green -> N17 and N11 - green -> N12. Choose N12 for the next step.' | r1:invalid R1 graph line: 'First, identify the nodes connected by green edges starting from N11: N11 - green -> N17 and N11 - green -> N12. Choose N12 for the next step.' | r2:invalid R2 graph line: 'First, identify the nodes connected by green edges starting from N11: N11 - green -> N17 and N11 - green -> N12. Choose N12 for the next step.' | r3:invalid R3 graph line: 'First, identify the nodes connected by green edges starting from N11: N11 - green -> N17 and N11 - green -> N12. Choose N12 for the next step.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "N13",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: From N11, following green reaches N12.\nStep 2: From N12, following green reaches N08.\nStep 3: From N08, following gold reaches N05.\nStep 4: From N05, following white reaches N00.\nStep 5: From N00, following white reaches N06.\nStep 6: From N06, following black reaches N07.\nStep 7: From N07, following green reaches N14.\nStep 8: From N14, following green reaches N13.",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 259,
+            "reasoning": 128,
+            "sampled_total": 134
+          },
+          "trace_diagnostics": {
+            "complete_trace": true,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 8,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 8,
+            "repeated_line_count": 0,
+            "replay_valid": true,
+            "replayed_answer": "N13",
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 8
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "N13",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "1:N11-green>N12\n2:N12-green>N08\n3:N08-gold>N05\n4:N05-white>N00\n5:N00-white>N06\n6:N06-black>N07\n7:N07-green>N14\n8:N14-green>N13",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 259,
+            "reasoning": 72,
+            "sampled_total": 79
+          },
+          "trace_diagnostics": {
+            "complete_trace": true,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 8,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 8,
+            "repeated_line_count": 0,
+            "replay_valid": true,
+            "replayed_answer": "N13",
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 8
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "N08",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "e1(N11,green,N12)\ne2(N12,green,N08)\ne3(N08,gold,N05)\ne4(N05,white,N00)\ne5(N00,white,N06)\ne6(N06,black,N07)\ne7(N07,green,N14)\ne8(N14,green,N08)",
+          "token_counts": {
+            "answer": 3,
+            "prompt": 259,
+            "reasoning": 88,
+            "sampled_total": 95
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r3",
+            "expected_representation": "r3",
+            "invalid_transition_count": 1,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 8,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 8,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 7
+          }
+        }
+      },
+      "depth": 8,
+      "item_id": "graph-test-d8-f394fe749c22ca38-9f09556cc4",
+      "reasoning_budget": 128,
+      "reasons": [
+        "c4_accuracy_regression",
+        "c4_invalid_transition"
+      ],
+      "reference_answer": "N13",
+      "replicate": 1,
+      "split": "test",
+      "task_family": "directed_graph_traversal"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "\\boxed{8}",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, the number machine starts with the number 24.\n\nIt subtracts 10 from 24, resulting in 14.\n\nNext, it subtracts another 10 from 14, leaving 4.\n\nThen, it multiplies 4 by 2, giving 8.\n\nFinally",
+          "token_counts": {
+            "answer": 5,
+            "prompt": 101,
+            "reasoning": 64,
+            "sampled_total": 72
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 9,
+            "repeated_line_count": 3,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, the number machine starts with the number 24.' | r1:invalid R1 arithmetic line: 'First, the number machine starts with the number 24.' | r2:invalid R2 arithmetic line: 'First, the number machine starts with the number 24.' | r3:invalid R3 arithmetic line: 'First, the number machine starts with the number 24.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "allowance_exhausted",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "24 - 10 = 14\n14 - 1",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, the number machine starts with 24. It subtracts 10, resulting in 14. Next, it subtracts another 10, leaving 4. Then, it multiplies by 2, which gives 8. Finally, it divides by 2, leading to 4",
+          "token_counts": {
+            "answer": 16,
+            "prompt": 238,
+            "reasoning": 64,
+            "sampled_total": 80
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 1,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, the number machine starts with 24. It subtracts 10, resulting in 14. Next, it subtracts another 10, leaving 4. Then, it multiplies by 2, which gives 8. Finally, it divides by 2, leading to 4' | r1:invalid R1 arithmetic line: 'First, the number machine starts with 24. It subtracts 10, resulting in 14. Next, it subtracts another 10, leaving 4. Then, it multiplies by 2, which gives 8. Finally, it divides by 2, leading to 4' | r2:invalid R2 arithmetic line: 'First, the number machine starts with 24. It subtracts 10, resulting in 14. Next, it subtracts another 10, leaving 4. Then, it multiplies by 2, which gives 8. Finally, it divides by 2, leading to 4' | r3:invalid R3 arithmetic line: 'First, the number machine starts with 24. It subtracts 10, resulting in 14. Next, it subtracts another 10, leaving 4. Then, it multiplies by 2, which gives 8. Finally, it divides by 2, leading to 4'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "8",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "Step 1: The current value is 24. Subtracting 10 gives 14.\nStep 2: The current value is 14. Subtracting 10 gives 4.\nStep 3: The current value is 4. Multiplying by 2 gives 8.\nStep",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 101,
+            "reasoning": 64,
+            "sampled_total": 68
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 3,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'Step'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": true,
+            "verified_prefix_transitions": 3
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "4",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "1:24-10=14\n2:14-10=4\n3:4*2=8\n4:8/2=4",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 101,
+            "reasoning": 36,
+            "sampled_total": 41
+          },
+          "trace_diagnostics": {
+            "complete_trace": true,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": true,
+            "replayed_answer": "4",
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 4
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "4",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "s1=24>sub(10)>14\ns2=14>sub(10)>4\nm1=4>mul(2)>8\nd1=8>div(2)>4",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 101,
+            "reasoning": 48,
+            "sampled_total": 53
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 arithmetic line: 'm1=4>mul(2)>8'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        }
+      },
+      "depth": 4,
+      "item_id": "arith-test-d4-7e0dbb34657a820b-47f4cd02b5",
+      "reasoning_budget": 64,
+      "reasons": [
+        "c4_invalid_transition",
+        "c4_trace_parse_failure"
+      ],
+      "reference_answer": "4",
+      "replicate": 3,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic"
+    },
+    {
+      "conditions": {
+        "c0": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "The final number that leaves the machine is \\boxed{4}.",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "First, the number machine receives 24.\n\nThe machine subtracts 10 from 24, resulting in 14.\n\nNext, it subtracts another 10 from 14, giving 4.\n\nThen, the machine multiplies 4 by 2, which equals 8.\n\nFinally, the machine divides 8 by 2, leaving the final result as 4.\n\nTherefore, the number that leaves the machine is 4.",
+          "token_counts": {
+            "answer": 13,
+            "prompt": 101,
+            "reasoning": 94,
+            "sampled_total": 111
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 11,
+            "repeated_line_count": 4,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: 'First, the number machine receives 24.' | r1:invalid R1 arithmetic line: 'First, the number machine receives 24.' | r2:invalid R2 arithmetic line: 'First, the number machine receives 24.' | r3:invalid R3 arithmetic line: 'First, the number machine receives 24.'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c1": {
+          "answer_termination": "natural_close",
+          "correct": false,
+          "forced_reasoning_transition": true,
+          "parse_status": "valid",
+          "parsed_answer": "The number that leaves the machine is \\boxed{22}.",
+          "reasoning_termination": "budget_forced",
+          "reasoning_text": "First, the number machine subtracts 10 from the input. Let's call the input x. So, the machine's calculation is x - 10.\n\nNext, the machine subtracts another 10, so the new value is x - 10 - 10, which simplifies to x - 20.\n\nThen, the machine multiplies this result by 2, giving 2*(x - 20) = 2x - 40.\n\nFinally, the machine divides this value by 2, resulting in (2x - 40)/2 = x - 2",
+          "token_counts": {
+            "answer": 13,
+            "prompt": 238,
+            "reasoning": 128,
+            "sampled_total": 144
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": null,
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 7,
+            "repeated_line_count": 2,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r0:invalid R0 arithmetic line: \"First, the number machine subtracts 10 from the input. Let's call the input x. So, the machine's calculation is x - 10.\" | r1:invalid R1 arithmetic line: \"First, the number machine subtracts 10 from the input. Let's call the input x. So, the machine's calculation is x - 10.\" | r2:invalid R2 arithmetic line: \"First, the number machine subtracts 10 from the input. Let's call the input x. So, the machine's calculation is x - 10.\" | r3:invalid R3 arithmetic line: \"First, the number machine subtracts 10 from the input. Let's call the input x. So, the machine's calculation is x - 10.\"",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        },
+        "c2": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "4",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "Step 1: The current value is 24. Subtracting 10 gives 14.\nStep 2: The current value is 14. Subtracting 10 gives 4.\nStep 3: The current value is 4. Multiplying by 2 gives 8.\nStep 4: The current value is 8. Dividing by 2 gives 4.",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 101,
+            "reasoning": 83,
+            "sampled_total": 88
+          },
+          "trace_diagnostics": {
+            "complete_trace": true,
+            "detected_representation": "r0",
+            "expected_representation": "r0",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": true,
+            "replayed_answer": "4",
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 4
+          }
+        },
+        "c3": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "4",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "1:24-10=14\n2:14-10=4\n3:4*2=8\n4:8/2=4",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 101,
+            "reasoning": 36,
+            "sampled_total": 41
+          },
+          "trace_diagnostics": {
+            "complete_trace": true,
+            "detected_representation": "r2",
+            "expected_representation": "r2",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": false,
+            "parsed_transition_count": 4,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": true,
+            "replayed_answer": "4",
+            "trace_parse_error": null,
+            "trace_parse_success": true,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 4
+          }
+        },
+        "c4": {
+          "answer_termination": "natural_close",
+          "correct": true,
+          "forced_reasoning_transition": false,
+          "parse_status": "valid",
+          "parsed_answer": "4",
+          "reasoning_termination": "natural_close",
+          "reasoning_text": "s1=24>sub(10)>14\ns2=14>sub(10)>4\nm1=4>mul(2)>8\nd1=8>div(2)>4",
+          "token_counts": {
+            "answer": 1,
+            "prompt": 101,
+            "reasoning": 48,
+            "sampled_total": 53
+          },
+          "trace_diagnostics": {
+            "complete_trace": false,
+            "detected_representation": null,
+            "expected_representation": "r3",
+            "invalid_transition_count": 0,
+            "invalid_transition_event": true,
+            "parsed_transition_count": 0,
+            "prompt_copied": false,
+            "reasoning_empty": false,
+            "reasoning_line_count": 4,
+            "repeated_line_count": 0,
+            "replay_valid": false,
+            "replayed_answer": null,
+            "trace_parse_error": "r3:invalid R3 arithmetic line: 'm1=4>mul(2)>8'",
+            "trace_parse_success": false,
+            "trailing_fragment_recovered": false,
+            "verified_prefix_transitions": 0
+          }
+        }
+      },
+      "depth": 4,
+      "item_id": "arith-test-d4-7e0dbb34657a820b-47f4cd02b5",
+      "reasoning_budget": 128,
+      "reasons": [
+        "c4_invalid_transition",
+        "c4_trace_parse_failure"
+      ],
+      "reference_answer": "4",
+      "replicate": 3,
+      "split": "test",
+      "task_family": "multi_operation_arithmetic"
+    }
+  ],
+  "schema_version": 1,
+  "selection": "first deterministic paired example per reason, task family, depth, and primary budget; capped at 80 item-budget-replicate keys"
+}

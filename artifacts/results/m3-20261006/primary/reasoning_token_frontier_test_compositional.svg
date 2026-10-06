@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="28" text-anchor="middle" font-family="sans-serif" font-size="20">M3 test_compositional: Median generated reasoning tokens</text>
+<line x1="90" y1="470" x2="870" y2="470" stroke="#111827"/>
+<line x1="90" y1="55" x2="90" y2="470" stroke="#111827"/>
+<line x1="90" y1="470.00" x2="870" y2="470.00" stroke="#e5e7eb"/>
+<text x="80" y="474.00" text-anchor="end" font-family="sans-serif" font-size="12">0.00</text>
+<line x1="90" y1="387.00" x2="870" y2="387.00" stroke="#e5e7eb"/>
+<text x="80" y="391.00" text-anchor="end" font-family="sans-serif" font-size="12">28.98</text>
+<line x1="90" y1="304.00" x2="870" y2="304.00" stroke="#e5e7eb"/>
+<text x="80" y="308.00" text-anchor="end" font-family="sans-serif" font-size="12">57.96</text>
+<line x1="90" y1="221.00" x2="870" y2="221.00" stroke="#e5e7eb"/>
+<text x="80" y="225.00" text-anchor="end" font-family="sans-serif" font-size="12">86.94</text>
+<line x1="90" y1="138.00" x2="870" y2="138.00" stroke="#e5e7eb"/>
+<text x="80" y="142.00" text-anchor="end" font-family="sans-serif" font-size="12">115.92</text>
+<line x1="90" y1="55.00" x2="870" y2="55.00" stroke="#e5e7eb"/>
+<text x="80" y="59.00" text-anchor="end" font-family="sans-serif" font-size="12">144.90</text>
+<text x="90.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">16</text>
+<text x="246.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">32</text>
+<text x="402.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">64</text>
+<text x="558.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">128</text>
+<text x="714.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">256</text>
+<text x="870.00" y="495" text-anchor="middle" font-family="sans-serif" font-size="12">512</text>
+<polyline points="90.00,424.18 246.00,378.35 402.00,286.70 558.00,103.40 714.00,74.76 870.00,77.63" fill="none" stroke="#6b7280" stroke-width="2.5"/>
+<circle cx="90.00" cy="424.18" r="4" fill="#6b7280"/>
+<circle cx="246.00" cy="378.35" r="4" fill="#6b7280"/>
+<circle cx="402.00" cy="286.70" r="4" fill="#6b7280"/>
+<circle cx="558.00" cy="103.40" r="4" fill="#6b7280"/>
+<circle cx="714.00" cy="74.76" r="4" fill="#6b7280"/>
+<circle cx="870.00" cy="77.63" r="4" fill="#6b7280"/>
+<line x1="105" y1="522" x2="129" y2="522" stroke="#6b7280" stroke-width="3"/>
+<text x="135" y="526" font-family="sans-serif" font-size="13">C0</text>
+<polyline points="90.00,424.18 246.00,378.35 402.00,286.70 558.00,103.40 714.00,80.49 870.00,83.35" fill="none" stroke="#8b5cf6" stroke-width="2.5"/>
+<circle cx="90.00" cy="424.18" r="4" fill="#8b5cf6"/>
+<circle cx="246.00" cy="378.35" r="4" fill="#8b5cf6"/>
+<circle cx="402.00" cy="286.70" r="4" fill="#8b5cf6"/>
+<circle cx="558.00" cy="103.40" r="4" fill="#8b5cf6"/>
+<circle cx="714.00" cy="80.49" r="4" fill="#8b5cf6"/>
+<circle cx="870.00" cy="83.35" r="4" fill="#8b5cf6"/>
+<line x1="250" y1="522" x2="274" y2="522" stroke="#8b5cf6" stroke-width="3"/>
+<text x="280" y="526" font-family="sans-serif" font-size="13">C1</text>
+<polyline points="90.00,424.18 246.00,378.35 402.00,286.70 558.00,156.39 714.00,156.39 870.00,156.39" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<circle cx="90.00" cy="424.18" r="4" fill="#2563eb"/>
+<circle cx="246.00" cy="378.35" r="4" fill="#2563eb"/>
+<circle cx="402.00" cy="286.70" r="4" fill="#2563eb"/>
+<circle cx="558.00" cy="156.39" r="4" fill="#2563eb"/>
+<circle cx="714.00" cy="156.39" r="4" fill="#2563eb"/>
+<circle cx="870.00" cy="156.39" r="4" fill="#2563eb"/>
+<line x1="395" y1="522" x2="419" y2="522" stroke="#2563eb" stroke-width="3"/>
+<text x="425" y="526" font-family="sans-serif" font-size="13">C2</text>
+<polyline points="90.00,424.18 246.00,378.35 402.00,312.48 558.00,312.48 714.00,312.48 870.00,312.48" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+<circle cx="90.00" cy="424.18" r="4" fill="#f59e0b"/>
+<circle cx="246.00" cy="378.35" r="4" fill="#f59e0b"/>
+<circle cx="402.00" cy="312.48" r="4" fill="#f59e0b"/>
+<circle cx="558.00" cy="312.48" r="4" fill="#f59e0b"/>
+<circle cx="714.00" cy="312.48" r="4" fill="#f59e0b"/>
+<circle cx="870.00" cy="312.48" r="4" fill="#f59e0b"/>
+<line x1="540" y1="522" x2="564" y2="522" stroke="#f59e0b" stroke-width="3"/>
+<text x="570" y="526" font-family="sans-serif" font-size="13">C3</text>
+<polyline points="90.00,424.18 246.00,378.35 402.00,298.16 558.00,265.22 714.00,265.22 870.00,265.22" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+<circle cx="90.00" cy="424.18" r="4" fill="#16a34a"/>
+<circle cx="246.00" cy="378.35" r="4" fill="#16a34a"/>
+<circle cx="402.00" cy="298.16" r="4" fill="#16a34a"/>
+<circle cx="558.00" cy="265.22" r="4" fill="#16a34a"/>
+<circle cx="714.00" cy="265.22" r="4" fill="#16a34a"/>
+<circle cx="870.00" cy="265.22" r="4" fill="#16a34a"/>
+<line x1="685" y1="522" x2="709" y2="522" stroke="#16a34a" stroke-width="3"/>
+<text x="715" y="526" font-family="sans-serif" font-size="13">C4</text>
+<text x="480.0" y="502" text-anchor="middle" font-family="sans-serif" font-size="14">Reasoning-token budget</text>
+<text x="20" y="262.5" text-anchor="middle" font-family="sans-serif" font-size="14" transform="rotate(-90 20 262.5)">Median generated reasoning tokens</text>
+</svg>
